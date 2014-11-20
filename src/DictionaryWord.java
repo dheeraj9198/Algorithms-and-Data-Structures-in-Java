@@ -12,6 +12,15 @@ public class DictionaryWord {
 
     public static void main(String[] args)
     {
+  /*      for(int i =0 ; i<dim_x;i++)
+        {
+            for(int j=0;j<dim_y;j++)
+            {
+                System.out.print(matrix[i][j]+" ");
+            }
+            System.out.println();
+        }*/
+
         wordSet.add("i");
         wordSet.add("abfg");
         wordSet.add("mnop");
@@ -32,23 +41,40 @@ public class DictionaryWord {
     private static void checkAndPrint(String word)
     {
         if(wordSet.contains(word))
-            System.out.println(word);
+        {
+            System.out.println("YES "+word);
+        }else{
+            //System.out.println("NOT "+word);
+        }
     }
 
     private static void recursion(String word,int[][] visitedMap,int x,int y)
     {
+        if(word.equals("ab"))
+        {
+            System.out.println("HERE "+x+"*"+y);
+            for(int i =0 ; i<dim_x;i++)
+            {
+                for(int j=0;j<dim_y;j++)
+                {
+                    System.out.print(visitedMap[i][j]+" ");
+                }
+                System.out.println();
+            }
+        }
+
         for(int i = Math.max(x - 1, 0);i<Math.min(x + 2, dim_x);i++)
         {
-            //System.out.println("X= "+i);
             for(int j = Math.max(y - 1, 0);j<Math.min(y + 2, dim_y);j++)
-            {
-                //System.out.println("Y= "+j);
+            {        if(word.equals("ab"))
+                System.out.println("POSSIBLE WORD "+word+matrix[i][j]);
                 if(visitedMap[i][j] == 1)
-                {
-                    continue;
-                }else if(i==x && j==y){
+                {        if(word.equals("ab"))
+                    System.out.println("Visited "+i+"*"+j);
                     continue;
                 }else{
+                    if(word.equals("ab"))
+                        System.out.println("visiting "+i+"*"+j);
                     visitedMap[i][j] = 1;
                     checkAndPrint(word+matrix[i][j]);
                     recursion(word+matrix[i][j],visitedMap,i,j);
