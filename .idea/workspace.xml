@@ -2,15 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="selection sort">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DictionaryWord.java" afterPath="$PROJECT_DIR$/src/DictionaryWord.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProblemSolving/ColorfulNumber.java" />
+      <change type="MOVED" beforePath="C:\Users\Aurus\IdeaProjects\Algorithms-and-Data-Structures-in-Java\src\DictionaryWord.java" afterPath="$PROJECT_DIR$/src/ProblemSolving/DictionaryWord.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Fibonacci.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416410474558" ignored="false" />
     <file path="/SelectionSort.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416454570369" ignored="false" />
-    <file path="/Dummy.txt" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416542618079" ignored="false" />
+    <file path="/Dummy.txt" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416561762354" ignored="false" />
     <file path="/DictionaryWord.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416542831430" ignored="false" />
+    <file path="/ColorfulNumber.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416563788097" ignored="false" />
+    <file path="$PROJECT_DIR$/../encodingserver/src/main/java/com/aurusnet/coursehub/type/CommandEnum.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416551776751" ignored="false" />
+    <file path="/CommandEnum.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416551758080" ignored="false" />
+    <file path="$PROJECT_DIR$/../encodingserver/src/main/java/com/aurusnet/coursehub/RequestHandler.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416561049752" ignored="false" />
+    <file path="/RequestHandler.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416561048003" ignored="false" />
+    <file path="/a.dummy" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416560762653" ignored="false" />
+    <file path="$PROJECT_DIR$/../youtube-uploader/.idea/encodings.xml" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416561765018" ignored="false" />
+    <file path="$PROJECT_DIR$/../youtube-uploader/.idea/misc.xml" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416561765018" ignored="false" />
+    <file path="$PROJECT_DIR$/../youtube-uploader/.idea/modules.xml" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416561765260" ignored="false" />
+    <file path="$PROJECT_DIR$/../youtube-uploader/.idea/compiler.xml" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416561765260" ignored="false" />
+    <file path="$PROJECT_DIR$/../youtube-uploader/.idea/workspace.xml" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416561773754" ignored="false" />
+    <file path="$PROJECT_DIR$/../youtube-uploader/.idea/vcs.xml" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416561765260" ignored="false" />
+    <file path="$PROJECT_DIR$/../encodingserver/src/main/java/com/aurusnet/coursehub/helper/XMLTransformer.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416562034128" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +40,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -62,6 +76,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -71,14 +86,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DictionaryWord.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DictionaryWord.java">
+      <file leaf-file-name="ColorfulNumber.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ProblemSolving/ColorfulNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="39" selection-start="1500" selection-end="1500" vertical-scroll-proportion="1.6689655">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#773#781#0" expanded="true" />
-              </folding>
+            <state line="48" column="87" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.35828876">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,14 +116,16 @@
         <option value="$PROJECT_DIR$/src/Fibonacci.java" />
         <option value="$PROJECT_DIR$/src/SelectionSort.java" />
         <option value="$PROJECT_DIR$/src/DictionaryWord.java" />
+        <option value="$PROJECT_DIR$/src/ProblemSolving/DictionaryWord.java" />
+        <option value="$PROJECT_DIR$/src/ProblemSolving/ColorfulNumber.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -141,6 +155,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -155,7 +170,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Ds Algo" />
+              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -165,7 +180,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Ds Algo" />
+              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -173,9 +188,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ds Algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProblemSolving" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -195,7 +227,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Application.DictionaryWord">
+  <component name="RunManager" selected="Application.ColorfulNumber">
     <configuration default="false" name="Fibonacci" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Fibonacci" />
@@ -232,7 +264,29 @@
     </configuration>
     <configuration default="false" name="DictionaryWord" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="DictionaryWord" />
+      <option name="MAIN_CLASS_NAME" value="ProblemSolving.DictionaryWord" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Ds Algo" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ColorfulNumber" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ProblemSolving.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ProblemSolving.ColorfulNumber" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -338,16 +392,18 @@
       <patterns />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.Fibonacci" />
       <item index="1" class="java.lang.String" itemvalue="Application.SelectionSort" />
       <item index="2" class="java.lang.String" itemvalue="Application.DictionaryWord" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ColorfulNumber" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.DictionaryWord" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SelectionSort" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Fibonacci" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.ColorfulNumber" />
+        <item index="1" class="java.lang.String" itemvalue="Application.DictionaryWord" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SelectionSort" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Fibonacci" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -391,7 +447,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -405,19 +461,19 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24322917" sideWeight="0.5032538" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4967462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24318182" sideWeight="0.50425893" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49574107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -487,12 +543,29 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/DictionaryWord.java">
+    <entry file="file://$PROJECT_DIR$/src/ProblemSolving/ColorfulNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProblemSolving/DictionaryWord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#773#781#0" expanded="true" />
+            <element signature="e#798#806#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProblemSolving/DictionaryWord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#798#806#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -529,13 +602,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DictionaryWord.java">
+    <entry file="file://$PROJECT_DIR$/src/ProblemSolving/DictionaryWord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="39" selection-start="1500" selection-end="1500" vertical-scroll-proportion="1.6689655">
+        <state line="47" column="5" selection-start="1525" selection-end="1525" vertical-scroll-proportion="-0.030195381">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#773#781#0" expanded="true" />
+            <element signature="e#798#806#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProblemSolving/ColorfulNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="87" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.35828876">
+          <folding />
         </state>
       </provider>
     </entry>
