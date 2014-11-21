@@ -10,11 +10,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created with IntelliJ IDEA.
- * User: Aurus
- * Date: 11/19/14
- * Time: 3:45 PM
- * To change this template use File | Settings | File Templates.
+ * Colorful Number:
+ * A number can be broken into different sub-sequence parts.
+ * Suppose, a number 3245 can be broken into parts like 3 2 4 5 32 24 45 324 245.
+ * And this number is a colorful number, since product of every digit of a sub-sequence are different.
+ * That is, 3 2 4 5 (3*2)=6 (2*4)=8 (4*5)=20 (3*2*4)= 24 (2*4*5)= 40
+ * But 326 is not a colorful number as it generates 3 2 6 (3*2)=6 (2*6)=12.
  */
 public class ColorfulNumber {
     public static void main(String[] args) throws Exception {

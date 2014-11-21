@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="selection sort">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProblemSolving/ColorfulNumber.java" />
-      <change type="MOVED" beforePath="C:\Users\Aurus\IdeaProjects\Algorithms-and-Data-Structures-in-Java\src\DictionaryWord.java" afterPath="$PROJECT_DIR$/src/ProblemSolving/DictionaryWord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProblemSolving/ColorfulNumber.java" afterPath="$PROJECT_DIR$/src/ProblemSolving/ColorfulNumber.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Fibonacci.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416410474558" ignored="false" />
     <file path="/SelectionSort.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416454570369" ignored="false" />
-    <file path="/Dummy.txt" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416561762354" ignored="false" />
+    <file path="/Dummy.txt" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416563979033" ignored="false" />
     <file path="/DictionaryWord.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416542831430" ignored="false" />
     <file path="/ColorfulNumber.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416563788097" ignored="false" />
     <file path="$PROJECT_DIR$/../encodingserver/src/main/java/com/aurusnet/coursehub/type/CommandEnum.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416551776751" ignored="false" />
@@ -86,11 +84,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="DictionaryWord.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ProblemSolving/DictionaryWord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="5" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#798#806#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ColorfulNumber.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ProblemSolving/ColorfulNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="87" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.35828876">
-              <folding />
+            <state line="60" column="30" selection-start="2217" selection-end="2217" vertical-scroll-proportion="0.6791444">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -443,7 +455,11 @@
       <created>1416505407341</created>
       <updated>1416505407341</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Colorful number">
+      <created>1416563984347</created>
+      <updated>1416563984347</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -519,7 +535,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="selection sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Colorful number" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -534,6 +550,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="selection sort" />
+    <MESSAGE value="Colorful number" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -546,7 +563,9 @@
     <entry file="file://$PROJECT_DIR$/src/ProblemSolving/ColorfulNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -604,7 +623,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProblemSolving/DictionaryWord.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="5" selection-start="1525" selection-end="1525" vertical-scroll-proportion="-0.030195381">
+        <state line="47" column="5" selection-start="1525" selection-end="1525" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#798#806#0" expanded="true" />
@@ -614,8 +633,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProblemSolving/ColorfulNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="87" selection-start="1515" selection-end="1515" vertical-scroll-proportion="0.35828876">
-          <folding />
+        <state line="60" column="30" selection-start="2217" selection-end="2217" vertical-scroll-proportion="0.6791444">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
