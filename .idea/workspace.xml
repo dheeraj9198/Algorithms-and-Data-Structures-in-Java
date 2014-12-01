@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/to do" afterPath="$PROJECT_DIR$/to do" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
@@ -559,7 +558,7 @@
       <updated>1416410196726</updated>
       <workItem from="1416487233621" duration="2583000" />
       <workItem from="1417425963395" duration="37000" />
-      <workItem from="1417426012948" duration="5077000" />
+      <workItem from="1417426012948" duration="5680000" />
     </task>
     <task id="LOCAL-00001" summary="Not working">
       <created>1416490347168</created>
@@ -573,11 +572,15 @@
       <created>1417439106412</created>
       <updated>1417439106412</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="to do&#10;">
+      <created>1417439118227</created>
+      <updated>1417439118227</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7697000" />
+    <option name="totallyTimeSpent" value="8300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
