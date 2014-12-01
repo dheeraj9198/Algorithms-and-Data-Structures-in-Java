@@ -70,7 +70,7 @@
       <file leaf-file-name="to do" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/to do">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="28" selection-start="88" selection-end="88" vertical-scroll-proportion="0.030100334" vertical-offset="0" max-vertical-offset="598">
+            <state line="1" column="20" selection-start="80" selection-end="80" vertical-scroll-proportion="0.030100334" vertical-offset="0" max-vertical-offset="598">
               <folding />
             </state>
           </provider>
@@ -559,7 +559,7 @@
       <updated>1416410196726</updated>
       <workItem from="1416487233621" duration="2583000" />
       <workItem from="1417425963395" duration="37000" />
-      <workItem from="1417426012948" duration="5066000" />
+      <workItem from="1417426012948" duration="5077000" />
     </task>
     <task id="LOCAL-00001" summary="Not working">
       <created>1416490347168</created>
@@ -569,11 +569,15 @@
       <created>1417436688316</created>
       <updated>1417436688316</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="to do&#10;">
+      <created>1417439106412</created>
+      <updated>1417439106412</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7686000" />
+    <option name="totallyTimeSpent" value="7697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
@@ -623,7 +627,8 @@
     </option>
     <MESSAGE value="Not working" />
     <MESSAGE value="to do" />
-    <option name="LAST_COMMIT_MESSAGE" value="to do" />
+    <MESSAGE value="to do&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="to do&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -696,7 +701,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/to do">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="28" selection-start="88" selection-end="88" vertical-scroll-proportion="0.030100334" vertical-offset="0" max-vertical-offset="598">
+        <state line="1" column="20" selection-start="80" selection-end="80" vertical-scroll-proportion="0.030100334" vertical-offset="0" max-vertical-offset="598">
           <folding />
         </state>
       </provider>
