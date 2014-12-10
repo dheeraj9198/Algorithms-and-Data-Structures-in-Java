@@ -1,5 +1,4 @@
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
@@ -34,10 +33,16 @@ public class LinkedList {
 
         if (root == null) {
             root = new Node(data);
+            return root;
         } else {
-            root.next = insertData(root.next, data);
+            // list order = 1 2 3 4 5 if insert order is 1 2 3 4 5
+            //root.next = insertData(root.next, data);
+
+            // list order is 5 4 3 2 1 if insert order is 1 2 3 4 5
+            Node node = new Node(data);
+            node.next = root;
+            return node;
         }
-        return root;
     }
 
     public void print() {
