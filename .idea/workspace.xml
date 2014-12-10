@@ -2,17 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LocalMinimaNXNGrid.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BST.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Distribution.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LinkedList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MyStack.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SmallestCommonSubsequenceFinder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SodukoSolver.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TopologicalSort.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TrieDheeraj.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Fibonacci.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416410474558" ignored="false" />
     <file path="/SelectionSort.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416454570369" ignored="false" />
-    <file path="/Dummy.txt" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416657242358" ignored="false" />
+    <file path="/Dummy.txt" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418222210645" ignored="false" />
     <file path="/DictionaryWord.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416542831430" ignored="false" />
     <file path="/SecondMajority.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416656545975" ignored="false" />
     <file path="/LocalMinimaNXNGrid.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416666119675" ignored="false" />
+    <file path="/TrieDheeraj.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418223618106" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,10 +82,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LocalMinimaNXNGrid.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LocalMinimaNXNGrid.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LocalMinimaNXNGrid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="54" selection-start="1494" selection-end="1494" vertical-scroll-proportion="0.2362822">
+            <state line="71" column="6" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrieDheeraj.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TrieDheeraj.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="49" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.38390803">
               <folding />
             </state>
           </provider>
@@ -105,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/DictionaryWord.java" />
         <option value="$PROJECT_DIR$/src/SecondMajority.java" />
         <option value="$PROJECT_DIR$/src/LocalMinimaNXNGrid.java" />
+        <option value="$PROJECT_DIR$/src/TrieDheeraj.java" />
       </list>
     </option>
   </component>
@@ -123,7 +142,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -142,6 +161,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -195,7 +215,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,28 +229,11 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.LocalMinimaNXNGrid">
-    <configuration default="false" name="Fibonacci" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Fibonacci" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Ds Algo" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.TrieDheeraj">
     <configuration default="false" name="SelectionSort" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="SelectionSort" />
@@ -300,6 +302,23 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="TrieDheeraj" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="TrieDheeraj" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Ds Algo" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -312,19 +331,6 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -353,6 +359,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -392,19 +411,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Fibonacci" />
-      <item index="1" class="java.lang.String" itemvalue="Application.SelectionSort" />
-      <item index="2" class="java.lang.String" itemvalue="Application.DictionaryWord" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SecondMajority" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LocalMinimaNXNGrid" />
+      <item index="0" class="java.lang.String" itemvalue="Application.SelectionSort" />
+      <item index="1" class="java.lang.String" itemvalue="Application.DictionaryWord" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SecondMajority" />
+      <item index="3" class="java.lang.String" itemvalue="Application.LocalMinimaNXNGrid" />
+      <item index="4" class="java.lang.String" itemvalue="Application.TrieDheeraj" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.LocalMinimaNXNGrid" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SecondMajority" />
-        <item index="2" class="java.lang.String" itemvalue="Application.DictionaryWord" />
-        <item index="3" class="java.lang.String" itemvalue="Application.SelectionSort" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Fibonacci" />
+        <item index="0" class="java.lang.String" itemvalue="Application.TrieDheeraj" />
+        <item index="1" class="java.lang.String" itemvalue="Application.LocalMinimaNXNGrid" />
+        <item index="2" class="java.lang.String" itemvalue="Application.SecondMajority" />
+        <item index="3" class="java.lang.String" itemvalue="Application.DictionaryWord" />
+        <item index="4" class="java.lang.String" itemvalue="Application.SelectionSort" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -452,7 +471,11 @@
       <created>1416657245505</created>
       <updated>1416657245505</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="2 majority">
+      <created>1416668692462</created>
+      <updated>1416668692462</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -478,11 +501,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24322917" sideWeight="0.5032538" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4967462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4967462" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -554,6 +577,20 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/LocalMinimaNXNGrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LocalMinimaNXNGrid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/SecondMajority.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -602,7 +639,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LocalMinimaNXNGrid.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="54" selection-start="1494" selection-end="1494" vertical-scroll-proportion="0.2362822">
+        <state line="71" column="6" selection-start="2281" selection-end="2281" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TrieDheeraj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="49" selection-start="1908" selection-end="1908" vertical-scroll-proportion="0.38390803">
           <folding />
         </state>
       </provider>
