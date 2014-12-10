@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProblemSolving/ThirdChildNextRight.java" afterPath="$PROJECT_DIR$/src/ProblemSolving/ThirdChildNextRight.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CustomMinPriorityQueue.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Fibonacci.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416410474558" ignored="false" />
     <file path="/SelectionSort.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416454570369" ignored="false" />
-    <file path="/Dummy.txt" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418233609611" ignored="false" />
+    <file path="/Dummy.txt" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418239289766" ignored="false" />
     <file path="/DictionaryWord.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416542831430" ignored="false" />
     <file path="/SecondMajority.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416656545975" ignored="false" />
     <file path="/LocalMinimaNXNGrid.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416666119675" ignored="false" />
@@ -20,6 +19,7 @@
     <file path="/StringPlacingSpaces.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418230247595" ignored="false" />
     <file path="/ThirdChildNextRight.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418233570940" ignored="false" />
     <file path="/AllPermutationsOfString.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418234909202" ignored="false" />
+    <file path="/CustomMinPriorityQueue.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418240146261" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,11 +130,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopologicalSort.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TopologicalSort.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TopologicalSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="13" selection-start="247" selection-end="247" vertical-scroll-proportion="0.22172453">
+            <state line="11" column="13" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomMinPriorityQueue.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CustomMinPriorityQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="78" selection-start="570" selection-end="570" vertical-scroll-proportion="0.49272117">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#549#557#0" expanded="true" />
+                <element signature="e#754#755#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -168,6 +181,7 @@
         <option value="$PROJECT_DIR$/src/ProblemSolving/StringPlacingSpaces.java" />
         <option value="$PROJECT_DIR$/src/ProblemSolving/ThirdChildNextRight.java" />
         <option value="$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java" />
+        <option value="$PROJECT_DIR$/src/CustomMinPriorityQueue.java" />
       </list>
     </option>
   </component>
@@ -277,30 +291,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Application.AllPermutationsOfString">
-    <configuration default="false" name="LinkedList" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="LinkedList" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Ds Algo" />
-      <envs />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="" />
-        <option name="TRANSPORT" value="0" />
-        <option name="LOCAL" value="true" />
-      </RunnerSettings>
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Debug" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.CustomMinPriorityQueue">
     <configuration default="false" name="Heap" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Heap" />
@@ -370,6 +361,23 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="ProblemSolving.AllPermutationsOfString" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Ds Algo" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="CustomMinPriorityQueue" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="CustomMinPriorityQueue" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -476,19 +484,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.LinkedList" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Heap" />
-      <item index="2" class="java.lang.String" itemvalue="Application.StringPlacingSpaces" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ThirdChildNextRight" />
-      <item index="4" class="java.lang.String" itemvalue="Application.AllPermutationsOfString" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Heap" />
+      <item index="1" class="java.lang.String" itemvalue="Application.StringPlacingSpaces" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ThirdChildNextRight" />
+      <item index="3" class="java.lang.String" itemvalue="Application.AllPermutationsOfString" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CustomMinPriorityQueue" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.AllPermutationsOfString" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ThirdChildNextRight" />
-        <item index="2" class="java.lang.String" itemvalue="Application.StringPlacingSpaces" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Heap" />
-        <item index="4" class="java.lang.String" itemvalue="Application.LinkedList" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CustomMinPriorityQueue" />
+        <item index="1" class="java.lang.String" itemvalue="Application.AllPermutationsOfString" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ThirdChildNextRight" />
+        <item index="3" class="java.lang.String" itemvalue="Application.StringPlacingSpaces" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Heap" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -552,7 +560,11 @@
       <created>1418233612357</created>
       <updated>1418233612357</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Trie dictionary">
+      <created>1418239293116</created>
+      <updated>1418239293116</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -655,36 +667,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/SecondMajority.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fibonacci.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SelectionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="42" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Fibonacci.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="472" selection-end="472" vertical-scroll-proportion="0.36954087">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SelectionSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="43" column="78" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.556551">
@@ -780,8 +762,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TopologicalSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="247" selection-end="247" vertical-scroll-proportion="0.22172453">
+        <state line="11" column="13" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_45/src.zip!/java/util/AbstractQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="13" selection-start="3401" selection-end="3401" vertical-scroll-proportion="0.4844649">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_45/src.zip!/java/util/PriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="147" column="28" selection-start="5306" selection-end="5306" vertical-scroll-proportion="0.34177214">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_45/src.zip!/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="17" selection-start="3985" selection-end="3985" vertical-scroll-proportion="0.3325868">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CustomMinPriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="78" selection-start="570" selection-end="570" vertical-scroll-proportion="0.49272117">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#549#557#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
