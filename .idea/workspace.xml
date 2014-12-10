@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Heap.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProblemSolving/StringPlacingSpaces.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProblemSolving/ThirdChildNextRight.java" />
-      <change type="DELETED" beforePath="C:\Users\windows 7\IdeaProjects\Ds Algo\src\ProblemSolving\BinarySearchTree.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LinkedList.java" afterPath="$PROJECT_DIR$/src/LinkedList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProblemSolving/ThirdChildNextRight.java" afterPath="$PROJECT_DIR$/src/ProblemSolving/ThirdChildNextRight.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Fibonacci.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416410474558" ignored="false" />
     <file path="/SelectionSort.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416454570369" ignored="false" />
-    <file path="/Dummy.txt" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418223715776" ignored="false" />
+    <file path="/Dummy.txt" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418233609611" ignored="false" />
     <file path="/DictionaryWord.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416542831430" ignored="false" />
     <file path="/SecondMajority.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416656545975" ignored="false" />
     <file path="/LocalMinimaNXNGrid.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1416666119675" ignored="false" />
@@ -22,6 +19,7 @@
     <file path="/Heap.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418224515206" ignored="false" />
     <file path="/StringPlacingSpaces.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418230247595" ignored="false" />
     <file path="/ThirdChildNextRight.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418233570940" ignored="false" />
+    <file path="/AllPermutationsOfString.java" changelist="99e3673b-fc86-4706-968f-da8f87686d20" time="1418234909202" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +95,7 @@
       <file leaf-file-name="StringPlacingSpaces.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ProblemSolving/StringPlacingSpaces.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+            <state line="30" column="32" selection-start="672" selection-end="785" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#711#719#0" expanded="true" />
@@ -107,14 +105,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThirdChildNextRight.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ThirdChildNextRight.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ProblemSolving/ThirdChildNextRight.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="20" selection-start="2605" selection-end="2605" vertical-scroll-proportion="2.0795074">
+            <state line="4" column="54" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1861#1867#0" expanded="true" />
+                <element signature="e#1810#1816#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllPermutationsOfString.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="43" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#818#826#0" expanded="true" />
+                <element signature="e#1064#1072#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopologicalSort.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TopologicalSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="13" selection-start="247" selection-end="247" vertical-scroll-proportion="0.22172453">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,6 +167,7 @@
         <option value="$PROJECT_DIR$/src/Heap.java" />
         <option value="$PROJECT_DIR$/src/ProblemSolving/StringPlacingSpaces.java" />
         <option value="$PROJECT_DIR$/src/ProblemSolving/ThirdChildNextRight.java" />
+        <option value="$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java" />
       </list>
     </option>
   </component>
@@ -256,24 +277,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
   </component>
-  <component name="RunManager" selected="Application.ThirdChildNextRight">
-    <configuration default="false" name="TrieDheeraj" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="TrieDheeraj" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Ds Algo" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.AllPermutationsOfString">
     <configuration default="false" name="LinkedList" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="LinkedList" />
@@ -344,6 +348,28 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="ProblemSolving.ThirdChildNextRight" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Ds Algo" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AllPermutationsOfString" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ProblemSolving.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ProblemSolving.AllPermutationsOfString" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -450,19 +476,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.TrieDheeraj" />
-      <item index="1" class="java.lang.String" itemvalue="Application.LinkedList" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Heap" />
-      <item index="3" class="java.lang.String" itemvalue="Application.StringPlacingSpaces" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ThirdChildNextRight" />
+      <item index="0" class="java.lang.String" itemvalue="Application.LinkedList" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Heap" />
+      <item index="2" class="java.lang.String" itemvalue="Application.StringPlacingSpaces" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ThirdChildNextRight" />
+      <item index="4" class="java.lang.String" itemvalue="Application.AllPermutationsOfString" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ThirdChildNextRight" />
-        <item index="1" class="java.lang.String" itemvalue="Application.StringPlacingSpaces" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Heap" />
-        <item index="3" class="java.lang.String" itemvalue="Application.LinkedList" />
-        <item index="4" class="java.lang.String" itemvalue="Application.TrieDheeraj" />
+        <item index="0" class="java.lang.String" itemvalue="Application.AllPermutationsOfString" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ThirdChildNextRight" />
+        <item index="2" class="java.lang.String" itemvalue="Application.StringPlacingSpaces" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Heap" />
+        <item index="4" class="java.lang.String" itemvalue="Application.LinkedList" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -522,7 +548,11 @@
       <created>1418223717245</created>
       <updated>1418223717245</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Trie dictionary">
+      <created>1418233612357</created>
+      <updated>1418233612357</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -625,20 +655,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/LocalMinimaNXNGrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LocalMinimaNXNGrid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SecondMajority.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -723,17 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProblemSolving/StringPlacingSpaces.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#711#719#0" expanded="true" />
-            <element signature="e#844#852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_45/src.zip!/java/util/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="190" column="6" selection-start="7230" selection-end="7230" vertical-scroll-proportion="0.5458937">
@@ -743,11 +748,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProblemSolving/ThirdChildNextRight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="20" selection-start="2605" selection-end="2605" vertical-scroll-proportion="2.0795074">
+        <state line="4" column="54" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1861#1867#0" expanded="true" />
+            <element signature="e#1810#1816#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProblemSolving/StringPlacingSpaces.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="32" selection-start="672" selection-end="785" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#711#719#0" expanded="true" />
+            <element signature="e#844#852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="43" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#818#826#0" expanded="true" />
+            <element signature="e#1064#1072#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TopologicalSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="247" selection-end="247" vertical-scroll-proportion="0.22172453">
+          <folding />
         </state>
       </provider>
     </entry>
