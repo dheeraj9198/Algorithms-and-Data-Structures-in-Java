@@ -1,5 +1,3 @@
-package ProblemSolving;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
