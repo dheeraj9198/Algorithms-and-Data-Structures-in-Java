@@ -1,7 +1,6 @@
 package ProblemSolving;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
 
 /**
  * Created with IntelliJ IDEA.
@@ -12,43 +11,48 @@ import java.util.List;
  */
 public class AllPermutationsOfString {
 
-    public static class Permute{
+    public static class Permute {
         public String string;
 
-        public Permute(String s){
-                            string = s;
+        public Permute(String s) {
+            string = s;
         }
 
-        public void printAll()
-        {
-            List<String> stringList = printAllPermutations(string);
-            for(String s : stringList){
+        public void printAll() {
+            HashSet<String> stringList = printAllPermutations(string);
+            for (String s : stringList) {
                 System.out.println(s);
             }
         }
 
-        public List<String> printAllPermutations(String string)
-        {
-            if(string.length() == 1)
-            {
-                List<String> stringList = new ArrayList<String>();
+        public HashSet<String> printAllPermutations(String string) {
+            if (string.length() == 1) {
+                HashSet<String> stringList = new HashSet<String>();
                 stringList.add(string);
-                return  stringList;
+                return stringList;
             }
 
-            List<String> list = printAllPermutations(string.substring(1,string.length()));
-            List<String> stringList =  new ArrayList<String>();
-            for(String s : list){
-                 stringList.add(string.charAt(0)+s);
-                 stringList.add(s+string.charAt(0));
+            HashSet<String> list = printAllPermutations(string.substring(1, string.length()));
+            HashSet<String> stringList = new HashSet<String>();
+            for (String s : list) {
+                for(int i =0;i<=s.length();i++){
+                    stringList.add(permute(string.charAt(0), s, i));
+                }
             }
             return stringList;
         }
 
+        private String permute(char start,String string,int index){
+            String one = string.substring(0,index);
+            String two = string.substring(index);
+            return one+start+two;
+        }
     }
 
-    public static void main(String[] args){
-         Permute permute = new Permute("ABC");
+
+
+    public static void main(String[] args) {
+        Permute permute = new Permute("ABC");
         permute.printAll();
     }
 }

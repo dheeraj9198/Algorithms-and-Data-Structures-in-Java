@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SodukoSolver.java" afterPath="$PROJECT_DIR$/src/SodukoSolver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java" afterPath="$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
@@ -68,11 +67,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SodukoSolver.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SodukoSolver.java">
+      <file leaf-file-name="AllPermutationsOfString.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="25" selection-start="3380" selection-end="3380" vertical-scroll-proportion="3.8528428" vertical-offset="0" max-vertical-offset="2772">
-              <folding />
+            <state line="49" column="5" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.548495" vertical-offset="554" max-vertical-offset="1152">
+              <folding>
+                <element signature="e#761#769#0" expanded="true" />
+                <element signature="e#1010#1018#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,9 +107,9 @@
         <option value="$PROJECT_DIR$/src/Heap.java" />
         <option value="$PROJECT_DIR$/src/ProblemSolving/StringPlacingSpaces.java" />
         <option value="$PROJECT_DIR$/src/ProblemSolving/ThirdChildNextRight.java" />
-        <option value="$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java" />
         <option value="$PROJECT_DIR$/src/CustomMinPriorityQueue.java" />
         <option value="$PROJECT_DIR$/src/SodukoSolver.java" />
+        <option value="$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java" />
       </list>
     </option>
   </component>
@@ -175,6 +177,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ds Algo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProblemSolving" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -196,8 +216,9 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
-  <component name="RunManager" selected="Application.SodukoSolver">
+  <component name="RunManager" selected="Application.AllPermutationsOfString">
     <configuration default="false" name="StringPlacingSpaces" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -518,9 +539,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.SodukoSolver" />
-        <item index="1" class="java.lang.String" itemvalue="Application.CustomMinPriorityQueue" />
-        <item index="2" class="java.lang.String" itemvalue="Application.AllPermutationsOfString" />
+        <item index="0" class="java.lang.String" itemvalue="Application.AllPermutationsOfString" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SodukoSolver" />
+        <item index="2" class="java.lang.String" itemvalue="Application.CustomMinPriorityQueue" />
         <item index="3" class="java.lang.String" itemvalue="Application.ThirdChildNextRight" />
         <item index="4" class="java.lang.String" itemvalue="Application.StringPlacingSpaces" />
       </list>
@@ -553,7 +574,7 @@
       <changelist id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="" />
       <created>1416410196726</created>
       <updated>1416410196726</updated>
-      <workItem from="1418297015056" duration="762000" />
+      <workItem from="1418297015056" duration="2093000" />
     </task>
     <task id="LOCAL-00001" summary="selection sort">
       <created>1416454660785</created>
@@ -591,11 +612,15 @@
       <created>1418239293116</created>
       <updated>1418239293116</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="chill">
+      <created>1418298922706</created>
+      <updated>1418298922706</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="762000" />
+    <option name="totallyTimeSpent" value="2093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
@@ -621,7 +646,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24279211" sideWeight="0.45444685" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.544" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5216" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -647,7 +672,8 @@
     <MESSAGE value="Dictionary Word BAD IMPLEMENTATION" />
     <MESSAGE value="2 majority" />
     <MESSAGE value="Trie dictionary" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trie dictionary" />
+    <MESSAGE value="chill" />
+    <option name="LAST_COMMIT_MESSAGE" value="chill" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -681,7 +707,10 @@
     <entry file="file://$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="43" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="1080">
-          <folding />
+          <folding>
+            <element signature="e#761#769#0" expanded="true" />
+            <element signature="e#1010#1018#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -763,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="43" selection-start="1366" selection-end="1366" vertical-scroll-proportion="0.7" vertical-offset="462" max-vertical-offset="1062">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ProblemSolving/ThirdChildNextRight.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="78" selection-end="78" vertical-scroll-proportion="-0.03" vertical-offset="72" max-vertical-offset="2358">
@@ -795,6 +817,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="128" column="25" selection-start="3380" selection-end="3380" vertical-scroll-proportion="3.8528428" vertical-offset="0" max-vertical-offset="2772">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProblemSolving/AllPermutationsOfString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="5" selection-start="1469" selection-end="1469" vertical-scroll-proportion="0.548495" vertical-offset="554" max-vertical-offset="1152">
+          <folding>
+            <element signature="e#761#769#0" expanded="true" />
+            <element signature="e#1010#1018#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
