@@ -1,5 +1,5 @@
 /**
- * Created by sujeet on 12/12/14.
+ * Created by dheeraj on 12/12/14.
  */
 public class ReverseALinkedList {
 
