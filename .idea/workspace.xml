@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ReverseALinkedList.java" />
+    <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="Reverse from nth node start and end linked list&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
@@ -70,7 +69,7 @@
       <file leaf-file-name="ReverseALinkedList.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ReverseALinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="48" selection-start="2408" selection-end="2408" vertical-scroll-proportion="1.1204014" vertical-offset="1058" max-vertical-offset="1980">
+            <state line="96" column="48" selection-start="2408" selection-end="2408" vertical-scroll-proportion="1.1166667" vertical-offset="1058" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
@@ -145,7 +144,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -180,6 +178,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -547,7 +546,8 @@
       <updated>1416410196726</updated>
       <workItem from="1418297015056" duration="4534000" />
       <workItem from="1418363980770" duration="1089000" />
-      <workItem from="1418376627077" duration="2316000" />
+      <workItem from="1418376627077" duration="2355000" />
+      <workItem from="1418378996486" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="selection sort">
       <created>1416454660785</created>
@@ -597,22 +597,25 @@
       <created>1418302552900</created>
       <updated>1418302552900</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Reverse from nth node start and end linked list">
+      <created>1418378968022</created>
+      <updated>1418378968022</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7939000" />
+    <option name="totallyTimeSpent" value="7984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -621,7 +624,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -634,6 +636,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -656,7 +660,8 @@
     <MESSAGE value="chill" />
     <MESSAGE value="all string permutation" />
     <MESSAGE value="all string permutation&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="all string permutation&#10;" />
+    <MESSAGE value="Reverse from nth node start and end linked list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reverse from nth node start and end linked list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -666,6 +671,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ReverseALinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="48" selection-start="2408" selection-end="2408" vertical-scroll-proportion="0.0" vertical-offset="1058" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Heap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="47" selection-start="848" selection-end="848" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="882">
@@ -826,7 +838,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ReverseALinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="48" selection-start="2408" selection-end="2408" vertical-scroll-proportion="1.1204014" vertical-offset="1058" max-vertical-offset="1980">
+        <state line="96" column="48" selection-start="2408" selection-end="2408" vertical-scroll-proportion="1.1166667" vertical-offset="1058" max-vertical-offset="1980">
           <folding />
         </state>
       </provider>
