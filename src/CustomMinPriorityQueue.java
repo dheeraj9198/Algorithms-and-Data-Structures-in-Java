@@ -33,8 +33,10 @@ public class CustomMinPriorityQueue {
         minHeap.add(new Vertex(2,9));
         minHeap.add(new Vertex(3,90));
 
+        minHeap.peek().distance=1000;
+
         while(minHeap.size() > 0){
-            System.out.println(minHeap.remove().number);
+            System.out.println(minHeap.peek().distance + "-" +minHeap.remove().number);
         }
 
     }
