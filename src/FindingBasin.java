@@ -110,7 +110,7 @@ public class FindingBasin {
                 if(matrix[x][y] >= matrix[row][column]){
                     visitedMatrix[x][y] = true;
                     basinMatrix[x][y] =false;
-                    //rowColHeightPriorityQueue.remove(new RowColHeight(x,y,matrix[x][y]));
+                    rowColHeightPriorityQueue.remove(new RowColHeight(x,y,matrix[x][y]));
                     markALlNonBasins(rowColHeightPriorityQueue,visitedMatrix,basinMatrix,x,y);
                 }
             }
