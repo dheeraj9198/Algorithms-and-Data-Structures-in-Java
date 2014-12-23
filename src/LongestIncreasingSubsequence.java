@@ -40,7 +40,7 @@ public class LongestIncreasingSubsequence {
                 if (lengthCountIndex == -1) {
                     currentLength++;
                     maxElementArray[currentLength] = array[x];
-                    lengthArray[currentLength] = 1;
+                    lengthArray[currentLength] = lengthTemp;
                 } else {
                     maxElementArray[lengthCountIndex] = array[x];
                 }
@@ -50,6 +50,9 @@ public class LongestIncreasingSubsequence {
     }
 
     private int binarySearchMaxSmallest(int[] array, int data, int start, int end) {
+        if(data > array[end]){
+            return end;
+        }
         if (start == end) {
                 return -1;
         }
@@ -77,6 +80,10 @@ public class LongestIncreasingSubsequence {
 
         int mid = start + end;
         mid = mid/2;
+        if(array[mid] == data){
+            return mid;
+        }
+
         if(array[mid] < data){
             return binarySearch(array,data,mid+1,end);
         }else{
@@ -85,7 +92,7 @@ public class LongestIncreasingSubsequence {
     }
 
     public static void main(String[] args){
-        int[] arr = {2,3,5,6,7,8,10,11,13};
+        int[] arr = {2,5,3,7,11,8,10,13,6};//{2,3,5,6,7,8,10,11,13};
         LongestIncreasingSubsequence longestIncreasingSubsequence = new LongestIncreasingSubsequence(arr);
         System.out.println(longestIncreasingSubsequence.getLongestIncreasingsubsequenceLength());
         //System.out.println(longestIncreasingSubsequence.binarySearchMaxSmallest(arr,12,0,arr.length-1));
