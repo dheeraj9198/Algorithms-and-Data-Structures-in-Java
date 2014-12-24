@@ -1,7 +1,7 @@
 import java.util.Random;
 
 /**
- * Created by dheeraj on 24/12/14.
+ * Created by dhe on 24/12/14.
  */
 public class QuickSort {
 
