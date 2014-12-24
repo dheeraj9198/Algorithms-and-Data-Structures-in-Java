@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /**
  * Created by sujeet on 24/12/14.
  */
@@ -9,7 +11,7 @@ public class QuickSort {
 
     private static void quickSortAlgo(int[] array,int start,int end){
         if(start < end){
-            int x = partition(array,start,end);
+            int x = partitionRand(array,start,end);
             quickSortAlgo(array, start, x - 1);
             quickSortAlgo(array, x + 1, end);
         }
@@ -20,6 +22,32 @@ public class QuickSort {
         int pivotData = array[end];
         int index = start;
         int temp;
+        for(int x = start;x<=end-1;x++){
+            if(array[x] < pivotData){
+                temp = array[x];
+                array[x] = array[index];
+                array[index] = temp;
+                index++;
+            }
+        }
+        array[end] = array[index];
+        array[index]=  pivotData;
+        return index;
+    }
+
+
+    private static int partitionRand(int[] array, int start,int end){
+        Random r = new Random();
+        int R = r.nextInt(end-start) + start;
+        // last element is pivot
+        int temp;
+
+        temp = array[R];
+        array[R] = array[end];
+        array[end] = temp;
+
+        int pivotData = array[end];
+        int index = start;
         for(int x = start;x<=end-1;x++){
             if(array[x] < pivotData){
                 temp = array[x];
