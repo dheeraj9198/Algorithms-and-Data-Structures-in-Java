@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/QuickSort.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/QuickSort.java" afterPath="$PROJECT_DIR$/src/QuickSort.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
@@ -70,7 +70,7 @@
       <file leaf-file-name="QuickSort.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/QuickSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="16" selection-start="848" selection-end="848" vertical-scroll-proportion="0.93311036" vertical-offset="0" max-vertical-offset="882">
+            <state line="18" column="0" selection-start="491" selection-end="491" vertical-scroll-proportion="0.34357005" vertical-offset="145" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
@@ -555,7 +555,7 @@
       <workItem from="1418297015056" duration="4103000" />
       <workItem from="1419315507938" duration="1773000" />
       <workItem from="1419399628956" duration="1703000" />
-      <workItem from="1419422777608" duration="2213000" />
+      <workItem from="1419422777608" duration="3703000" />
     </task>
     <task id="LOCAL-00001" summary="selection sort">
       <created>1416454660785</created>
@@ -613,11 +613,15 @@
       <created>1419401141545</created>
       <updated>1419401141545</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="quick sort">
+      <created>1419425769983</created>
+      <updated>1419425769983</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9792000" />
+    <option name="totallyTimeSpent" value="11282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
@@ -643,7 +647,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24203338" sideWeight="0.7928417" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6368" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -704,7 +708,8 @@
     <MESSAGE value="matricx image rotation" />
     <MESSAGE value="search corrected" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="quick sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="quick sort" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -859,9 +864,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///usr/lib/jvm/jdk1.7.0_51/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="690" column="47" selection-start="27665" selection-end="27665" vertical-scroll-proportion="1.4376199" vertical-offset="11257" max-vertical-offset="27162">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/QuickSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="16" selection-start="848" selection-end="848" vertical-scroll-proportion="0.93311036" vertical-offset="0" max-vertical-offset="882">
+        <state line="18" column="0" selection-start="491" selection-end="491" vertical-scroll-proportion="0.34357005" vertical-offset="145" max-vertical-offset="900">
           <folding />
         </state>
       </provider>

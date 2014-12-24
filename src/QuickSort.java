@@ -16,24 +16,25 @@ public class QuickSort {
     }
 
     private static int partition(int[] array, int start,int end){
+        // last element is pivot
+        int pivotData = array[end];
+        int index = start;
         int temp;
-        int x = start;
-        int endData = array[end];
-        for(int k =0;k<end;k++){
-            if(array[k]<endData){
-                temp = array[k];
-                array[k]=array[x];
-                array[x]=temp;
-                x++;
+        for(int x = start;x<=end-1;x++){
+            if(array[x] < pivotData){
+                temp = array[x];
+                array[x] = array[index];
+                array[index] = temp;
+                index++;
             }
         }
-        array[end]=array[x];
-        array[x]=endData;
-        return x;
+        array[end] = array[index];
+        array[index]=  pivotData;
+        return index;
     }
 
     public static void main(String[] args){
-        int[] arr = {1,2,4,3,5,6,8,7,9,10,34};
+        int[] arr = {3,7,8,5,2,1,9,5,4};//{1,2,4,3,5,6,8,7,9,10,34};
         quickSort(arr);
         for(int g =0;g<arr.length;g++){
             System.out.println(arr[g]+" ");
