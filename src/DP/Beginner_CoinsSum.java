@@ -19,7 +19,7 @@ public class Beginner_CoinsSum {
         System.out.println(findMinCoinsBottomUp(11)+" "+calc);
     }
 
-    public static int findMinCoins(int sum){
+    public static int findMinCoinsTopDown(int sum){
         if(lookupTable.containsKey(sum)){
             return lookupTable.get(sum);
         }
@@ -30,7 +30,7 @@ public class Beginner_CoinsSum {
         if(sum == 1 || sum == 5 || sum ==3){
             return 1;
         }
-        int ans =1+minimum(findMinCoins(sum-1),findMinCoins(sum -3),findMinCoins(sum-5));
+        int ans =1+minimum(findMinCoinsTopDown(sum-1),findMinCoinsTopDown(sum -3),findMinCoinsTopDown(sum-5));
         lookupTable.put(sum,ans);
         return ans;
     }
