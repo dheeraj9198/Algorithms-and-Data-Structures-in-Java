@@ -2,7 +2,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by sujeet on 11/12/14.
+ * Created by dheeraj on 11/12/14.
  */
 public class PermuteAllCharsOfString {
     public String string;
