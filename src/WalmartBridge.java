@@ -1,6 +1,7 @@
 /**
  * Created by dheeraj on 12/21/14.
  * O(n^3)
+ * O(NlogN) for longest increasing subsequence
  */
 public class WalmartBridge {
     private String string1;

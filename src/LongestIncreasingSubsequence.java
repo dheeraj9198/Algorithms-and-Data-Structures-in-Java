@@ -1,5 +1,7 @@
 /**
  * Created by dheeraj on 12/22/14.
+ * O(NlogN)
+ *
  */
 public class LongestIncreasingSubsequence {
 
