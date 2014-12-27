@@ -44,9 +44,28 @@ public class LongestCommonSubsequence {
         return ans;
     }
 
+    private String findSubSequence(){
+        StringBuilder stringBuilder = new StringBuilder();
+        int r = rows-1;
+        int c = cols -1;
+        while(r >=1 && c >= 1){
+            if(string1.charAt(r-1) == string2.charAt(c-1)){
+                stringBuilder.append(string1.charAt(r-1));
+            }
+
+            if(mat[r-1][c] > mat[r][c-1]){
+                r = r-1;
+            }else{
+                c = c-1;
+            }
+        }
+        return stringBuilder.reverse().toString();
+    }
+
     public static void main(String[] args){
-        LongestCommonSubsequence longestCommonSubsequence = new LongestCommonSubsequence("acd","abcxd");
+        LongestCommonSubsequence longestCommonSubsequence = new LongestCommonSubsequence("ABCDGH","AEDFHR");
         System.out.println(longestCommonSubsequence.findAns());
+        System.out.println(longestCommonSubsequence.findSubSequence());
     }
 
 
