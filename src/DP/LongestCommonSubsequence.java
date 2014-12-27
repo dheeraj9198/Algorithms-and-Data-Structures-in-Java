@@ -45,6 +45,9 @@ public class LongestCommonSubsequence {
     }
 
     private String findSubSequence(){
+        /**
+         * move from bottom right corner to top left corner
+         */
         StringBuilder stringBuilder = new StringBuilder();
         int r = rows-1;
         int c = cols -1;
