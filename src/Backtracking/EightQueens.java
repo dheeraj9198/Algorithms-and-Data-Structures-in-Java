@@ -5,17 +5,17 @@ package Backtracking;
  */
 public class EightQueens {
 
+    private final int SIZE = 10;
+
     private final int safe = 0;
     private final int cut = 1;
     private final int queen = 2;
 
-    private int[][] mat = new int[8][8];
-    private int rows = 8;
-    private int cols = 8;
+    private int[][] mat = new int[SIZE][SIZE];
 
     private EightQueens() {
-        for (int x = 0; x < cols; x++) {
-            for (int y = 0; y < cols; y++) {
+        for (int x = 0; x < SIZE; x++) {
+            for (int y = 0; y < SIZE; y++) {
                 mat[x][y] = safe;
             }
         }
@@ -27,9 +27,9 @@ public class EightQueens {
 
 
     private int[][] copy(int[][] mat){
-        int[][] test = new int[rows][cols];
-        for (int x = 0; x < cols; x++) {
-            for (int y = 0; y < cols; y++) {
+        int[][] test = new int[SIZE][SIZE];
+        for (int x = 0; x < SIZE; x++) {
+            for (int y = 0; y < SIZE; y++) {
                 test[x][y] = mat[x][y];
             }
         }
@@ -43,51 +43,73 @@ public class EightQueens {
 
         if (solved(matrix)) {
             printMat(matrix);
-            System.exit(8);
+            return;
         }
-
-        for (int x = 0; x < cols; x++) {
-            for (int y = 0; y < cols; y++) {
+        int unsafe;
+        for (int x = 0; x < SIZE; x++) {
+            unsafe = 0;
+            for (int y = 0; y < SIZE; y++) {
                 if(matrix[x][y] == safe){
 
                     int[][] test = copy(matrix);
                     test[x][y] = queen;
-                    for(int z =0 ;z<rows;z++){
+                    //mark row
+                    for(int z =0 ;z<SIZE;z++){
                         if(z == x){
                             continue;
                         }
                         test[z][y] = cut;
                     }
-
-                    for(int z =0 ;z<cols;z++){
+                    //mark col
+                    for(int z =0 ;z<SIZE;z++){
                         if(z == y){
                             continue;
                         }
                         test[x][z] = cut;
                     }
 
+                    //first diagonal
                     int a = x+1;
                     int b = y+1;
-                    while(a<rows && b <  cols){
+                    while(a<SIZE && b <  SIZE){
                         test[a][b] = cut;
                         a++;b++;
                     }
-
                     a = x-1;
                     b = y-1;
                     while(a>=0 && b >=0){
                         test[a][b] = cut;
                         a--;b--;
                     }
+
+                    //second diagonal
+                    a = x+1;
+                    b = y-1;
+                    while(a<SIZE && b >=  0){
+                        test[a][b] = cut;
+                        a++;b--;
+                    }
+                    a = x-1;
+                    b = y+1;
+                    while(a>=0 && b < SIZE){
+                        test[a][b] = cut;
+                        a--;b++;
+                    }
+
                     solve(test);
+                }else {
+                    unsafe++;
+                    if(unsafe == SIZE){
+                        return;
+                    }
                 }
             }
         }
     }
 
     private void printMat(int[][] mat){
-        for (int x = 0; x < cols; x++) {
-            for (int y = 0; y < cols; y++) {
+        for (int x = 0; x < SIZE; x++) {
+            for (int y = 0; y < SIZE; y++) {
                 System.out.print(mat[x][y]+" ");
             }
             System.out.println();
@@ -97,14 +119,14 @@ public class EightQueens {
 
     private boolean solved(int[][] mat) {
         int count = 0;
-        for (int x = 0; x < cols; x++) {
-            for (int y = 0; y < cols; y++) {
+        for (int x = 0; x < SIZE; x++) {
+            for (int y = 0; y < SIZE; y++) {
                 if (mat[x][y] == queen) {
                     count++;
                 }
             }
         }
-        if (count == 8) {
+        if (count == SIZE) {
             return true;
         } else {
             return false;

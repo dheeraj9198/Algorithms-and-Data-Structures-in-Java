@@ -14,7 +14,6 @@ public class SodukoSolver {
     public SodukoSolver(int[][] mat) {
         matrix = mat;
         dim = matrix.length;
-        System.out.println("dim = "+dim);
     }
 
     public void solve() {
@@ -38,6 +37,8 @@ public class SodukoSolver {
                             solveP(newMat);
                         }
                     }
+                    // if execution comes here then no number from 1-9
+                    // is valid and solution till this point is invalid
                     return;
                 }
             }
