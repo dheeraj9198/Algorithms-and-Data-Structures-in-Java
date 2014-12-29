@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Backtracking/TugOfWar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Backtracking/TugOfWar.java" afterPath="$PROJECT_DIR$/src/Backtracking/TugOfWar.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
@@ -71,8 +71,8 @@
       <file leaf-file-name="TugOfWar.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Backtracking/TugOfWar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18770227" vertical-offset="1328" max-vertical-offset="1782">
-              <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.6349454" vertical-offset="1141" max-vertical-offset="1836">
+              <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
               <folding>
                 <element signature="e#687#696#0" expanded="true" />
               </folding>
@@ -654,7 +654,13 @@
       <option name="project" value="LOCAL" />
       <updated>1419763340925</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="tug of war">
+      <created>1419876427406</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1419876427406</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -683,7 +689,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24135281" sideWeight="0.7928417" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4947839" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4947839" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -723,7 +729,8 @@
     <MESSAGE value="longest common subsequence" />
     <MESSAGE value="chess" />
     <MESSAGE value="n queens" />
-    <option name="LAST_COMMIT_MESSAGE" value="n queens" />
+    <MESSAGE value="tug of war" />
+    <option name="LAST_COMMIT_MESSAGE" value="tug of war" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1000,8 +1007,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Backtracking/TugOfWar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18770227" vertical-offset="1328" max-vertical-offset="1782">
-          <caret line="77" column="45" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
+        <state vertical-scroll-proportion="0.6349454" vertical-offset="1141" max-vertical-offset="1836">
+          <caret line="86" column="4" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
           <folding>
             <element signature="e#687#696#0" expanded="true" />
           </folding>

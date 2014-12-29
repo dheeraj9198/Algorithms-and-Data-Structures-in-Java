@@ -83,6 +83,9 @@ public class TugOfWar {
         solve(copyArray(A),BB,index+1);
     }
 
+
+
+
     public static void main(String[] args){
         int[] arr = {3, 4, 5, -3, 100, 1, 89, 54, 23, 20};
         TugOfWar tugOfWar = new TugOfWar(arr);
