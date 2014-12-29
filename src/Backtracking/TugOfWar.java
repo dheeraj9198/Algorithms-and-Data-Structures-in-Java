@@ -20,19 +20,25 @@ public class TugOfWar {
         players = arr;
         length = players.length;
         lengthA = length/2;
-        lengthB = length - lengthA;
+        lengthB = length - length/2;
 
         setA = new ArrayList<Integer>();
         setB = new ArrayList<Integer>();
     }
 
-    private ArrayList<Integer> copyArray(ArrayList<Integer> arr){
+    private ArrayList<Integer> copyArray(ArrayList<Integer> arr,Integer next){
         ArrayList<Integer> copy = new ArrayList<Integer>();
         for(Integer integer : arr){
             copy.add(integer);
         }
+        if(next != null)
+        {
+            copy.add(next);
+        }
         return copy;
     }
+
+
 
     private int findSum(ArrayList<Integer> arr){
         int sum = 0;
@@ -44,13 +50,10 @@ public class TugOfWar {
 
     private void solve(ArrayList<Integer> A,ArrayList<Integer> B,int index){
         if(A.size() == lengthA){
-            B = new ArrayList<Integer>();
-            for(int x = 0;x<length;x++){
-                if(!A.contains(players[x])){
+            for(int x = index;x<length;x++){
                     B.add(players[x]);
-                }
             }
-            int t = findSum(A) - findSum(B);
+            int t = Math.abs(findSum(A) - findSum(B));
             if(t < diff){
                 setB = B;
                 setA = A;
@@ -60,13 +63,10 @@ public class TugOfWar {
         }
 
         if(B.size() == lengthB){
-             A = new ArrayList<Integer>();
-            for(int x = 0;x<length;x++){
-                if(!B.contains(players[x])){
+            for(int x = index;x<length;x++){
                     A.add(players[x]);
-                }
             }
-            int t = findSum(A) - findSum(B);
+            int t = Math.abs(findSum(A) - findSum(B));
             if(t < diff){
                 setB = B;
                 setA = A;
@@ -75,22 +75,16 @@ public class TugOfWar {
             return;
         }
 
-        ArrayList<Integer> AA = copyArray(A);
-        AA.add(players[index]);
-        solve(AA,copyArray(B),index+1);
-        ArrayList<Integer> BB = copyArray(B);
-        BB.add(players[index]);
-        solve(copyArray(A),BB,index+1);
+        solve(copyArray(A,players[index]),copyArray(B,null),index+1);
+        solve(copyArray(A,null),copyArray(B,players[index]),index+1);
     }
-
-
-
 
     public static void main(String[] args){
         int[] arr = {3, 4, 5, -3, 100, 1, 89, 54, 23, 20};
         TugOfWar tugOfWar = new TugOfWar(arr);
         tugOfWar.solve(new ArrayList<Integer>(),new ArrayList<Integer>(),0);
         System.out.println(tugOfWar.setA);
+        System.out.println(tugOfWar.setB);
     }
 
 }
