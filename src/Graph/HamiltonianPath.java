@@ -1,20 +1,15 @@
 package Graph;
-
-import java.util.ArrayList;
-
 /**
  * Created by dheeraj on 30/12/14.
  */
 public class HamiltonianPath {
     private int[][] graph;
-    private ArrayList<ArrayList<Integer>> hamiltonianCycle;
     private int dim;
     private boolean[] visited;
 
     public HamiltonianPath(int[][] g) {
         graph = g;
         dim = g.length;
-        hamiltonianCycle = new ArrayList<ArrayList<Integer>>();
         visited = new boolean[dim];
     }
 
@@ -27,7 +22,7 @@ public class HamiltonianPath {
     private void solve() {
         for (int x = 0; x < dim; x++) {
             initBoolean();
-            DFS(x,x,copyArr(visited));
+            DFS(x,x,visited.clone());
             System.out.println();
         }
     }
@@ -39,14 +34,6 @@ public class HamiltonianPath {
             }
         }
         return true;
-    }
-
-    private boolean[] copyArr(boolean[] ar){
-        boolean[] copy = new  boolean[ar.length];
-        for(int x =0;x<copy.length;x++){
-            copy[x]= ar[x];
-        }
-        return copy;
     }
 
     private boolean DFS(int parent, int root,boolean[] visited) {
@@ -61,7 +48,7 @@ public class HamiltonianPath {
         visited[parent] = true;
         for (int x = 0; x < dim; x++) {
             if (graph[parent][x] == 1) {
-                if (DFS(x,root,copyArr(visited))) {
+                if (DFS(x,root,visited.clone())) {
                     System.out.print(parent + " ");
                     return true;
                 }
@@ -78,10 +65,7 @@ public class HamiltonianPath {
                 {1, 1, 0, 0, 1},
                 {0, 1, 1, 1, 0},
         };
-
         HamiltonianPath hamiltonianPath = new HamiltonianPath(mat);
         hamiltonianPath.solve();
     }
-
-
 }
