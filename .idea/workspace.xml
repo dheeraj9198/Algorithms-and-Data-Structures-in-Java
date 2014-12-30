@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CoreJava/A.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CoreJava/B.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/to do" afterPath="$PROJECT_DIR$/to do" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
@@ -71,7 +70,7 @@
       <file leaf-file-name="ARC4.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/others/ARC4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="42" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="738">
+            <state line="17" column="42" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="738">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,19 +78,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="A.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CoreJava/A.java">
+      <file leaf-file-name="to do" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/to do">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="24" selection-start="217" selection-end="217" vertical-scroll-proportion="0.47572815" vertical-offset="105" max-vertical-offset="414">
+            <state line="4" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="B.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="A.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CoreJava/A.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="24" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="414">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EightQueens.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Backtracking/EightQueens.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="13" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="2646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="B.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CoreJava/B.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="35" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="540">
+            <state line="5" column="25" selection-start="86" selection-end="86" vertical-scroll-proportion="0.15050167" vertical-offset="0" max-vertical-offset="598">
               <folding />
             </state>
           </provider>
@@ -137,6 +154,7 @@
         <option value="$PROJECT_DIR$/src/others/ARC4.java" />
         <option value="$PROJECT_DIR$/src/CoreJava/A.java" />
         <option value="$PROJECT_DIR$/src/CoreJava/B.java" />
+        <option value="$PROJECT_DIR$/to do" />
       </list>
     </option>
   </component>
@@ -684,7 +702,7 @@
       <workItem from="1419919753126" duration="4000" />
       <workItem from="1419919766958" duration="1388000" />
       <workItem from="1419921244717" duration="235000" />
-      <workItem from="1419944954166" duration="229000" />
+      <workItem from="1419944954166" duration="465000" />
     </task>
     <task id="LOCAL-00001" summary="selection sort">
       <created>1416454660785</created>
@@ -754,11 +772,15 @@
       <created>1419921263375</created>
       <updated>1419921263375</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="core java">
+      <created>1419945195377</created>
+      <updated>1419945195377</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14244000" />
+    <option name="totallyTimeSpent" value="14480000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
@@ -784,7 +806,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24203338" sideWeight="0.7928417" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4624" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4624" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -848,7 +870,8 @@
     <MESSAGE value="quick sort" />
     <MESSAGE value="quick sort&#10;" />
     <MESSAGE value="encryption" />
-    <option name="LAST_COMMIT_MESSAGE" value="encryption" />
+    <MESSAGE value="core java" />
+    <option name="LAST_COMMIT_MESSAGE" value="core java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1105,33 +1128,53 @@
     </entry>
     <entry file="jar:///usr/lib/jvm/jdk1.7.0_51/src.zip!/java/io/InputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="22" selection-start="831" selection-end="831" vertical-scroll-proportion="0.632107" vertical-offset="0" max-vertical-offset="6282" />
+        <state line="44" column="22" selection-start="831" selection-end="831" vertical-scroll-proportion="0.632107" vertical-offset="0" max-vertical-offset="6282">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/jdk1.7.0_51/src.zip!/java/io/FileInputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="35" selection-start="909" selection-end="909" vertical-scroll-proportion="0.7826087" vertical-offset="0" max-vertical-offset="7650" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/others/ARC4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="42" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="738">
+        <state line="49" column="35" selection-start="909" selection-end="909" vertical-scroll-proportion="0.7826087" vertical-offset="0" max-vertical-offset="7650">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CoreJava/B.java">
+    <entry file="file://$PROJECT_DIR$/src/Backtracking/EightQueens.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="35" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="540">
+        <state line="5" column="13" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0" vertical-offset="1512" max-vertical-offset="2646">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreJava/A.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="217" selection-end="217" vertical-scroll-proportion="0.47572815" vertical-offset="105" max-vertical-offset="414">
+        <state line="14" column="24" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="414">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/others/ARC4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="42" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="738">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/to do">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="125" selection-end="125" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="198">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoreJava/B.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="25" selection-start="86" selection-end="86" vertical-scroll-proportion="0.15050167" vertical-offset="0" max-vertical-offset="598">
           <folding />
         </state>
       </provider>
