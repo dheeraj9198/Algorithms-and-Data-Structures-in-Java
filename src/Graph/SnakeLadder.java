@@ -43,7 +43,6 @@ public class SnakeLadder {
             }
         }
         System.out.println(distance[distance.length - 1]);
-
     }
 
     public static void main(String[] args) {
