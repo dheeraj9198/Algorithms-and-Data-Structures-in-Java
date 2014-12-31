@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Graph/SnakeLadder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/SnakeLadder.java" afterPath="$PROJECT_DIR$/src/Graph/SnakeLadder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
@@ -84,8 +84,8 @@
       <file leaf-file-name="SnakeLadder.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graph/SnakeLadder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2056075" vertical-offset="366" max-vertical-offset="1242">
-              <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+            <state vertical-scroll-proportion="1.3808411" vertical-offset="291" max-vertical-offset="1242">
+              <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#225#243#0" expanded="true" />
@@ -773,7 +773,13 @@
       <option name="project" value="LOCAL" />
       <updated>1420043185821</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Adjancy list">
+      <created>1420054863098</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1420054863098</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1227,8 +1233,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/SnakeLadder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2056075" vertical-offset="366" max-vertical-offset="1242">
-          <caret line="49" column="54" selection-start-line="49" selection-start-column="54" selection-end-line="49" selection-end-column="54" />
+        <state vertical-scroll-proportion="1.3808411" vertical-offset="291" max-vertical-offset="1242">
+          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#225#243#0" expanded="true" />

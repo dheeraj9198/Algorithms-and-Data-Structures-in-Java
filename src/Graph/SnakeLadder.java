@@ -48,14 +48,14 @@ public class SnakeLadder {
 
     public static void main(String[] args) {
         SnakeLadder snakeLadder = new SnakeLadder(30);
-        snakeLadder.jumpMap.put(2, 21);
-        snakeLadder.jumpMap.put(4, 7);
-        snakeLadder.jumpMap.put(10, 25);
-        snakeLadder.jumpMap.put(19, 28);
-        snakeLadder.jumpMap.put(20, 8);
-        snakeLadder.jumpMap.put(18, 6);
-        snakeLadder.jumpMap.put(16, 3);
-        snakeLadder.jumpMap.put(26, 0);
+        snakeLadder.jumpMap.put(3, 22);
+        snakeLadder.jumpMap.put(5, 8);
+        snakeLadder.jumpMap.put(11, 26);
+        snakeLadder.jumpMap.put(20, 29);
+        snakeLadder.jumpMap.put(21, 9);
+        snakeLadder.jumpMap.put(19, 7);
+        snakeLadder.jumpMap.put(17, 4);
+        snakeLadder.jumpMap.put(27, 1);
 
         snakeLadder.BFS();
     }
