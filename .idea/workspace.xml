@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Graph/ShortestPathWithExactlyKEdges.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Graph/ShortestPathWithExactlyKEdges.java" afterPath="$PROJECT_DIR$/src/Graph/ShortestPathWithExactlyKEdges.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
@@ -83,8 +83,8 @@
       <file leaf-file-name="ShortestPathWithExactlyKEdges.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graph/ShortestPathWithExactlyKEdges.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54140127" vertical-offset="218" max-vertical-offset="1224">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.56050956" vertical-offset="530" max-vertical-offset="1224">
+              <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -793,7 +793,13 @@
       <option name="project" value="LOCAL" />
       <updated>1420056445461</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="shortest path with exactly k edges">
+      <created>1420218369367</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1420218369367</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -868,7 +874,8 @@
     <MESSAGE value="hamiltonian cycle" />
     <MESSAGE value="Adjancy list" />
     <MESSAGE value="snake ladder&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="snake ladder&#10;" />
+    <MESSAGE value="shortest path with exactly k edges" />
+    <option name="LAST_COMMIT_MESSAGE" value="shortest path with exactly k edges" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1235,8 +1242,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/ShortestPathWithExactlyKEdges.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54140127" vertical-offset="218" max-vertical-offset="1224">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.56050956" vertical-offset="530" max-vertical-offset="1224">
+          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
           <folding />
         </state>
       </provider>

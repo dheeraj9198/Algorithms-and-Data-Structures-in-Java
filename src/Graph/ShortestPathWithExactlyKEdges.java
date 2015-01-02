@@ -47,7 +47,7 @@ public class ShortestPathWithExactlyKEdges {
 
 
     public static void main(String[] args) {
-        int[][] matrix = {{INFINITE, 1, 3, 2},
+        int[][] matrix = {{INFINITE, 10, 3, 2},
                 {INFINITE, INFINITE, INFINITE, 7},
                 {INFINITE, INFINITE, INFINITE, 6},
                 {INFINITE, INFINITE, INFINITE, INFINITE}
