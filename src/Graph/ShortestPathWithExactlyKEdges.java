@@ -38,7 +38,7 @@ public class ShortestPathWithExactlyKEdges {
                 if(depth == edgeCount-1 && j==destination){
                     answer = Math.min(answer,distance+matrix[parent][j]);
                 }
-                DFS(j,++depth,distance+matrix[parent][j]);
+                DFS(j,depth+1,distance+matrix[parent][j]);
             }
         }
 
