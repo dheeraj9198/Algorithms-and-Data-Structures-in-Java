@@ -36,7 +36,7 @@ public class TopologicalSort {
     }
 
     public void topologicalSort() {
-        System.out.println(adjListMap);
+        System.out.println(adjListMap.toString());
         System.out.println(visitedMap);
         //if(true)return;
 
@@ -72,7 +72,6 @@ public class TopologicalSort {
         topologicalSort.addPair("Satish", "Sandeep");
         topologicalSort.addPair("Gurinder", "Naveen");
         topologicalSort.addPair("Dheeraj","Gurinder");
-        topologicalSort.addPair("*","Dheeraj");
 
         topologicalSort.topologicalSort();
     }
