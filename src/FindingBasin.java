@@ -82,6 +82,7 @@ public class FindingBasin {
                     if (matrix[x][y] > rowColHeight.height) {
                         basinMatrix[x][y] = false;
                         //matrix[x][y] is non basin so all its neighbours >= it are also non basins
+                        //DFS :)
                         markALlNonBasins(rowColHeightPriorityQueue,visitedMatrix,basinMatrix,x,y);
                     }
                 }
