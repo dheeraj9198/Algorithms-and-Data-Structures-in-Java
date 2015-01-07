@@ -17,55 +17,60 @@ public class MergeSort {
         int k = size/2;
         Node temp = start;
         for(int x=0;x<k;x++){
-            temp = temp.next;
+
+            if(x == k-1){
+                Node p = temp.next;
+                temp.next = null;
+                temp = p;
+            }else{
+                temp = temp.next;
+
+            }
         }
 
         Node first = sort(start,k);
         Node second = sort(temp,size-k);
 
+        //System.out.println("two nodes");
+        //print(first);
+        //print(second);
+
         Node sortedRoot = null;
         Node sortedRootTemp = null;
 
-        int x =0;
-        int y =0;
-
-        while(x<k && y<size-k){
-            System.out.println("first = " + first.value + " + second = " + second.value);
+        while(first!= null && second!=null){
+            //System.out.println("first = " + first.value + " + second = " + second.value);
             if(first.value < second.value){
                 if(sortedRoot == null){
                     sortedRoot = first;
                     sortedRootTemp = first;
                 }else{
-                    sortedRootTemp = first;
+                    sortedRootTemp.next = first;
+                    sortedRootTemp = sortedRootTemp.next;
                 }
-                sortedRootTemp = sortedRootTemp.next;
-                x++;
                 first = first.next;
             }else{
                 if(sortedRoot == null){
                     sortedRoot = second;
                     sortedRootTemp = second;
                 }else{
-                    sortedRootTemp = second;
+                    sortedRootTemp.next = second;
+                    sortedRootTemp = sortedRootTemp.next;
                 }
-                sortedRootTemp = sortedRootTemp.next;
-                y++;
                 second = second.next;
             }
         }
 
-        if(x == k){
-            System.out.println("first = null" + second.value);
-            sortedRootTemp =second;
-            print(sortedRootTemp);
+        if(first == null){
+            //System.out.println("first = null" + second.value);
+            sortedRootTemp.next =second;
         }
 
-        if(y == size-k){
-            System.out.println("second = null" + first.value);
-            sortedRootTemp = first;
-            print(sortedRootTemp);
+        if(second == null){
+            //System.out.println("second = null" + first.value);
+            sortedRootTemp.next = first;
         }
-
+        //print(sortedRoot);
         return sortedRoot;
     }
 
@@ -102,6 +107,9 @@ public class MergeSort {
         mergeSort.addNode(2);
         mergeSort.addNode(1);
         mergeSort.addNode(6);
+        mergeSort.addNode(0);
+        mergeSort.addNode(5);
+
 
         mergeSort.print(mergeSort.root);
         mergeSort.sortedRoot = mergeSort.sort(mergeSort.root,mergeSort.size);
