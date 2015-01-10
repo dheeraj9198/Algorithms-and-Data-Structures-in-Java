@@ -13,13 +13,13 @@ public class FlipkartJson {
     private HashMap<Character, FlipkartJson> map;
     private List<Integer> integerList;
 
-    private static final int undefined = 0;
     private static final int object = 1;
     private static final int array = 2;
 
-    public int type = undefined;
+    public int type;
 
-    private FlipkartJson() {
+    private FlipkartJson(int type) {
+        this.type = type;
         map = new HashMap<Character, FlipkartJson>();
         integerList = new ArrayList<Integer>();
     }
@@ -32,37 +32,38 @@ public class FlipkartJson {
 
         if (data.charAt(1) == '>') {
             // >
-            if (type == undefined || type == object) {
-                type = object;
-                if (map.containsKey(data.charAt(0))) {
-                    map.get(data.charAt(0)).setData(data.substring(2));
-                } else {
-                    FlipkartJson flipkartJson = new FlipkartJson();
-                    flipkartJson.setData(data.substring(2));
-                    map.put(data.charAt(0), flipkartJson);
-                }
-            } else {
+
+            if (map.containsKey(data.charAt(0)) && map.get(data.charAt(0)).type == array) {
                 System.out.println("error");
+                return;
+            }
+
+            if (map.containsKey(data.charAt(0))) {
+                map.get(data.charAt(0)).setData(data.substring(2));
+            } else {
+                FlipkartJson flipkartJson = new FlipkartJson(object);
+                flipkartJson.setData(data.substring(2));
+                map.put(data.charAt(0), flipkartJson);
             }
         } else {
             // =
-            if (type == undefined || type == array) {
-                type = array;
-                if (map.containsKey(data.charAt(0))) {
-                    map.get(data.charAt(0)).setInt(Integer.parseInt(data.substring(2)));
-                } else {
-                    FlipkartJson flipkartJson = new FlipkartJson();
-                    flipkartJson.setInt(Integer.parseInt(data.substring(2)));
-                    map.put(data.charAt(0), flipkartJson);
-                }
-            } else {
+
+            if (map.containsKey(data.charAt(0)) && map.get(data.charAt(0)).type == object) {
                 System.out.println("error");
+                return;
+            }
+            if (map.containsKey(data.charAt(0))) {
+                map.get(data.charAt(0)).setInt(Integer.parseInt(data.substring(2)));
+            } else {
+                FlipkartJson flipkartJson = new FlipkartJson(array);
+                flipkartJson.setInt(Integer.parseInt(data.substring(2)));
+                map.put(data.charAt(0), flipkartJson);
             }
         }
     }
 
     public void printData() {
-        if (!integerList.isEmpty()) {
+        if (type == array) {
             if (integerList.size() > 1) {
                 System.out.print("[");
             }
@@ -82,14 +83,14 @@ public class FlipkartJson {
             int x = 0;
             for (Map.Entry<Character, FlipkartJson> entry : map.entrySet()) {
                 x++;
-                if (entry.getValue().integerList.isEmpty()) {
-                    System.out.print(entry.getKey() + ": {");
+                if (entry.getValue().type == object) {
+                    System.out.print("\""+entry.getKey()+"\"" + ": {");
                 } else {
-                    System.out.print(entry.getKey() + ": ");
+                    System.out.print("\""+entry.getKey() +"\""+ ": ");
                 }
                 entry.getValue().printData();
 
-                if (entry.getValue().integerList.isEmpty()) {
+                if (entry.getValue().type == object) {
                     System.out.print("}");
                 }
                 if (map.size() > 1 && x < map.size()) {
@@ -100,12 +101,12 @@ public class FlipkartJson {
     }
 
     public static void main(String[] args) throws Exception {
-        FlipkartJson flipkartJson = new FlipkartJson();
+        FlipkartJson flipkartJson = new FlipkartJson(object);
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String a;
         while (true) {
-            a = bufferedReader.readLine().replaceAll(" ","");
+            a = bufferedReader.readLine().replaceAll(" ", "");
             if (a.equals("p")) {
                 System.out.print("{");
                 flipkartJson.printData();
