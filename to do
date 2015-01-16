@@ -13,5 +13,16 @@ android
 sudo apt-get install lib32z1 lib32z1-dev lib32stdc++6
 
 
+private means "only visible within the enclosing class".
+
+protected means "only visible within the enclosing class and any subclasses, and also anywhere in the enclosing class's package".
+
+private, therefore, has no meaning when applied to a top-level class; the same goes for the first part of the definition of protected. The second part of protected could apply, but it is covered by the default (package-protected) modifier, so protected is part meaningless and part redundant.
+
+Both private and protected can be (and frequently are) applied to nested classes and interfaces, just never top-level classes and interfaces.
+
 algo links
 http://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
+
+
+

@@ -114,6 +114,7 @@ public class MergeSort {
         mergeSort.print(mergeSort.root);
         mergeSort.sortedRoot = mergeSort.sort(mergeSort.root,mergeSort.size);
         mergeSort.print(mergeSort.sortedRoot);
+
     }
 
 }
