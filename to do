@@ -8,10 +8,7 @@ http://www.programcreek.com/2014/05/inheritance-vs-composition-in-java/
 
 http://stackoverflow.com/questions/49002/prefer-composition-over-inheritance
 
-android
-
-sudo apt-get install lib32z1 lib32z1-dev lib32stdc++6
-
+java scope
 
 private means "only visible within the enclosing class".
 
@@ -20,9 +17,27 @@ protected means "only visible within the enclosing class and any subclasses, and
 private, therefore, has no meaning when applied to a top-level class; the same goes for the first part of the definition of protected. The second part of protected could apply, but it is covered by the default (package-protected) modifier, so protected is part meaningless and part redundant.
 
 Both private and protected can be (and frequently are) applied to nested classes and interfaces, just never top-level classes and interfaces.
+-----------------------------------------------------------------------------------------------
 
-algo links
+android adb issue
+sudo apt-get install lib32z1 lib32z1-dev lib32stdc++6
+
+-----------------------------------------------------------------------------------------------
+
+algorithm links
 http://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
 
+--------------------------------------------------------------------------------------------------
 
+database
+1-mysql/sql
+2-mongo db
+3-redis
+---------------------------------------------------------------------------------------------------
+api
+
+json api
+rest 
+soap
+----------------------------------------------------------------------------------------------------
 
