@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project name="WowzaSp" default="jar" basedir=".">
+
+    <property name="wowza.lib.dir" value="/usr/local/WowzaStreamingEngine/lib"/>
+    <property name="jar.filename" value="WowzaSp.jar"/>
+    <property name="core.build.dir" value="out/production/WowzaSp/"/>
+
+    <target name="jar">
+        <jar jarfile="${wowza.lib.dir}/${jar.filename}">
+            <fileset dir="${core.build.dir}"/>
+        </jar>
+    </target>
+
+</project>
