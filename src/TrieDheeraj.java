@@ -58,7 +58,6 @@ public class TrieDheeraj {
          Trie trie = new Trie();
          trie.insert("dheeraj");
          trie.insert("sachan");
-         trie.insert("sonam");
 
          System.out.println(trie.search("dheerajs"));
 
