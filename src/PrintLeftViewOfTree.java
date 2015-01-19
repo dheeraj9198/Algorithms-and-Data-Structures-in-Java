@@ -61,6 +61,7 @@ public static void main(String[] args){
     printLeftViewOfTree.root.right.left = new Node(6);
     printLeftViewOfTree.root.right.right = new Node(7);
     printLeftViewOfTree.root.right.right.right = new Node(8);
+    printLeftViewOfTree.root.right.right.right.left = new Node(9);
 
     printLeftViewOfTree.printLeft();
 }
