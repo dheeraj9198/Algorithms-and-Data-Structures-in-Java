@@ -8,18 +8,19 @@ public class ExcelSheet {
 
     public String convertToTitle(int n) {
         StringBuilder stringBuilder = new StringBuilder("");
-        int k;
+        int rem;
         while(n>0){
-            k = 64+n%26;
-            if(k == 64)
-            {
+          rem = n % 26;
+            n= n/26;
 
-                stringBuilder.append('Z');
-                n = n/26;
-            }else{
-                stringBuilder.append((char)(k));
+            if(rem == 0 && n >0){
+                rem = 26;
+                n = n-1;
             }
-            n = n /26;
+
+            if (rem > 0){
+                stringBuilder.append((char)('A'+rem-1));
+            }
         }
 
         return stringBuilder.reverse().toString();
@@ -27,6 +28,6 @@ public class ExcelSheet {
 
     public static void main(String[] args){
         ExcelSheet excelSheet = new ExcelSheet();
-     System.out.print(excelSheet.convertToTitle(52));
+     System.out.print(excelSheet.convertToTitle(26));
     }
 }
