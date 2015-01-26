@@ -1,0 +1,137 @@
+start transaction;
+select @m := max(RegionID) from Region where 1;
+set @m = @m +1;
+insert into Region (RegionID,RegionDescription) values (@m,'dheeraj');
+commit;
+
+_______________________________________________________________________________________
+
+DELIMITER $$
+
+CREATE PROCEDURE `sp_fail`()
+BEGIN
+    DECLARE `_rollback` BOOL DEFAULT 0;
+    DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET `_rollback` = 1;
+    START TRANSACTION;
+
+   insert into Region (RegionID,RegionDescription,One) values (10,'dheeraj',90);
+
+
+    IF `_rollback` THEN
+        ROLLBACK;
+    ELSE
+        COMMIT;
+    END IF;
+END$$
+
+DELIMITER ;
+
+------------------------------------------------------------------------------------------
+
+DELIMITER $$
+CREATE FUNCTION test(region int) RETURNS int
+    DETERMINISTIC
+BEGIN
+    DECLARE lvl integer;
+        SET lvl = region*region;
+ RETURN (lvl);
+END $$
+DELIMITER
+__________________________________________________________________________________________
+
+DELIMITER //
+CREATE PROCEDURE GetAll(IN pn VARCHAR(255))
+ BEGIN
+ SELECT *
+ FROM Region
+ WHERE ProductName = pn;
+ END //
+DELIMITER ;
+-------------------------------------------------------------------------------------------
+DELIMITER $$
+CREATE PROCEDURE dheeraj(
+ IN one int,
+ OUT total INT)
+BEGIN
+ SELECT count(ProductID)
+ INTO total
+ FROM Products
+ WHERE SupplierID = one;
+END$$
+DELIMITER ;
+--------------------------------------------------------------------------------------------
+CALL dheeraj(1,@total);
+SELECT @total;
+_____________________________________________________________________________________________
+
+    set @rollback = 0;
+    strat TRANSACTION;
+    DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET @rollback = 1;
+    INSERT INTO `tablea` (`date`) VALUES (NOW());
+    INSERT INTO `tableb` (`date`) VALUES (NOW());
+    INSERT INTO `tablec` (`date`) VALUES (NOW());
+    IF @rollback THEN
+        ROLLBACK;
+    ELSE
+        select * from Products where 1;
+        COMMIT;
+    END IF;
+---------------------------------------------------------------------------------------------
+trigger
+______________________________________________________________________________________________
+DELIMITER $$
+CREATE TRIGGER dheeraj
+    BEFORE insert ON client
+    FOR EACH ROW BEGIN
+     INSERT INTO test
+    SET name = 1,
+     age = 1;
+END$$
+DELIMITER ;
+
+
+
+DELIMITER $$
+CREATE TRIGGER dheeraj1
+    BEFORE update ON client
+    FOR EACH ROW BEGIN
+     INSERT INTO test
+    SET name = old.money,
+     age = new.client_number;
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE TRIGGER dheeraj1
+    BEFORE delete ON client
+    FOR EACH ROW BEGIN
+     INSERT INTO test
+    SET name = old.money,
+     age = new.client_number;
+END$$
+DELIMITER ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
