@@ -1,0 +1,118 @@
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/accesslogs');
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function (callback) {
+  console.log('MONGO connection success');
+});
+
+var Sequelize = require('sequelize')
+  , sequelize = new Sequelize('accesslogs', 'root', 'dheeraj', {
+      dialect: "mysql", // or 'sqlite', 'postgres', 'mariadb'
+      port:    3306, // or 5432 (for postgres)
+    })
+
+sequelize
+  .authenticate()
+  .complete(function(err) {
+    if (err) {
+      console.log('SQL Unable to connect to the database:', err)
+    } else {
+      console.log('SQL Connection has been established successfully.')
+    }
+  });
+
+
+
+var AccessLog = sequelize.define('Region', {
+id : {type: Sequelize.INTEGER,primaryKey: true},
+client_id : {type: Sequelize.INTEGER},
+client_name : {type: Sequelize.CHAR},
+user_id : {type: Sequelize.CHAR},
+username: {type : Sequelize.CHAR},
+fname: {type : Sequelize.CHAR},
+email : {type :Sequelize.CHAR},
+lecture_id : {type : Sequelize.INTEGER },
+lecture_name : {type:Sequelize.CHAR},
+course_id: {type : Sequelize.INTEGER},
+course_name : {type: Sequelize.CHAR},
+course_code : {type: Sequelize.CHAR},
+visibility : {type : Sequelize.INTEGER},
+lecture_no : {type: Sequelize.INTEGER},
+lecture_state : {type : Sequelize.INTEGER},
+application : {type : Sequelize.CHAR},
+start_time : {type : Sequelize.DATE},
+stop_time : {type: Sequelize.DATE},
+ip_address : {type : Sequelize.CHAR },
+elapsed_time : {type: Sequelize.FLOAT},
+country_code : {type : Sequelize.CHAR},
+country_name : {type : Sequelize.CHAR},
+city :{type : Sequelize.CHAR},
+embed_token : {type : Sequelize.CHAR},
+token_uid : {type : Sequelize.CHAR  },
+is_lti_user : {type: Sequelize.INTEGER}
+},
+{
+  tableName: 'tbl_access_log', // this will define the table's name
+  timestamps: false           // this will deactivate the timestamp columns
+});
+
+
+var logSchema = new mongoose.Schema({
+  userId: Number,
+  userName: String,
+  firstName:  String,
+  email: String,
+  lectureId:Number,
+  lectureName: String,
+  courseId: Number,
+  courseName:String,
+  courseCode:String,
+  consumed: []
+ });
+
+var Log = mongoose.model('Log',logSchema);
+var id = 0;
+while(id <= 2309109){
+  id = id +1;
+  console.log("============================================");
+  console.log("RUNNING FOR ID = "+id);
+  console.log("============================================");
+AccessLog.find({ where: { id : id } })
+  .complete(function(err, test) {
+    if (err) {
+      console.log('An error occurred while searching for RegionID', err)
+    } else if (!test) {
+      console.log('No user with the username "john-doe" has been found.')
+    } else {
+      console.log(JSON.stringify(test));
+      var etime = test.stop_time - test.start_time;
+      etime =  etime / 1000;
+      //console.log("============================================");
+      //console.log(etime);
+      //console.log("============================================");
+
+      var query = {userId: test.user_id,lectureId:test.lecture_id};
+      Log.findOne(query,function(err, person) {
+        if (err) {
+          console.log('MONGO got an error');
+        }else if(person){
+          person.consumed.push({start : test.start_time,end : test.stop_time,ip : test.ip_address,elapsedTime : etime,countryCode:test.country_code,
+            city : test.city,application : test.application});
+          person.save();
+        }else{
+          var log = new Log({userId : test.user_id,userName:test.username,firstName : test.fname,email:test.email,lectureId : test.lecture_id,
+            lectureName : test.lecture_name,courseId:test.course_id,courseName:test.course_name,courseCode : test.course_code,
+            consumed : [{start : test.start_time,end : test.stop_time,ip : test.ip_address,elapsedTime : etime,countryCode:test.country_code,
+              city : test.city,application : test.application}]});
+          log.save(function (err, savedData) {
+            if (err) return console.log(err);
+            console.log("SAVED IN MONGO DB");
+          });
+        }
+      });
+    }
+});
+
+
+}
