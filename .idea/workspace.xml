@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99e3673b-fc86-4706-968f-da8f87686d20" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CoreJava/ABS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CoreJava/ABSA.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BottomViewOfTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CoreJava/C.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CoreJava/CC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CoreJava/DS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CoreJava/Shapes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreJava/A.java" afterPath="$PROJECT_DIR$/src/CoreJava/A.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreJava/B.java" afterPath="$PROJECT_DIR$/src/CoreJava/B.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreJava/Test.java" afterPath="$PROJECT_DIR$/src/CoreJava/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/LeetCode/TrappingWater.java" afterPath="$PROJECT_DIR$/src/LeetCode/TrappingWater.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo-new" afterPath="$PROJECT_DIR$/todo-new" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/StackGetMin.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Ds Algo.iws" />
@@ -106,17 +95,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BottomViewOfTree.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BottomViewOfTree.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BottomViewOfTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3325893" vertical-offset="607" max-vertical-offset="1368">
-              <caret line="42" column="66" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="607" max-vertical-offset="1368">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#193#210#0" expanded="true" />
                 <element signature="e#349#350#0" expanded="true" />
                 <element signature="e#386#387#0" expanded="true" />
                 <element signature="e#497#503#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StackGetMin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/StackGetMin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
+              <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+              <folding>
+                <element signature="e#142#151#0" expanded="true" />
+                <element signature="e#202#211#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -186,6 +190,7 @@
         <option value="$PROJECT_DIR$/todo-new" />
         <option value="$PROJECT_DIR$/src/CoreJava/CC.java" />
         <option value="$PROJECT_DIR$/src/BottomViewOfTree.java" />
+        <option value="$PROJECT_DIR$/src/StackGetMin.java" />
       </list>
     </option>
   </component>
@@ -951,7 +956,13 @@
       <option name="project" value="LOCAL" />
       <updated>1422298714888</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="bottom view">
+      <created>1422463414347</created>
+      <option name="number" value="00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1422463414347</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -978,8 +989,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48307693" sideWeight="0.7928417" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2876304" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29285166" sideWeight="0.7928417" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31445605" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1007,7 +1018,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="matricx image rotation" />
     <MESSAGE value="search corrected" />
     <MESSAGE value="quick sort" />
     <MESSAGE value="longest common subsequence" />
@@ -1032,7 +1042,8 @@
     <MESSAGE value="leetcode" />
     <MESSAGE value="sql" />
     <MESSAGE value="trapping water" />
-    <option name="LAST_COMMIT_MESSAGE" value="trapping water" />
+    <MESSAGE value="bottom view" />
+    <option name="LAST_COMMIT_MESSAGE" value="bottom view" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1045,20 +1056,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/PrintLeftViewOfTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20592824" vertical-offset="66" max-vertical-offset="1368">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LeetCode/BinaryTreeSumPath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26209047" vertical-offset="750" max-vertical-offset="1548">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/LeetCode/ValidParenthesis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.43837753" vertical-offset="277" max-vertical-offset="918">
@@ -1140,6 +1137,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
           <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1454,14 +1452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/todo-new">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CoreJava/CC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1332">
@@ -1485,16 +1475,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/todo-new">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BottomViewOfTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3325893" vertical-offset="607" max-vertical-offset="1368">
-          <caret line="42" column="66" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="607" max-vertical-offset="1368">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#193#210#0" expanded="true" />
             <element signature="e#349#350#0" expanded="true" />
             <element signature="e#386#387#0" expanded="true" />
             <element signature="e#497#503#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-7-oracle/src.zip!/java/util/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3322933" vertical-offset="795" max-vertical-offset="2196">
+          <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StackGetMin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="641">
+          <caret line="0" column="23" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding>
+            <element signature="e#142#151#0" expanded="true" />
+            <element signature="e#202#211#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
           </folding>
         </state>
       </provider>
