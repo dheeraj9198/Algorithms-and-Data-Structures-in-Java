@@ -9,6 +9,10 @@ import java.util.Comparator;
  * To change this template use File | Settings | File Templates.
  */
 public class ArraySort {
+
+
+
+
     public static void main(String[] args){
         Integer[] array = {2,6,3,9,4,0,100,78};
         Arrays.sort(array,new Comparator<Integer>(){
