@@ -1,3 +1,5 @@
+package BinaryTree;
+
 /**
  * Created with IntelliJ IDEA.
  * User: naveen

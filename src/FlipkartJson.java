@@ -7,6 +7,7 @@ import java.util.Map;
 
 /**
  * Created by dheeraj on 12/18/14.
+ * sample input : a>b>c>d=1   a>b>c>d=4 a>b>f=0 a>b>f>g=9(will give error as json becomes invalid)
  */
 public class FlipkartJson {
 

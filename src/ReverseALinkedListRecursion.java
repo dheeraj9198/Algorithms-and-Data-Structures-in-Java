@@ -70,8 +70,10 @@ public class ReverseALinkedListRecursion {
             //divide
             Node lastNode = reversePrivate(rest);
 
-            //conquer
-            first.next.next = first;
+            // conquer
+            // can also do
+            // first.next.next = first;
+            rest.next = first;
             first.next = null;
             return lastNode;
         }
