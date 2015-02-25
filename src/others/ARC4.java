@@ -18,8 +18,8 @@ public class ARC4 {
         final byte[] buf = new byte[8192];
         final Cipher c = Cipher.getInstance("AES/CTR/NoPadding");
         c.init(Cipher.ENCRYPT_MODE, new SecretKeySpec("1234567890123456".getBytes(), "AES"), new IvParameterSpec(new byte[16]));
-        final InputStream is = new FileInputStream("/home/sujeet/Downloads/clear.mp4");
-        final OutputStream os = new CipherOutputStream(new FileOutputStream("/home/sujeet/Downloads/ttt.mp4"), c);
+        final InputStream is = new FileInputStream("/home/dheeraj/dash-junk/manifest1.mpd");
+        final OutputStream os = new CipherOutputStream(new FileOutputStream("/home/dheeraj/dash-junk/manifest1E.mpd"), c);
         while (true) {
             int n = is.read(buf);
             if (n == -1) break;
