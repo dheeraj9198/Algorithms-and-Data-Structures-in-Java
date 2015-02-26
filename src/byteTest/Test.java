@@ -21,8 +21,8 @@ public class Test {
 
         final byte[] buf = new byte[1024];
         byte test;
-        final InputStream is = new FileInputStream("/home/dheeraj/dash-junk/manifest1E.mpd");
-        final OutputStream os = new FileOutputStream("/home/dheeraj/dash-junk/manifest1D.mpd");
+        final InputStream is = new FileInputStream("/home/dheeraj/dash-junk/manifest.mpd");
+        final OutputStream os = new FileOutputStream("/home/dheeraj/dash-junk/manifestE.mpd");
         while (true) {
             int n = is.read(buf);
             if (n == -1) break;
