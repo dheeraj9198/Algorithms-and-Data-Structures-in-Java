@@ -18,7 +18,7 @@ public class Hanoi {
     }
 
     public static void main(String[] args){
-        hanoi(10,"source","destination","temp");
+        hanoi(3,"source","destination","temp");
         System.out.println("Steps = "+steps);
     }
 }

@@ -5,7 +5,25 @@ import java.io.InputStreamReader;
 
 /**
  * Created by dheeraj on 12/16/14.
+ *
  */
+/*
+
+Alok-nath is man of equality. He needs your help to divide his “sanskars” evenly amongst all his followers. By doing this,
+        Alok-nath can create equality amongst his followers and he'll be called a true “sanskari”.
+        Alok-nath has N sanskars, and K followers. Each sanskar is given a numerical value which shows its intensity.
+        Your task is to determine whether it is possible to allocate all the sanskars to followers in such a way that the sum
+        of intensities of the sanskars allocated to each follower is equal. Note : A sanskar can be allocated to only one of the followers.
+        Input
+        The first line of the input contains an integer T, denoting the number of test cases. Then T test cases follow. The first
+        line of each case contains two integers N and K, with N denoting the number of sanskars and K denoting the number of followers.
+        In the next line are N space separated integers denoting the intensities of each sanskar.
+        Output
+        For each test case, output "yes" if it is possible to divide his sanskars equally amongst his followers; otherwise output
+        "no" (without quotes).
+*/
+
+
 class AlokNath {
     public static void main(String[] args) throws Exception {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
