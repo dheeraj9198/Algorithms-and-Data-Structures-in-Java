@@ -1,0 +1,27 @@
+LIS(i) - Length of longest increasing subsequence which includes element A[i] as its last element.
+LIS(i) = 1 + Max j=1 to i-1 {LIS(j)} if A[i]>A[j] for 1<j<i
+          =   1 if no such j exists.
+
+          Example:
+
+          A[] = {3, 4, 1, 5}
+
+          i=1 , LIS(1) = 1
+
+          i=2 , LIS(2) = 1+ Max(LIS(1)) = 1 +1 =2 (4>3)
+
+          i=3 , LIS(3) = 1 (1>3, 1>4)
+
+          i=4 , LIS(4) = 1+ Max(LIS(1),LIS(2), LIS(3))
+
+          = 1 + Max(1,2,1) = 3
+
+          find the index which con­tains the longest sequence, print that index from main array.
+          Start mov­ing back­wards and pick all the indexes which are in sequence (descending).
+          If longest sequence for more than one indexes, pick any one.
+
+          int[] A = { 1, 12, 7, 0, 23, 11, 52, 31, 61, 69, 70, 2 };
+
+          Output:
+          Longest Increasing subsequence: 7
+          Actual Elements: 1 7 11 31 61 69 70
