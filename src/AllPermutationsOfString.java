@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashSet;
 
 /**
@@ -17,21 +18,21 @@ public class AllPermutationsOfString {
         }
 
         public void printAll() {
-            HashSet<String> stringList = printAllPermutations(string);
+            ArrayList<String> stringList = printAllPermutations(string);
             for (String s : stringList) {
                 System.out.println(s);
             }
         }
 
-        public HashSet<String> printAllPermutations(String string) {
+        public ArrayList<String> printAllPermutations(String string) {
             if (string.length() == 1) {
-                HashSet<String> stringList = new HashSet<String>();
+                ArrayList<String> stringList = new ArrayList<String>();
                 stringList.add(string);
                 return stringList;
             }
 
-            HashSet<String> list = printAllPermutations(string.substring(1, string.length()));
-            HashSet<String> stringList = new HashSet<String>();
+            ArrayList<String> list = printAllPermutations(string.substring(1, string.length()));
+            ArrayList<String> stringList = new ArrayList<String>();
             for (String s : list) {
                 for(int i =0;i<=s.length();i++){
                     stringList.add(permute(string.charAt(0), s, i));
