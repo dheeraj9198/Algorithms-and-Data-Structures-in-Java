@@ -1,0 +1,4 @@
+*.iml
+out/**
+.git/**
+.idea/**
