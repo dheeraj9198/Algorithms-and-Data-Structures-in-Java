@@ -72,6 +72,8 @@ public class TopologicalSort {
         topologicalSort.addPair("Satish", "Sandeep");
         topologicalSort.addPair("Gurinder", "Naveen");
         topologicalSort.addPair("Dheeraj","Gurinder");
+        topologicalSort.addPair("Dheeraj","Gurinder1");
+
 
         topologicalSort.topologicalSort();
     }

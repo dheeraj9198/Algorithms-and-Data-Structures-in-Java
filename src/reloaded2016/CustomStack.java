@@ -3,7 +3,7 @@ package reloaded2016;
 /**
  * Created by dheeraj on 9/6/16.
  */
-public class Stack {
+public class CustomStack {
     private static class Node {
         int data;
         Node node;
@@ -37,7 +37,7 @@ public class Stack {
     }
 
     public static void main(String[] strings) {
-        Stack queue = new Stack();
+        CustomStack queue = new CustomStack();
         queue.add(1);
         queue.add(2);
         queue.add(3);

@@ -21,6 +21,15 @@ Alok-nath is man of equality. He needs your help to divide his “sanskars” ev
         Output
         For each test case, output "yes" if it is possible to divide his sanskars equally amongst his followers; otherwise output
         "no" (without quotes).
+
+        distribute 1 2 3 4 5 6 to 3
+        sort to des order 6 5 4 3 2 1
+
+        dis current  to lowest sum
+        6 5 4
+        1 2 3
+
+
 */
 
 

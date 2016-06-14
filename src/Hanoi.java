@@ -1,5 +1,11 @@
 /**
  * Created by dheeraj on 9/2/15.
+ * To move n discs from peg A to peg C:
+
+ move n−1 discs from A to B. This leaves disc #n alone on peg A
+ move disc #n from A to C
+ move n−1 discs from B to C so they sit on disc #n
+
  */
 public class Hanoi {
 

@@ -3,7 +3,7 @@ package reloaded2016;
 /**
  * Created by dheeraj on 9/6/16.
  */
-class HashMap {
+class CustomHashMap {
 
     private static final int prime = 1001;
     private static final int a = 379;
@@ -27,7 +27,7 @@ class HashMap {
 
 
     public static void main(String[] strings){
-        HashMap customHashMap = new HashMap();
+        CustomHashMap customHashMap = new CustomHashMap();
         customHashMap.put(9000);
         System.out.println(customHashMap.get(9000));
     }

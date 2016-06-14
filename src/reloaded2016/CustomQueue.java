@@ -3,7 +3,7 @@ package reloaded2016;
 /**
  * Created by dheeraj on 9/6/16.
  */
-public class Queue {
+public class CustomQueue {
     private static class Node {
         int data;
         Node node;
@@ -37,7 +37,7 @@ public class Queue {
 
     public static void main(String[] strings)
     {
-        Queue queue = new Queue();
+        CustomQueue queue = new CustomQueue();
         queue.enqueue(1);
         queue.enqueue(2);
         queue.enqueue(3);
