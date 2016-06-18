@@ -37,7 +37,7 @@ public class LongestIncreasingsubsequence {
     }
 
     public static void main(String[] args){
-        int[] arr = {2,5,3,7,11,1};
+        int[] arr = {1, 12, 7, 0, 23, 11, 52, 31, 61, 69, 70, 2};
         LongestIncreasingsubsequence longestIncreasingsubsequence = new LongestIncreasingsubsequence(arr);
         System.out.println(longestIncreasingsubsequence.solve());
     }

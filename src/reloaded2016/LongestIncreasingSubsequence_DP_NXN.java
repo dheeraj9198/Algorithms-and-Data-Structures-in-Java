@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by dheeraj on 6/11/2016.
  */
-public class LongstIncreasingSubsequence {
+public class LongestIncreasingSubsequence_DP_NXN {
 
     private static int[] lis;
 

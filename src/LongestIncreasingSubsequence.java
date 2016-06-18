@@ -18,16 +18,9 @@ public class LongestIncreasingSubsequence {
         int[] maxElementArray = new int[length];
         int[] lengthArray = new int[length];
 
-        int currentLength;
-
-        for (int x = 0; x < length; x++) {
-            maxElementArray[x] = 0;
-            lengthArray[x] = 0;
-        }
-
+        int currentLength = 0;
         maxElementArray[0] = array[0];
         lengthArray[0] = 1;
-        currentLength = 0;
 
         for (int x = 1; x < length; x++) {
             int maxIndex = binarySearchMaxSmallest(maxElementArray, array[x], 0, currentLength);
