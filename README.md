@@ -1,3 +1,3 @@
 Algorithms-and-Data-Structures-in-Java
 ======================================
-General Algorithms and Problem soving
+General Algorithms and Problem solving
