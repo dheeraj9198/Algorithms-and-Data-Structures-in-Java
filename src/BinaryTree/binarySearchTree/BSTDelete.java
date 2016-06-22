@@ -51,15 +51,19 @@ public class BSTDelete {
             } else if (root.left == null) {
                 return root.right;
             } else {
-                Node inOrderSuccessor = findInOrderSuccessor(root.right);
+            /*    Node inOrderSuccessor = findInOrderSuccessor(root);
                 root.data = inOrderSuccessor.data;
-                return delete(inOrderSuccessor.data, inOrderSuccessor);
+                root.right = delete(inOrderSuccessor.data, inOrderSuccessor);*/
+                Node inOrderPred = findInOrderPredecessor(root);
+                root.data = inOrderPred.data;
+                root.left = delete(inOrderPred.data, inOrderPred);
             }
         }
         return root;
     }
 
-    private Node findInOrderSuccessor(Node right) {
+    private Node findInOrderSuccessor(Node root) {
+        Node right = root.right;
         if (right.left == null) {
             return right;
         } else {
@@ -67,20 +71,28 @@ public class BSTDelete {
         }
     }
 
+    private Node findInOrderPredecessor(Node root) {
+        Node left = root.left;
+        if (left.right == null) {
+            return left;
+        } else {
+            return findInOrderSuccessor(left.right);
+        }
+    }
+
     public static void main(String[] args) {
         BSTDelete tree = new BSTDelete();
         tree.root = tree.insert(50, tree.root);
-        tree.root = tree.insert(30, tree.root);
-        tree.root = tree.insert(20, tree.root);
-        tree.root = tree.insert(40, tree.root);
-        tree.root = tree.insert(70, tree.root);
-        tree.root = tree.insert(60, tree.root);
-        tree.root = tree.insert(80, tree.root);
-        tree.root = tree.insert(90, tree.root);
-
+        tree.insert(30, tree.root);
+        tree.insert(20, tree.root);
+        tree.insert(40, tree.root);
+        tree.insert(70, tree.root);
+        tree.insert(60, tree.root);
+        tree.insert(80, tree.root);
+        tree.insert(90, tree.root);
         tree.inOrderTraversal(tree.root);
         System.out.println();
-        tree.delete(70,tree.root);
+        tree.delete(30, tree.root);
         tree.inOrderTraversal(tree.root);
     }
 
