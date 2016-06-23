@@ -45,7 +45,7 @@ public class BstToCircularDLL {
             }
             return right == null ? node : right;
         } else if (position == 2) {
-            rightMost = right == null ? node : right;
+            rightMost = right == null ? rightMost : right;
             return left == null ? node : left;
         }
 

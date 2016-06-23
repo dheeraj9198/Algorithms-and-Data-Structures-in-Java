@@ -39,10 +39,9 @@ public class SortedDLLtoBST {
         }
         Node right = rootNew.right;
         rootNew.right = null;
-        Node left = root;
         rootNew.left = null;
 
-        rootNew.left = makeBst(left);
+        rootNew.left = makeBst(root);
         rootNew.right = makeBst(right);
         return rootNew;
     }
@@ -81,7 +80,8 @@ public class SortedDLLtoBST {
 
         dllTraverse(root);
         System.out.println();
-        inorder(makeBst(root));
+        Node node = makeBst(root);
+        inorder(node);
 
     }
 }
