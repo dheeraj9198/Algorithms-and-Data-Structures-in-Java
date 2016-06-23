@@ -7,30 +7,30 @@ package BinaryTree;
  * Time: 7:54 PM
  * To change this template use File | Settings | File Templates.
  */
-public class BTFromPreInOrder {
+public class BTFromPostInOrder {
     private Node root;
-    private int[] preorder;
+    private int[] postOrder;
     private int[] inOrder;
-    private int preIndex;
+    private int postIndex;
 
-    private BTFromPreInOrder(int[] pre, int[] in) {
-        preorder = pre;
+    private BTFromPostInOrder(int[] post, int[] in) {
+        postOrder = post;
         inOrder = in;
     }
 
     private void start() {
-        preIndex = 0;
-        root = buildTree(0, preorder.length - 1);
+        postIndex = inOrder.length-1;
+        root = buildTree(0, postOrder.length - 1);
     }
 
     private Node buildTree(int start, int end) {
         if (start > end ) {
             return null;
         }
-        Node nRoot = new Node(preorder[preIndex++]);
+        Node nRoot = new Node(postOrder[postIndex--]);
         int pos = findPos(nRoot.data);
-        nRoot.left = buildTree(start, pos - 1);
         nRoot.right = buildTree(pos + 1, end);
+        nRoot.left = buildTree(start, pos - 1);
         return nRoot;
     }
 
@@ -43,18 +43,18 @@ public class BTFromPreInOrder {
         throw new RuntimeException("Element not found");
     }
 
-    private void preOrderTaversal(Node root) {
+    private void inOrderTaversal(Node root) {
         if (root == null) return;
-        System.out.print(root.data+" ");
         if (root.left != null)
-            preOrderTaversal(root.left);
+            inOrderTaversal(root.left);
+        System.out.print(root.data+" ");
         if (root.right != null)
-            preOrderTaversal(root.right);
+            inOrderTaversal(root.right);
     }
 
     public static void main(String[] args) {
-        BTFromPreInOrder btFromPreInOrder = new BTFromPreInOrder(new int[]{4, 2, 1, 3, 6, 5, 7}, new int[]{1, 2,3,4,5, 6, 7});
+        BTFromPostInOrder btFromPreInOrder = new BTFromPostInOrder(new int[]{1,3,2,5,7,6,4}, new int[]{1, 2,3,4,5, 6, 7});
         btFromPreInOrder.start();
-        btFromPreInOrder.preOrderTaversal(btFromPreInOrder.root);
+        btFromPreInOrder.inOrderTaversal(btFromPreInOrder.root);
     }
 }
