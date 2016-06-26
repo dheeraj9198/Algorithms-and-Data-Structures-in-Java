@@ -2,3 +2,4 @@
 out/**
 .git/**
 .idea/**
+*.class

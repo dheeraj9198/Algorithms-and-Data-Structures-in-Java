@@ -54,18 +54,13 @@ public class TrieDheeraj {
         }
     }
 
-     public static void main(String[] args){
-         Trie trie = new Trie();
-         trie.insert("dheeraj");
-         trie.insert("sachan");
+    public static void main(String[] args) {
+        Trie trie = new Trie();
+        trie.insert("dheeraj");
+        trie.insert("sachan");
 
-         System.out.println(trie.search("dheerajs"));
-
-
+        System.out.println(trie.search("dheerajs"));
 
 
-
-
-
-     }
+    }
 }
