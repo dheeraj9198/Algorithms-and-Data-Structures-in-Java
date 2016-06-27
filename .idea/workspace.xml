@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34a7e45e-5d4c-47f9-901a-90e0e01bcb03" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BinaryTree/binarySearchTree/LogNKMin.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/stockPrices/Maximum single-sell profit.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Algorithms-and-Data-Structures-in-Java.iws" />
@@ -66,23 +66,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RodCutting.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/npp-code/RodCutting.java">
+      <file leaf-file-name="DynamicProgramming.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stockPrices/DynamicProgramming.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="59" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogNKMin.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BinaryTree/binarySearchTree/LogNKMin.java">
+      <file leaf-file-name="Maximum single-sell profit.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/stockPrices/Maximum single-sell profit.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78064513">
-              <caret line="46" column="87" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StockPrice.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/npp-code/StockPrice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3016129">
+              <caret line="11" column="64" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -124,6 +132,8 @@
         <option value="$PROJECT_DIR$/src/npp-code/Trie.java" />
         <option value="$PROJECT_DIR$/src/npp-code/RodCutting.java" />
         <option value="$PROJECT_DIR$/src/BinaryTree/binarySearchTree/LogNKMin.java" />
+        <option value="$PROJECT_DIR$/src/stockPrices/Maximum single-sell profit.txt" />
+        <option value="$PROJECT_DIR$/src/npp-code/StockPrice.java" />
       </list>
     </option>
   </component>
@@ -235,7 +245,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="reloaded2016" />
+              <option name="myItemId" value="stockPrices" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -254,46 +264,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="npp-code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BinaryTree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BinaryTree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="binarySearchTree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -433,22 +403,7 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="Application.LogNKMin">
-    <configuration default="false" name="ByteShift" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="ByteShift" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Algorithms-and-Data-Structures-in-Java" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.StockPrice">
     <configuration default="false" name="CustomHashMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -507,6 +462,21 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="BinaryTree.binarySearchTree.LogNKMin" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Algorithms-and-Data-Structures-in-Java" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="StockPrice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="StockPrice" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -942,19 +912,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ByteShift" />
-      <item index="1" class="java.lang.String" itemvalue="Application.CustomHashMap" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Trie" />
-      <item index="3" class="java.lang.String" itemvalue="Application.RodCutting" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LogNKMin" />
+      <item index="0" class="java.lang.String" itemvalue="Application.CustomHashMap" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Trie" />
+      <item index="2" class="java.lang.String" itemvalue="Application.RodCutting" />
+      <item index="3" class="java.lang.String" itemvalue="Application.LogNKMin" />
+      <item index="4" class="java.lang.String" itemvalue="Application.StockPrice" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.LogNKMin" />
-        <item index="1" class="java.lang.String" itemvalue="Application.RodCutting" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Trie" />
-        <item index="3" class="java.lang.String" itemvalue="Application.CustomHashMap" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ByteShift" />
+        <item index="0" class="java.lang.String" itemvalue="Application.StockPrice" />
+        <item index="1" class="java.lang.String" itemvalue="Application.LogNKMin" />
+        <item index="2" class="java.lang.String" itemvalue="Application.RodCutting" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Trie" />
+        <item index="4" class="java.lang.String" itemvalue="Application.CustomHashMap" />
       </list>
     </recent_temporary>
   </component>
@@ -992,7 +962,7 @@
       <workItem from="1466871484467" duration="135000" />
       <workItem from="1466873055029" duration="120000" />
       <workItem from="1466934023698" duration="13434000" />
-      <workItem from="1467038296743" duration="7555000" />
+      <workItem from="1467038296743" duration="8872000" />
     </task>
     <task id="LOCAL-00001" summary="chocolate wrapper">
       <created>1466250605096</created>
@@ -1024,11 +994,17 @@
       <option name="project" value="LOCAL" />
       <updated>1467042410430</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="LogKMin bst">
+      <created>1467047347846</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1467047347846</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35165000" />
+    <option name="totallyTimeSpent" value="36482000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1072,7 +1048,8 @@
     <MESSAGE value="bst delete node not working when both children present" />
     <MESSAGE value="made trie" />
     <MESSAGE value="rod cutting first cut" />
-    <option name="LAST_COMMIT_MESSAGE" value="rod cutting first cut" />
+    <MESSAGE value="LogKMin bst" />
+    <option name="LAST_COMMIT_MESSAGE" value="LogKMin bst" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1093,29 +1070,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinaryTree/binarySearchTree/BstToDLL.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Array/MergeSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/QuickSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1466,9 +1420,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/binarySearchTree/LogNKMin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61612904">
+          <caret line="46" column="87" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/npp-code/RodCutting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="1.1241935">
           <caret line="41" column="59" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -1476,10 +1438,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinaryTree/binarySearchTree/LogNKMin.java">
+    <entry file="file://$PROJECT_DIR$/src/stockPrices/DynamicProgramming.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78064513">
-          <caret line="46" column="87" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stockPrices/Maximum single-sell profit.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/npp-code/StockPrice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3016129">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
           <folding />
         </state>
       </provider>

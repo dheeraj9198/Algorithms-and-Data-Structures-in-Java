@@ -1,0 +1,96 @@
+http://stackoverflow.com/questions/7086464/maximum-single-sell-profit
+
+Suppose we are given an array of n integers representing stock prices on a single day.
+We want to find a pair (buyDay, sellDay), with buyDay ≤ sellDay, such that
+if we bought the stock on buyDay and sold it on sellDay, we would maximize our profit.
+Clearly there is an O(n2) solution to the algorithm by trying out all possible (buyDay, sellDay)
+pairs and taking the best out of all of them. However, is there a better algorithm, perhaps one that runs in O(n) time?
+
+
+I love this problem. It's a classic interview question and depending on how you think about it,
+you'll end up getting better and better solutions. It's certainly possible to do this in better than O(n2) time,
+ and I've listed three different ways that you can think about the problem here. Hopefully this answers your question!
+
+First, the divide-and-conquer solution. Let's see if we can solve this by splitting the input in half, solving the problem in
+ each subarray, then combining the two together. Turns out we actually can do this, and can do so efficiently! The intuition
+ is as follows. If we have a single day, the best option is to buy on that day and then sell it back on the same day for no profit.
+ Otherwise, split the array into two halves. If we think about what the optimal answer might be, it must be in one of three places:
+
+The correct buy/sell pair occurs completely within the first half.
+The correct buy/sell pair occurs completely within the second half.
+The correct buy/sell pair occurs across both halves - we buy in the first half, then sell in the second half.
+We can get the values for (1) and (2) by recursively invoking our algorithm on the first and second halves. For option (3), the way to
+ make the highest profit would be to buy at the lowest point in the first half and sell in the greatest point in the second half.
+ We can find the minimum and maximum values in the two halves by just doing a simple linear scan over the input and finding the two values.
+  This then gives us an algorithm with the following recurrence:
+
+T(1) <= O(1)
+T(n) <= 2T(n / 2) + O(n)
+Using the Master Theorem to solve the recurrence, we find that this runs in O(n lg n) time and will use O(lg n) space for the recursive calls.
+ We've just beaten the naive O(n2) solution!
+
+But wait! We can do much better than this. Notice that the only reason we have an O(n) term in our recurrence is that we had to scan the entire
+ input trying to find the minimum and maximum values in each half. Since we're already recursively exploring each half, perhaps we can do better
+  by having the recursion also hand back the minimum and maximum values stored in each half! In other words, our recursion hands back three things:
+
+The buy and sell times to maximize profit.
+The minimum value overall in the range.
+The maximum value overall in the range.
+These last two values can be computed recursively using a straightforward recursion that we can run at the same time as the recursion to compute (1):
+
+The max and min values of a single-element range are just that element.
+The max and min values of a multiple element range can be found by splitting the input in half, finding the max and min values of each half, then
+ taking their respective max and min.
+If we use this approach, our recurrence relation is now
+
+T(1) <= O(1)
+T(n) <= 2T(n / 2) + O(1)
+Using the Master Theorem here gives us a runtime of O(n) with O(lg n) space, which is even better than our original solution!
+
+But wait a minute - we can do even better than this! Let's think about solving this problem using dynamic programming. The idea will be to think about
+ the problem as follows. Suppose that we knew the answer to the problem after looking at the first k elements. Could we use our knowledge of the (k+1)st
+ element, combined with our initial solution, to solve the problem for the first (k+1) elements? If so, we could get a great algorithm going by solving
+ the problem for the first element, then the first two, then the first three, etc. until we'd computed it for the first n elements.
+
+Let's think about how to do this. If we have just one element, we already know that it has to be the best buy/sell pair. Now suppose we know the best
+ answer for the first k elements and look at the (k+1)st element. Then the only way that this value can create a solution better than what we had for
+ the first k elements is if the difference between the smallest of the first k elements and that new element is bigger than the biggest difference
+ we've computed so far. So suppose that as we're going across the elements, we keep track of two values - the minimum value we've seen so far, and
+ the maximum profit we could make with just the first k elements. Initially, the minimum value we've seen so far is the first element, and the
+  maximum profit is zero. When we see a new element, we first update our optimal profit by computing how much we'd make by buying at the lowest
+  price seen so far and selling at the current price. If this is better than the optimal value we've computed so far, then we update the optimal
+  solution to be this new profit. Next, we update the minimum element seen so far to be the minimum of the current smallest element and the new element.
+
+Since at each step we do only O(1) work and we're visiting each of the n elements exactly once, this takes O(n) time to complete! Moreover, it only
+uses O(1) auxiliary storage. This is as good as we've gotten so far!
+
+As an example, on your inputs, here's how this algorithm might run. The numbers in-between each of the values of the array correspond to the values
+held by the algorithm at that point. You wouldn't actually store all of these (it would take O(n) memory!), but it's helpful to see the algorithm evolve:
+
+        5        10         4         6        7
+min         5         5        4          4         4
+best      (5,5)     (5,10)   (5,10)     (5,10)    (5,10)
+Answer: (5, 10)
+
+        5        10         4         6        12
+min         5         5        4          4         4
+best      (5,5)     (5,10)   (5,10)     (5,10)    (4,12)
+Answer: (4, 12)
+
+        1       2       3      4      5
+min         1       1       1      1      1
+best      (1,1)   (1,2)   (1,3)  (1,4)  (1,5)
+Answer: (1, 5)
+
+Can we do better now? Unfortunately, not in an asymptotic sense. If we use less than O(n) time, we can't look at all the numbers on large inputs
+and thus can't guarantee that we won't miss the optimal answer (we could just "hide" it in the elements we didn't look at). Plus, we can't use any less
+than O(1) space. There might be some optimizations to the constant factors hidden in the big-O notation, but otherwise we can't expect to find any radically better options.
+
+Overall, this means that we have the following algorithms:
+
+Naive: O(n2) time, O(1) space.
+Divide-and-Conquer: O(n lg n) time, O(lg n) space.
+Optimized Divide-and-Conquer: O(n) time, O(lg n) space.
+Dynamic programming: O(n) time, O(1) space.
+Hope this helps!
+
