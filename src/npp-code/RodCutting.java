@@ -16,6 +16,7 @@ class RodCutting {
 
     static int[] price;
     static int[] solution;
+    static int[] firstCut;
 
     static int cut(int length) {
         if (solution[length] != -1) {
@@ -26,6 +27,7 @@ class RodCutting {
             int sol1 = price[k] + cut(length - k);
             if (sol1 > sol) {
                 sol = sol1;
+                firstCut[length] = k;
             }
         }
         solution[length] = sol;
@@ -34,18 +36,9 @@ class RodCutting {
 
     public static void main(String[] s) {
 
-        price = new int[9];
+        price = new int[]{0, 1, 5, 8, 9, 10, 17, 17, 20};
         solution = new int[9];
-
-        price[0] = 0;
-        price[1] = 1;
-        price[2] = 5;
-        price[3] = 8;
-        price[4] = 9;
-        price[5] = 10;
-        price[6] = 17;
-        price[7] = 17;
-        price[8] = 20;
+        firstCut = new int[9];
 
         for (int x = 0; x < solution.length; x++) {
             solution[x] = -1;
@@ -54,8 +47,9 @@ class RodCutting {
         solution[1] = 1;
 
         System.out.println(cut(8));
-for(int k : solution){
-System.out.print(k+"*");}
+        for (int k =0;k<solution.length;k++){
+            System.out.println(k + "*"+solution[k]+"*"+firstCut[k]);
+        }
 
     }
 
