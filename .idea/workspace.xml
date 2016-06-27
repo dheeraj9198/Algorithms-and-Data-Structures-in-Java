@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="34a7e45e-5d4c-47f9-901a-90e0e01bcb03" name="Default" comment="made trie">
+    <list default="true" id="34a7e45e-5d4c-47f9-901a-90e0e01bcb03" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BinaryTree/binarySearchTree/LogNKMin.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/npp-code/RodCutting.java" afterPath="$PROJECT_DIR$/src/npp-code/RodCutting.java" />
     </list>
     <ignored path="Algorithms-and-Data-Structures-in-Java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,14 +66,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RodCutting.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RodCutting.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/npp-code/RodCutting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.59303594">
+            <state vertical-scroll-proportion="0.0">
               <caret line="41" column="59" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogNKMin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree/binarySearchTree/LogNKMin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.78064513">
+              <caret line="46" column="87" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/TrieDheeraj.java" />
         <option value="$PROJECT_DIR$/src/npp-code/Trie.java" />
         <option value="$PROJECT_DIR$/src/npp-code/RodCutting.java" />
+        <option value="$PROJECT_DIR$/src/BinaryTree/binarySearchTree/LogNKMin.java" />
       </list>
     </option>
   </component>
@@ -243,6 +254,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="npp-code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BinaryTree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BinaryTree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="binarySearchTree" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -382,27 +433,7 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="Application.RodCutting">
-    <configuration default="false" name="RabinKarp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="stringMatching.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="stringMatching.RabinKarp" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Algorithms-and-Data-Structures-in-Java" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.LogNKMin">
     <configuration default="false" name="ByteShift" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="ByteShift" />
@@ -456,6 +487,26 @@
     <configuration default="false" name="RodCutting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="RodCutting" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Algorithms-and-Data-Structures-in-Java" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="LogNKMin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="BinaryTree.binarySearchTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="BinaryTree.binarySearchTree.LogNKMin" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -891,19 +942,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.RabinKarp" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ByteShift" />
-      <item index="2" class="java.lang.String" itemvalue="Application.CustomHashMap" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Trie" />
-      <item index="4" class="java.lang.String" itemvalue="Application.RodCutting" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ByteShift" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CustomHashMap" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Trie" />
+      <item index="3" class="java.lang.String" itemvalue="Application.RodCutting" />
+      <item index="4" class="java.lang.String" itemvalue="Application.LogNKMin" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.RodCutting" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Trie" />
-        <item index="2" class="java.lang.String" itemvalue="Application.CustomHashMap" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ByteShift" />
-        <item index="4" class="java.lang.String" itemvalue="Application.RabinKarp" />
+        <item index="0" class="java.lang.String" itemvalue="Application.LogNKMin" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RodCutting" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Trie" />
+        <item index="3" class="java.lang.String" itemvalue="Application.CustomHashMap" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ByteShift" />
       </list>
     </recent_temporary>
   </component>
@@ -941,7 +992,7 @@
       <workItem from="1466871484467" duration="135000" />
       <workItem from="1466873055029" duration="120000" />
       <workItem from="1466934023698" duration="13434000" />
-      <workItem from="1467038296743" duration="2629000" />
+      <workItem from="1467038296743" duration="7555000" />
     </task>
     <task id="LOCAL-00001" summary="chocolate wrapper">
       <created>1466250605096</created>
@@ -967,11 +1018,17 @@
       <option name="project" value="LOCAL" />
       <updated>1466965504281</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="rod cutting first cut">
+      <created>1467042410430</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1467042410430</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30239000" />
+    <option name="totallyTimeSpent" value="35165000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -984,7 +1041,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3157339" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3157339" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -1014,7 +1071,8 @@
     <MESSAGE value="chocolate wrapper" />
     <MESSAGE value="bst delete node not working when both children present" />
     <MESSAGE value="made trie" />
-    <option name="LAST_COMMIT_MESSAGE" value="made trie" />
+    <MESSAGE value="rod cutting first cut" />
+    <option name="LAST_COMMIT_MESSAGE" value="rod cutting first cut" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1026,7 +1084,7 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1035,16 +1093,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/PrintLeftViewOfTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1420,11 +1468,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/npp-code/RodCutting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59303594">
+        <state vertical-scroll-proportion="0.0">
           <caret line="41" column="59" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/binarySearchTree/LogNKMin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78064513">
+          <caret line="46" column="87" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
