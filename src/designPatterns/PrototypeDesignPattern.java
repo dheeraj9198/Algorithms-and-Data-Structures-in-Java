@@ -1,5 +1,6 @@
 package designPatterns;
 
+import java.io.Serializable;
 import java.util.Hashtable;
 
 /**
@@ -7,7 +8,7 @@ import java.util.Hashtable;
  */
 public class PrototypeDesignPattern {
 
-    public static abstract class Shape implements Cloneable {
+    public static abstract class Shape implements Cloneable,Serializable {
 
         private String id;
         protected String type;
