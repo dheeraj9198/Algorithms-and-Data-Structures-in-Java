@@ -18,6 +18,20 @@ public class CustomMinPriorityQueue {
             number = num;
             distance = dis;
         }
+
+        @Override
+        public boolean equals(Object obj) {
+            if(obj instanceof Vertex) {
+                Vertex vertex = (Vertex) obj;
+                return number == vertex.number;
+            }
+            return false;
+        }
+
+        @Override
+        public int hashCode() {
+            return number*997+distance;
+        }
     }
 
     public static void main(String[] args) {
@@ -33,7 +47,7 @@ public class CustomMinPriorityQueue {
         minHeap.add(new Vertex(2,9));
         minHeap.add(new Vertex(3,90));
 
-        minHeap.peek().distance=1000;
+        minHeap.remove(new Vertex(1,10));
 
         while(minHeap.size() > 0){
             System.out.println(minHeap.peek().distance + "-" +minHeap.remove().number);

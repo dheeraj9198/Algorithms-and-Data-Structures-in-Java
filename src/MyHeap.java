@@ -99,8 +99,11 @@ public class MyHeap {
     public static void main(String[] args){
         int[] arr = {1,4,3,6,5,8,7,9,2};
         MyHeap myHeap =new MyHeap(arr);
-        //myHeap.heapSort();
+/*
+        myHeap.heapSort();
+*/
         myHeap.print();
+
 
         myHeap.increaseKeyValue(8,10);
 
