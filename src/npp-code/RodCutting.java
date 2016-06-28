@@ -10,8 +10,6 @@
  * price    | 3   5   8   9  10  17  17  20
  */
 
-import java.util.*;
-
 class RodCutting {
 
     static int[] price;
