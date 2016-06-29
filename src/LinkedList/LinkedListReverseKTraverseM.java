@@ -2,7 +2,8 @@ package LinkedList;
 
 /**
  * Created by dheeraj on 6/29/2016.
- * Given a linked-list and 2 integers k & m. Reverse the linked-list till k elements and then traverse till m elements and repeat.
+ * Given a linked-list and 2 integers k & m.
+ * Reverse the linked-list till k elements and then traverse till m elements and repeat.
  */
 public class LinkedListReverseKTraverseM {
 
@@ -41,8 +42,8 @@ public class LinkedListReverseKTraverseM {
             x++;
         }
 
-        if (x == k) {
-            current.next = start;
+        if (x > k) {
+            start.next = current;
         }
         return new Data(prev, current, x < k);
     }
@@ -61,10 +62,15 @@ public class LinkedListReverseKTraverseM {
         }
         Node revRoot = null;
         int rev = 3;
-        int simple = 3;
+        int simple = 2;
         Node c = root;
         while (true) {
-            Data data = reverseK(c, rev);
+            if (revRoot == null && c == null) {
+                break;
+            } else if (revRoot != null && (c == null || c.next == null)) {
+                break;
+            }
+            Data data = reverseK(revRoot == null ? c : c.next, rev);
             if (revRoot == null) {
                 revRoot = data.newRoot;
             } else {
@@ -75,7 +81,7 @@ public class LinkedListReverseKTraverseM {
             }
             int x = 1;
             c = data.afterK;
-            while (x <= simple && c != null) {
+            while (x < simple && c != null) {
                 c = c.next;
                 x++;
             }
