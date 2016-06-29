@@ -3,7 +3,7 @@ package Array;
 /**
  * Created by dheeraj on 6/28/2016.
  */
-public class NextGreaterElementInRight {
+class NextGreaterElementInRight {
 
     public static void main(String[] strings) {
         int[] ints = new int[]{4, 5, 2, 25};
