@@ -22,6 +22,10 @@ public class BstToDLL {
             return node;
         }
 
+        if(node.left == null && node.right == null){
+            return node;
+        }
+
         Node left = makeDll(node.left,1);
         Node right = makeDll(node.right,2);
 

@@ -21,7 +21,7 @@ public class SortedDLLtoBST {
         }
     }
 
-    private static Node makeBst(Node root) {
+    private static Node  makeBst(Node root) {
         if (root == null) {
             return root;
         }
