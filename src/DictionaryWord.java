@@ -28,13 +28,13 @@ public class DictionaryWord {
         wordSet.add("air");
         wordSet.add("eat");
         wordSet.add("tea");
-
+        int[][] visitedMap = new int[dim_x][dim_y];
         for (int x = 0; x < dim_x; x++) {
             for (int y = 0; y < dim_y; y++) {
                 checkAndPrint(matrix[x][y] + "");
-                int[][] visitedMap = new int[dim_x][dim_y];
                 visitedMap[x][y] = 1;
                 recursion(matrix[x][y] + "", visitedMap, x, y);
+                visitedMap[x][y] = 0;
             }
         }
     }
@@ -48,18 +48,11 @@ public class DictionaryWord {
     private static void recursion(String word, int[][] visitedMap, int x, int y) {
         for (int i = Math.max(x - 1, 0); i < Math.min(x + 2, dim_x); i++) {
             for (int j = Math.max(y - 1, 0); j < Math.min(y + 2, dim_y); j++) {
-                if (visitedMap[i][j] == 1) {
-                    continue;
-                } else {
-                    int[][] newVisitedMap = new int[dim_x][dim_y];
-                    for (int p = 0; p < dim_x; p++) {
-                        for (int q = 0; q < dim_y; q++) {
-                           newVisitedMap[p][q] = visitedMap[p][q];
-                        }
-                    }
-                    newVisitedMap[i][j] = 1;
+                if (visitedMap[i][j] != 1) {
+                    visitedMap[i][j] = 1;
                     checkAndPrint(word + matrix[i][j]);
-                    recursion(word + matrix[i][j], newVisitedMap, i, j);
+                    recursion(word + matrix[i][j], visitedMap, i, j);
+                    visitedMap[i][j] = 0;
                 }
             }
         }
