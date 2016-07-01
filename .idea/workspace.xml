@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21e088be-6c0d-4137-9642-b43ab867ec69" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/IntegerToBinary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BinaryTree/CheckIfHeightBalancedBt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BinaryTree/SpiralTraversal.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Algorithms-and-Data-Structures-in-Java.iws" />
@@ -96,11 +94,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntegerToBinary.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="IntegerToBinary.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/IntegerToBinary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69199455">
+            <state vertical-scroll-proportion="0.0">
               <caret line="30" column="74" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LowestCommonAncestor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree/LowestCommonAncestor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpiralTraversal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree/SpiralTraversal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="58" selection-start-line="10" selection-start-column="3" selection-end-line="48" selection-end-column="5" />
+              <folding>
+                <element signature="e#539#545#0" expanded="true" />
+                <element signature="e#589#595#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CheckIfHeightBalancedBt.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree/CheckIfHeightBalancedBt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5991678">
+              <caret line="35" column="84" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree/Node.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -140,6 +181,8 @@
         <option value="$PROJECT_DIR$/src/DP/MaxSumIncreasingsubsequence.java" />
         <option value="$PROJECT_DIR$/src/DP/LongestIncreasingsubsequence.java" />
         <option value="$PROJECT_DIR$/src/IntegerToBinary.java" />
+        <option value="$PROJECT_DIR$/src/BinaryTree/SpiralTraversal.java" />
+        <option value="$PROJECT_DIR$/src/BinaryTree/CheckIfHeightBalancedBt.java" />
       </list>
     </option>
   </component>
@@ -148,11 +191,17 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="867" />
+    <option name="width" value="1056" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -232,6 +281,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Algorithms-and-Data-Structures-in-Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BinaryTree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -252,22 +319,7 @@
       <recent name="DP" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.IntegerToBinary">
-    <configuration default="false" name="NumberToWords" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="NumberToWords" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Algorithms-and-Data-Structures-in-Java" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.CheckIfHeightBalancedBt">
     <configuration default="false" name="LongestIncreasingsubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -311,6 +363,46 @@
     <configuration default="false" name="IntegerToBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="IntegerToBinary" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Algorithms-and-Data-Structures-in-Java" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SpiralTraversal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="BinaryTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="BinaryTree.SpiralTraversal" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Algorithms-and-Data-Structures-in-Java" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="CheckIfHeightBalancedBt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="BinaryTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="BinaryTree.CheckIfHeightBalancedBt" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -740,18 +832,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.NumberToWords" />
-      <item index="1" class="java.lang.String" itemvalue="Application.LongestIncreasingsubsequence" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MaxSumIncreasingsubsequence" />
-      <item index="3" class="java.lang.String" itemvalue="Application.IntegerToBinary" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.LongestIncreasingsubsequence" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MaxSumIncreasingsubsequence" />
+      <item index="2" class="java.lang.String" itemvalue="Application.IntegerToBinary" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SpiralTraversal" />
+      <item index="4" class="java.lang.String" itemvalue="Application.CheckIfHeightBalancedBt" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.IntegerToBinary" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LongestIncreasingsubsequence" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MaxSumIncreasingsubsequence" />
-        <item index="3" class="java.lang.String" itemvalue="Application.NumberToWords" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.CheckIfHeightBalancedBt" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SpiralTraversal" />
+        <item index="2" class="java.lang.String" itemvalue="Application.IntegerToBinary" />
+        <item index="3" class="java.lang.String" itemvalue="Application.LongestIncreasingsubsequence" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MaxSumIncreasingsubsequence" />
       </list>
     </recent_temporary>
   </component>
@@ -777,7 +871,7 @@
       <created>1467372099245</created>
       <option name="number" value="Default" />
       <updated>1467372099245</updated>
-      <workItem from="1467372102314" duration="4022000" />
+      <workItem from="1467372102314" duration="6778000" />
     </task>
     <task id="LOCAL-00001" summary="number to words">
       <created>1467372964177</created>
@@ -791,14 +885,20 @@
       <option name="project" value="LOCAL" />
       <updated>1467376034093</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="integer to binary and binary to integer">
+      <created>1467378813949</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1467378813949</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4022000" />
+    <option name="totallyTimeSpent" value="6778000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="867" y="0" width="1056" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -808,10 +908,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19218585" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19548872" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60865384" sideWeight="0.5" order="-1" side_tool="false" content_ui="combo" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -829,7 +929,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="number to words" />
     <MESSAGE value="max sum increasing subsequence DP" />
-    <option name="LAST_COMMIT_MESSAGE" value="max sum increasing subsequence DP" />
+    <MESSAGE value="integer to binary and binary to integer" />
+    <option name="LAST_COMMIT_MESSAGE" value="integer to binary and binary to integer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -874,8 +975,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IntegerToBinary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69199455">
+        <state vertical-scroll-proportion="0.0">
           <caret line="30" column="74" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/LowestCommonAncestor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/SpiralTraversal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="58" selection-start-line="10" selection-start-column="3" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="e#539#545#0" expanded="true" />
+            <element signature="e#589#595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/CheckIfHeightBalancedBt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5991678">
+          <caret line="35" column="84" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
           <folding />
         </state>
       </provider>
