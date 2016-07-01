@@ -3,16 +3,15 @@ package DP;
 /**
  * Created by dheeraj on 12/25/14.
  */
-public class LongestIncreasingsubsequence {
+public class MaxSumIncreasingsubsequence {
 
     private int[] array;
-    private LongestIncreasingsubsequence(int[] arr){
+    private MaxSumIncreasingsubsequence(int[] arr){
         array = arr;
     }
 
     private int solve(){
         int[] solution = new int[array.length];
-
         lis(solution);
         int max = solution[0];
         for(int x=1;x<solution.length;x++){
@@ -24,20 +23,20 @@ public class LongestIncreasingsubsequence {
     }
 
     private void lis(int[] solution){
-        solution[0] = 1;
+        solution[0] = array[0];
         for(int x =1;x<array.length;x++){
             for(int y=0;y<x;y++){
-                if(array[x] > array[y] && solution[x] < solution[y]+1){
-                    solution[x] = solution[y]+1;
+                if(array[x] > array[y] && solution[x] < solution[y]+array[x]){
+                    solution[x] = solution[y]+array[x];
                 }
             }
         }
     }
 
     public static void main(String[] args){
-        int[] arr = {1, 12, 7, 0, 23, 11, 52, 31, 61, 69, 70, 2};
-        LongestIncreasingsubsequence longestIncreasingsubsequence = new LongestIncreasingsubsequence(arr);
-        System.out.println(longestIncreasingsubsequence.solve());
+        int[] arr = {1, 101, 2, 3, 100, 4, 5};
+        MaxSumIncreasingsubsequence maxSumIncreasingsubsequence = new MaxSumIncreasingsubsequence(arr);
+        System.out.println(maxSumIncreasingsubsequence.solve());
     }
 
 }
