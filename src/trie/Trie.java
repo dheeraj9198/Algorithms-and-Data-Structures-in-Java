@@ -1,3 +1,5 @@
+package trie;
+
 class Trie {
 
     private static Node root = new Node('*', false);

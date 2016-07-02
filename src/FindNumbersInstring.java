@@ -35,7 +35,7 @@ import java.io.InputStreamReader;
  20
  12
  */
-public class TestClass2 {
+public class FindNumbersInstring {
     public static void main(String args[]) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line = br.readLine();

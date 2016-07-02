@@ -1,3 +1,5 @@
+package binarySearch;
+
 /**
  * Created by dheeraj on 14/6/16.
  */

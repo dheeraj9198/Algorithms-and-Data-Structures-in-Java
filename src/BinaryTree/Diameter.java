@@ -41,10 +41,13 @@ public class Diameter {
         diameter.root.left.right = new Node(5);
         diameter.root.right.left = new Node(6);
         diameter.root.right.right = new Node(7);
+/*
         diameter.root.right.right.right = new Node(8);
+*/
 
 
         diameter.findDia(diameter.root);
+
 
         System.out.println(diameter.maxDia);
 

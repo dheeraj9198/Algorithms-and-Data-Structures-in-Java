@@ -1,3 +1,5 @@
+package binarySearch;
+
 class CountOfRepNum {
 
     private static int getFirst(int[] array, int num, int start, int end) {

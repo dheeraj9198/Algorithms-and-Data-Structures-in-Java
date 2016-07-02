@@ -1,4 +1,4 @@
-package Array;
+package sorting;
 
 import com.sun.deploy.util.ArrayUtil;
 

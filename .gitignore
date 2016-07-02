@@ -3,3 +3,4 @@ out/**
 .git/**
 .idea/**
 *.class
+*.xml
