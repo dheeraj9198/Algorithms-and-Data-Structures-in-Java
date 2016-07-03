@@ -15,7 +15,7 @@ public class CopyWithRandomPointer {
 
         @Override
         public String toString() {
-            return data + "*" + (random == null ? "null" : random.data);
+            return data + "*" + (random == null ? "null" : random.data) + ">" + hashCode();
         }
     }
 
@@ -26,13 +26,12 @@ public class CopyWithRandomPointer {
         }
 
         Node node = new Node(root.data);
-
         Node left = root.left;
-
         root.left = node;
         node.left = left;
-
         insertLeftNode(left);
+
+
         node.right = insertLeftNode(root.right);
         return node;
 
@@ -51,10 +50,10 @@ public class CopyWithRandomPointer {
         if (node == null) {
             return;
         }
-        if (node.random != null){
+        if (node.random != null) {
             temp.random = node.random.left;
         }
-        if(node.left != null && temp.left != null) {
+        if (node.left != null && temp.left != null) {
             copyRandom(node.left.left, temp.left.left);
         }
         copyRandom(node.right, temp.right);
@@ -67,8 +66,8 @@ public class CopyWithRandomPointer {
         if (clone.left != null) {
             node.left = clone.left;
             clone.left = clone.left.left;
+            restoreTree(node.left, clone.left);
         }
-        restoreTree(node.left, clone.left);
         restoreTree(node.right, clone.right);
     }
 
@@ -84,11 +83,12 @@ public class CopyWithRandomPointer {
         inorder(node);
 
         Node temp = insertLeftNode(node);
-        copyRandom(node,temp);
+        copyRandom(node, temp);
         System.out.println();
         inorder(node);
 
         restoreTree(node, temp);
+        System.out.println();
 
         inorder(temp);
     }

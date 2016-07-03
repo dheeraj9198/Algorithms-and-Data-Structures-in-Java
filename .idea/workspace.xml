@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21e088be-6c0d-4137-9642-b43ab867ec69" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BinaryTree/CopyWithRandomPointer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CoreJava/A.java" afterPath="$PROJECT_DIR$/src/CoreJava/A.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinaryTree/CopyWithRandomPointer.java" afterPath="$PROJECT_DIR$/src/BinaryTree/CopyWithRandomPointer.java" />
     </list>
     <ignored path="Algorithms-and-Data-Structures-in-Java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,13 +69,13 @@
       <file leaf-file-name="CopyWithRandomPointer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BinaryTree/CopyWithRandomPointer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.5714285">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.14907508">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding>
                 <element signature="e#217#218#0" expanded="true" />
                 <element signature="e#257#258#0" expanded="true" />
                 <element signature="e#311#312#0" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
+                <element signature="e#413#414#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -834,7 +833,7 @@
       <workItem from="1467393987920" duration="411000" />
       <workItem from="1467476047121" duration="9177000" />
       <workItem from="1467531675194" duration="5670000" />
-      <workItem from="1467542860988" duration="13699000" />
+      <workItem from="1467542860988" duration="15654000" />
     </task>
     <task id="LOCAL-00001" summary="number to words">
       <created>1467372964177</created>
@@ -902,11 +901,17 @@
       <option name="project" value="LOCAL" />
       <updated>1467551212541</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="copy with random pointer fucked up">
+      <created>1467566615236</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1467566615236</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38384000" />
+    <option name="totallyTimeSpent" value="40339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -919,7 +924,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21647307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21647307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25208333" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
@@ -956,7 +961,8 @@
     <MESSAGE value="root to sumpath" />
     <MESSAGE value="bst questions&#10;" />
     <MESSAGE value="simple clone of tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple clone of tree" />
+    <MESSAGE value="copy with random pointer fucked up" />
+    <option name="LAST_COMMIT_MESSAGE" value="copy with random pointer fucked up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1350,13 +1356,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTree/CopyWithRandomPointer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5714285">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.14907508">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="e#217#218#0" expanded="true" />
             <element signature="e#257#258#0" expanded="true" />
             <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
           </folding>
         </state>
       </provider>
