@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="21e088be-6c0d-4137-9642-b43ab867ec69" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinaryTree/CopyWithRandomPointer.java" afterPath="$PROJECT_DIR$/src/BinaryTree/CopyWithRandomPointer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BinaryTree/CloneABinaryTree.java" afterPath="$PROJECT_DIR$/src/BinaryTree/CloneABinaryTree.java" />
     </list>
     <ignored path="Algorithms-and-Data-Structures-in-Java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,17 +66,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CopyWithRandomPointer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CopyWithRandomPointer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BinaryTree/CopyWithRandomPointer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14907508">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="96" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="e#217#218#0" expanded="true" />
                 <element signature="e#257#258#0" expanded="true" />
                 <element signature="e#311#312#0" expanded="true" />
                 <element signature="e#413#414#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CloneABinaryTree.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BinaryTree/CloneABinaryTree.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7584331">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,9 +148,9 @@
         <option value="$PROJECT_DIR$/src/BinaryTree/binarySearchTree/BstFloor.java" />
         <option value="$PROJECT_DIR$/src/BinaryTree/binarySearchTree/UnionTwoBsts.java" />
         <option value="$PROJECT_DIR$/src/BinaryTree/Node.java" />
-        <option value="$PROJECT_DIR$/src/BinaryTree/CloneABinaryTree.java" />
         <option value="$PROJECT_DIR$/src/CoreJava/A.java" />
         <option value="$PROJECT_DIR$/src/BinaryTree/CopyWithRandomPointer.java" />
+        <option value="$PROJECT_DIR$/src/BinaryTree/CloneABinaryTree.java" />
       </list>
     </option>
   </component>
@@ -264,7 +274,7 @@
       <recent name="DP" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CopyWithRandomPointer">
+  <component name="RunManager" selected="Application.CloneABinaryTree">
     <configuration default="false" name="SortedLinkedListToBst_ON" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -796,8 +806,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.CopyWithRandomPointer" />
-        <item index="1" class="java.lang.String" itemvalue="Application.CloneABinaryTree" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CloneABinaryTree" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CopyWithRandomPointer" />
         <item index="2" class="java.lang.String" itemvalue="Application.UnionTwoBsts" />
         <item index="3" class="java.lang.String" itemvalue="Application.BstFloor" />
         <item index="4" class="java.lang.String" itemvalue="Application.SortedLinkedListToBst_ON" />
@@ -833,7 +843,7 @@
       <workItem from="1467393987920" duration="411000" />
       <workItem from="1467476047121" duration="9177000" />
       <workItem from="1467531675194" duration="5670000" />
-      <workItem from="1467542860988" duration="15654000" />
+      <workItem from="1467542860988" duration="15864000" />
     </task>
     <task id="LOCAL-00001" summary="number to words">
       <created>1467372964177</created>
@@ -907,11 +917,17 @@
       <option name="project" value="LOCAL" />
       <updated>1467566615236</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="copy with random pointer done">
+      <created>1467571478267</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1467571478267</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40339000" />
+    <option name="totallyTimeSpent" value="40549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -927,7 +943,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21647307" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25208333" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25208333" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Run with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46356916" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -962,11 +978,20 @@
     <MESSAGE value="bst questions&#10;" />
     <MESSAGE value="simple clone of tree" />
     <MESSAGE value="copy with random pointer fucked up" />
-    <option name="LAST_COMMIT_MESSAGE" value="copy with random pointer fucked up" />
+    <MESSAGE value="copy with random pointer done" />
+    <option name="LAST_COMMIT_MESSAGE" value="copy with random pointer done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BinaryTree/CloneABinaryTree.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1338,14 +1363,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BinaryTree/CloneABinaryTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.554951">
-          <caret line="30" column="146" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTree/binarySearchTree/UnionTwoBsts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4624592">
@@ -1356,14 +1373,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BinaryTree/CopyWithRandomPointer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14907508">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="96" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
             <element signature="e#217#218#0" expanded="true" />
             <element signature="e#257#258#0" expanded="true" />
             <element signature="e#311#312#0" expanded="true" />
             <element signature="e#413#414#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BinaryTree/CloneABinaryTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7584331">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

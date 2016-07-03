@@ -5,15 +5,14 @@ package BinaryTree;
  */
 public class CloneABinaryTree {
 
-    private static void cloneTree(Node oring, Node clone) {
+    private static Node cloneTree(Node oring) {
         if (oring == null) {
-            return;
+            return null;
         }
-        clone.left =oring.left == null ? null : new Node(oring.left.data);
-        clone.right =oring.right == null ? null : new Node(oring.right.data);
-        cloneTree(oring.left,clone.left);
-        cloneTree(oring.right,clone.right);
-
+        Node node = new Node(oring.data);
+        node.left = cloneTree(oring.left);
+        node.right = cloneTree(oring.right);
+        return node;
     }
 
     public static void main(String[] strings) {
@@ -39,8 +38,7 @@ public class CloneABinaryTree {
         root.right.right.right = new Node(4);
 
 
-        Node cloned = new Node(root.data);
-        cloneTree(root,cloned);
+        Node cloned = cloneTree(root);
         System.out.println();
     }
 }
