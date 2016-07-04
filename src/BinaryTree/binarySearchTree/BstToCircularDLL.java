@@ -26,9 +26,7 @@ public class BstToCircularDLL {
             rootFinal = root;
         } else {
             root.left = prev;
-            if(prev != null) {
-                prev.right = root;
-            }
+            prev.right = root;
         }
         prev = root;
         makeDll(root.right);
