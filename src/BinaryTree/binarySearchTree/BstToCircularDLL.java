@@ -14,42 +14,24 @@ public class BstToCircularDLL {
         }
     }
 
-    private static Node leftMost = null;
-    private static Node rightMost = null;
+    private static Node rootFinal = null;
+    private static Node prev = null;
 
-    private static Node makeDll(Node node, int position) {
-        // 1 left 2 right 0 none
-        if (node == null) {
-            return node;
+    private static void makeDll(Node root) {
+        if (root == null) {
+            return;
         }
-
-        Node left = makeDll(node.left, 1);
-        Node right = makeDll(node.right, 2);
-
-        node.left = null;
-        node.right = null;
-
-        if (left != null) {
-            left.right = node;
-            node.left = left;
-        }
-
-        if (right != null) {
-            right.left = node;
-            node.right = right;
-        }
-
-        if (position == 1) {
-            if (leftMost == null) {
-                leftMost = left == null ? node : left;
+        makeDll(root.left);
+        if (rootFinal == null) {
+            rootFinal = root;
+        } else {
+            root.left = prev;
+            if(prev != null) {
+                prev.right = root;
             }
-            return right == null ? node : right;
-        } else if (position == 2) {
-            rightMost = right == null ? rightMost : right;
-            return left == null ? node : left;
         }
-
-        return leftMost;
+        prev = root;
+        makeDll(root.right);
     }
 
     private static void inorder(Node root) {
@@ -80,10 +62,10 @@ public class BstToCircularDLL {
 
         inorder(root);
         System.out.println();
-        Node test = makeDll(root, 0);
-        rightMost.right = leftMost;
-        leftMost.left = rightMost.left;
-        dllTraverse(test);
+        makeDll(root);
+        dllTraverse(rootFinal);
+        prev.right = rootFinal;
+        rootFinal.left = prev;
     }
 
 

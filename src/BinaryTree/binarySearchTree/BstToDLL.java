@@ -14,45 +14,24 @@ public class BstToDLL {
         }
     }
 
-    private static Node reply = null;
+    private static Node rootFinal = null;
+    private static Node prev = null;
 
-    private static Node makeDll(Node node,int position) {
-        // 1 left 2 right 0 none
-        if (node == null) {
-            return node;
+    private static void makeDll(Node root) {
+        if (root == null) {
+            return;
         }
-
-        if(node.left == null && node.right == null){
-            return node;
+        makeDll(root.left);
+        if (rootFinal == null) {
+            rootFinal = root;
+        } else {
+            root.left = prev;
+            if(prev != null) {
+                prev.right = root;
+            }
         }
-
-        Node left = makeDll(node.left,1);
-        Node right = makeDll(node.right,2);
-
-        node.left = null;
-        node.right = null;
-
-        if (left != null) {
-            left.right = node;
-            node.left = left;
-        }
-
-        if (right != null) {
-            right.left = node;
-            node.right = right;
-        }
-
-        if(reply == null){
-            reply  = left == null ? node : left;
-        }
-
-        if(position == 1){
-            return right == null ? node : right;
-        }else if(position == 2){
-            return left == null ? node : left;
-        }
-
-        return reply;
+        prev = root;
+        makeDll(root.right);
     }
 
     private static void inorder(Node root) {
@@ -64,9 +43,9 @@ public class BstToDLL {
     }
 
     private static void dllTraverse(Node root) {
-        while(root != null){
+        while (root != null) {
             System.out.print(root.data + " ");
-            root =   root.right;
+            root = root.right;
         }
     }
 
@@ -83,8 +62,8 @@ public class BstToDLL {
 
         inorder(root);
         System.out.println();
-        Node test = makeDll(root,0);
-        dllTraverse(test);
+        makeDll(root);
+        dllTraverse(rootFinal);
     }
 
 
