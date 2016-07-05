@@ -1,7 +1,5 @@
 package LinkedList;
 
-import java.util.Set;
-
 /**
  * Created by dheeraj on 6/1/15.
  */
@@ -11,27 +9,28 @@ public class MergeSort {
     private Node root;
     private Node sortedRoot;
 
-    private Node sort(Node start,int size){
-        if(size == 1){
+    private Node sort(Node start, int size) {
+        if (size == 0) {
+            return null;
+        }
+        if (size == 1) {
             return start;
         }
 
-        int k = size/2;
+        int k = size / 2;
         Node temp = start;
-        for(int x=0;x<k;x++){
-
-            if(x == k-1){
+        for (int x = 1; x <= k; x++) {
+            if (x == k) {
                 Node p = temp.next;
                 temp.next = null;
                 temp = p;
-            }else{
+            } else {
                 temp = temp.next;
-
             }
         }
 
-        Node first = sort(start,k);
-        Node second = sort(temp,size-k);
+        Node first = sort(start, k);
+        Node second = sort(temp, size - k);
 
         //System.out.println("two nodes");
         //print(first);
@@ -40,22 +39,22 @@ public class MergeSort {
         Node sortedRoot = null;
         Node sortedRootTemp = null;
 
-        while(first!= null && second!=null){
+        while (first != null && second != null) {
             //System.out.println("first = " + first.value + " + second = " + second.value);
-            if(first.value < second.value){
-                if(sortedRoot == null){
+            if (first.value < second.value) {
+                if (sortedRoot == null) {
                     sortedRoot = first;
                     sortedRootTemp = first;
-                }else{
+                } else {
                     sortedRootTemp.next = first;
                     sortedRootTemp = sortedRootTemp.next;
                 }
                 first = first.next;
-            }else{
-                if(sortedRoot == null){
+            } else {
+                if (sortedRoot == null) {
                     sortedRoot = second;
                     sortedRootTemp = second;
-                }else{
+                } else {
                     sortedRootTemp.next = second;
                     sortedRootTemp = sortedRootTemp.next;
                 }
@@ -63,12 +62,12 @@ public class MergeSort {
             }
         }
 
-        if(first == null){
+        if (first == null) {
             //System.out.println("first = null" + second.value);
-            sortedRootTemp.next =second;
+            sortedRootTemp.next = second;
         }
 
-        if(second == null){
+        if (second == null) {
             //System.out.println("second = null" + first.value);
             sortedRootTemp.next = first;
         }
@@ -76,19 +75,20 @@ public class MergeSort {
         return sortedRoot;
     }
 
-    private static class Node{
+    private static class Node {
         int value;
         Node next;
-        private Node(int data){
+
+        private Node(int data) {
             this.value = data;
             this.next = null;
         }
     }
 
-    private void addNode(int value){
-        if(root == null){
+    private void addNode(int value) {
+        if (root == null) {
             root = new Node(value);
-        }else{
+        } else {
             Node temp = new Node(value);
             temp.next = root;
             root = temp;
@@ -96,16 +96,16 @@ public class MergeSort {
         size++;
     }
 
-    private void print(Node node){
-        while(node != null){
-            System.out.print(node.value+" ");
+    private void print(Node node) {
+        while (node != null) {
+            System.out.print(node.value + " ");
             node = node.next;
         }
         System.out.println();
     }
 
-    public static void main(String[] args){
-        MergeSort mergeSort  = new MergeSort();
+    public static void main(String[] args) {
+        MergeSort mergeSort = new MergeSort();
         mergeSort.addNode(2);
         mergeSort.addNode(1);
         mergeSort.addNode(6);
@@ -114,7 +114,7 @@ public class MergeSort {
 
 
         mergeSort.print(mergeSort.root);
-        mergeSort.sortedRoot = mergeSort.sort(mergeSort.root,mergeSort.size);
+        mergeSort.sortedRoot = mergeSort.sort(mergeSort.root, mergeSort.size);
         mergeSort.print(mergeSort.sortedRoot);
 
     }
