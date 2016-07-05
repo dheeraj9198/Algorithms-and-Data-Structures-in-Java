@@ -1,0 +1,6 @@
+1- socket server
+2- thread pool
+3- redis (clusters)
+4- thread pool
+5- Listener Queue
+6- State Observers
