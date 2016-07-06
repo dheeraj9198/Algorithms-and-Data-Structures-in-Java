@@ -1,4 +1,4 @@
-import java.util.PriorityQueue;
+import java.util.Arrays;
 
 /**
  * Created by dheeraj on 18/2/15.
@@ -41,7 +41,7 @@ public class Test {
         }
         System.out.println();
 */
-        PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>();
+    /*    PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>();
         priorityQueue.add(10);
         priorityQueue.add(7);
         priorityQueue.add(11);
@@ -50,6 +50,11 @@ public class Test {
 
         while (priorityQueue.size() > 0){
                 System.out.println(priorityQueue.poll());
+        }*/
+        int[] ints = new int[]{6,5,4};
+        Arrays.sort(ints);
+        for(int k : ints){
+            System.out.print(k+" ");
         }
     }
 
