@@ -1,0 +1,101 @@
+An MxN grid: for each grid point, there is a certain amount of money on it.
+
+A person: top-left corner => bottom-right corner. Moves right or down.
+
+Optimal path? collect the maximum sum of money.
+
+O(n^2)
+
+//where i have to run it
+   0  1 2
+ 0 5 10 8
+ 1 2 12 14
+
+//start from 5
+looks like
+
+5(0,0)->10(0,1)->8(0,2)->14(1,2)
+while return remove the added nodes
+using queue as linked list for removing node
+5(0,0)->10(0,1)->12(1,1)->14(1,2)
+
+static class Node{
+int x,y;
+public(int x,int y){
+this.x=x;
+this.y=y;}
+}
+
+int maxSum = Integer.MIN_VALUE;
+Queue<Node> maxSumPath;
+
+Queue<Node> pathQueue = new LinkedList<Node>();
+
+//provided money matrix
+int[][] matrix;
+
+main(){
+
+int[][] visited = new int[matrix.length][matrix[0].length];
+
+int x =0;
+int y =0;
+Node node = new Node(x,y);
+pathQueue.add(node);
+visited[x][y] = 1;
+maxSumCalc(x,y,matrix[x][y],visited);
+visited[x][y] = 0;
+pathQueue.remove(node);
+}
+
+
+
+
+
+
+
+
+
+//actual dfs
+void maxSumCalc(int x,int y,int sumTillNow,,int[][] visited){
+
+//detect end
+if(x == matrix.length-1 && y == matrix[0].length){
+if(sumTillNow > maxSum){
+maxSum = sumTillNow;
+maxSumPath = copyQueue(pathQueue );
+}
+
+}
+
+//right move
+if(x+1<=matrix.length){
+if(visited[x+1][y] == 0){
+visited[x+1][y] = 1;
+Node node = new Node(x+1,y);
+queue.add(node);
+maxSumCalc(x+1,y,sumTillNow+matrix[x+1][y]);
+queue.remove(node);
+visited[x+1][y] = 0;
+}
+
+}
+
+//down move
+if(y+1<=matrix[0].length){
+if(visited[x][y+1] == 0){
+visited[x][y+1] = 1;
+Node node = new Node(x,y+1);
+queue.add(node);
+maxSumCalc(x,y+1,sumTillNow+matrix[x][y+1]);
+queue.remove(node);
+visited[x][y+1] = 0;
+}
+
+}
+
+
+}
+
+//did not get the question
+//not audible
