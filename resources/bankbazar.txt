@@ -1,0 +1,79 @@
+Consider that you have a deck of numbered cards, they are randomly shuffled and are in the range of 1 to N.
+Your objective is to sort it, with 1 on top and N at the bottom. You are allowed to perform only one kind of operation on the deck,
+which is to take a card and move it to the top of the deck. This operation is called moveToTop(n) where n is the number of the card to be moved.
+This operation will take care of finding and moving the card. You have to sort the deck with the minimum number of moves to the top.
+
+Deck{
+moveToTop(n);
+
+sort(){
+int[] lisIndex = findLis(array);
+int index = -1;
+for(int k =0;k<arrray.length;k++){
+if(lisIndex[k] != 0){
+
+if(index ==-1){
+
+}else{
+
+}
+
+}
+
+}
+
+}
+}
+
+findLis(int[] array){
+int[] temp = new int[array.length];
+//3 1 4 2 5
+    temp[0] = array[0];
+     for(int k =1;k<array.length;k++){
+
+     for(int x =0;x< k;x++){
+     if(array[k] > array[x] && temp[k] < temp[x]+1)
+     temp[k] = temp[x]+1;
+     }
+
+     }
+     //temp 1 1 2 2 3
+     //finding  max lis index
+     int maxIndex = 0;
+     for(int k =1;k<array.length;k++){
+         if(temp[k]>temp[maxIndex]){
+maxIndex = k;
+               }
+
+     }
+     //marking lis indexes
+     int k = temp[maxIndex];
+     for(int j =  maxindex;j>=0;j--){
+     if(temp[j] == k){
+     temp[j] = 1;
+     k--;
+     }else{
+     temp[j]=0;
+     }
+     //temp  1 0 1 0 1
+     return temp;
+}
+
+
+3 Mov 2,1
+4
+5
+1
+2
+
+3 Mov 2,1
+1
+4
+2
+5
+
+3 Mov 4,3,2,1
+5
+4
+1
+2
