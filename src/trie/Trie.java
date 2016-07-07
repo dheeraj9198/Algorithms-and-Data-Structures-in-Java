@@ -1,8 +1,11 @@
 package trie;
 
+import java.util.ArrayList;
+import java.util.List;
+
 class Trie {
 
-    private static Node root = new Node('*', false);
+    private static Node root = new Node(' ', false);
 
     static int getIndex(char x) {
         return ((int) x) - ((int) 'a');
@@ -46,6 +49,7 @@ class Trie {
             return true;
         }
         char x = data.charAt(0);
+        //note that first node ie root is just dummy, it just holds important
         Node node = root.children[getIndex(x)];
         if (node == null) {
             return false;
@@ -58,15 +62,79 @@ class Trie {
         }
     }
 
+    static boolean delete(String data, Node root) {
+        if (data == null || data.length() == 0) {
+            return false;
+        }
+        char x = data.charAt(0);
+        //note that first node ie root is just dummy, it just holds important
+        Node node = root.children[getIndex(x)];
+        if (node == null) {
+            return false;
+        } else {
+            if (data.length() == 1) {
+                node.isLeaf = false;
+                boolean allNull = true;
+                for (Node node1 : node.children) {
+                    allNull = allNull && node1 == null;
+                }
+                return allNull;
+            } else {
+                boolean delete = delete(data.substring(1, data.length()), node);
+                if (delete) {
+                    node.children[getIndex(x)] = null;
+                    if(node.isLeaf){
+                        return false;
+                    }
+                    boolean allNull = true;
+                    for (Node node1 : node.children) {
+                        allNull = allNull && node1 == null;
+                    }
+                    return allNull;                }
+            }
+        }
+        return false;
+    }
+
+
+    private static List<String> strings = new ArrayList<>();
+
+    private static List<String> getAll() {
+        strings = new ArrayList<String>();
+        findAllDFS(root, "");
+        return strings;
+    }
+
+    private static void findAllDFS(Node node, String old) {
+        if (node != null) {
+            if (node.data != ' ') {
+                old = old + node.data;
+            }
+            if (node.isLeaf) {
+                strings.add(old);
+            }
+            for (Node node1 : node.children) {
+                findAllDFS(node1, old);
+            }
+        }
+    }
+
     public static void main(String[] args) {
         insert("abc", root);
         insert("xyz", root);
         insert("abcd", root);
-		
-		System.out.println(find("abc",root));
-		System.out.println(find("abcd",root));
-		System.out.println(find("ab",root));
-		System.out.println(find("xyz",root));
+        insert("abcde", root);
+
+
+        delete("abcd", root);
+
+ /*       System.out.println(find("abc", root));
+        System.out.println(find("abcd", root));
+        System.out.println(find("ab", root));
+        System.out.println(find("xyz", root));*/
+
+
+        System.out.println(getAll());
     }
 
 
