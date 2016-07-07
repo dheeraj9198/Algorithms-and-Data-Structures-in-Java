@@ -20,20 +20,38 @@ import java.util.Arrays;
  */
 public class AmazonTestRemoveArrayElems {
 
+    //  1 3 3 4 5 7 8
+    static int minIndex = -1;
+
+    private static void findHalf(int[] ints, int max, int start, int end) {
+        if (start > end) {
+            return;
+        }
+        int mid = (start + end) / 2;
+        if (2 * ints[mid] >= max) {
+            minIndex = mid;
+            findHalf(ints, max, start, mid - 1);
+        } else {
+            findHalf(ints, max, mid + 1, end);
+        }
+    }
+
     public static void main(String[] strings) {
-        System.out.println(minArray(new int[]{1, 4, 5, 3, 8, 3, 7}));
+        System.out.println(minArray(new int[]{3,3,3,3,1, 4, 5, 3, 8, 3, 7}));
     }
 
     private static int minArray(int[] arr) {
         Arrays.sort(arr);
         int sol = -1;
-        int max = arr[arr.length - 1];
+        findHalf(arr,arr[arr.length-1],0,arr.length-1);
+        sol = minIndex;
+     /*   int max = arr[arr.length - 1];
 
         for (int k = 0; k < arr.length; k++) {
             if (2 * arr[k] <= max) {
                 sol = k;
             }
-        }
+        }*/
 
         int sol2 = -1;
         for (int k = arr.length - 1; k >= 0; k--) {
@@ -42,8 +60,8 @@ public class AmazonTestRemoveArrayElems {
             }
         }
 
-        if(sol2 != -1)
-            sol2 = arr.length -1- sol2;
+        if (sol2 != -1)
+            sol2 = arr.length - 1 - sol2;
 
         if (sol == -1 && sol2 == -1) {
             return 0;
