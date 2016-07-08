@@ -1,4 +1,4 @@
-package Array;
+package heap;
 
 /**
  * Created by dheeraj on 7/5/2016.
