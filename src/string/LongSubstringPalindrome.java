@@ -2,7 +2,6 @@ package string;
 
 public class LongSubstringPalindrome {
 
-
     private static boolean isPalindrome(String s, int start, int end) {
         while (start < end) {
             if (s.charAt(start) == s.charAt(end)) {
