@@ -23,14 +23,14 @@ public class PrintPostFromPreInOrder {
     }
 
     private void buildTree(int start, int end) {
-        if (start > end ) {
+        if (start > end) {
             return;
         }
         int data = preorder[preIndex++];
         int pos = findPos(data);
         buildTree(start, pos - 1);
         buildTree(pos + 1, end);
-            System.out.print(data+" ");
+        System.out.print(data + " ");
     }
 
     private int findPos(int data) {

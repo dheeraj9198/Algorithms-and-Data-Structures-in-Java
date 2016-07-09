@@ -6,9 +6,9 @@ import java.util.HashMap;
  * Created by dheeraj on 7/8/2016.
  */
 public class KMostFrequent {
-
-    static Data[] datas = new Data[4];
-    static int size;
+    private static HashMap<String, Data> wordCountMap = new HashMap<String, Data>();
+    private static Data[] datas = new Data[4];
+    private static int size;
 
     private static void addToHeap(Data data) {
         if (size < datas.length) {
@@ -90,8 +90,6 @@ public class KMostFrequent {
                     '}';
         }
     }
-
-    private static HashMap<String, Data> wordCountMap = new HashMap<String, Data>();
 
     private static void addWord(String word) {
         Data data = wordCountMap.get(word);
