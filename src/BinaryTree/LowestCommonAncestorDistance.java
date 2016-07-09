@@ -26,29 +26,32 @@ public class LowestCommonAncestorDistance {
         findLca(root, one, two, 0);
     }
 
-    private static int dl = 0;
-    private static int dr = 0;
-    private static int droot = 0;
+    private static int dl = -1;
+    private static int dr = -1;
+    private static int droot = -1;
 
-    private void findLca(Node root, int left, int right, int distance) {
+    private int findLca(Node root, int left, int right, int distance) {
         if (root == null) {
-            return;
+            return -1;
         }
 
         if (root.data == left || root.data == right) {
             if (root.data == left) {
-                dl = distance;
+                return distance;
             } else {
-                dr = distance;
+                return distance;
             }
         }
 
-        findLca(root.left, left, right, distance + 1);
-        findLca(root.right, left, right, distance + 1);
+        int l = findLca(root.left, left, right, distance + 1);
+        int r = findLca(root.right, left, right, distance + 1);
 
-        if (dl > 0 && dr > 0) {
+        if (l > -1 && r > -1 && droot == -1) {
+            dl = l;
+            dr = r;
             droot = distance;
         }
+        return l > r ? l : r;
     }
 
     public static void main(String[] args) {
@@ -66,7 +69,7 @@ public class LowestCommonAncestorDistance {
         root.right.right.right = new Node(15);
 
         LowestCommonAncestorDistance lowestCommonAncestor = new LowestCommonAncestorDistance(root);
-        lowestCommonAncestor.find(15, 8);
+        lowestCommonAncestor.find(7, 8);
         System.out.println((dl + dr - 2 * droot));
     }
 

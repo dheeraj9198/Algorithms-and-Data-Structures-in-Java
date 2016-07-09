@@ -60,7 +60,7 @@ public class LowestCommonAncestor {
         root.right.right.right = new Node(15);
 
         LowestCommonAncestor lowestCommonAncestor = new LowestCommonAncestor(root);
-        System.out.println(lowestCommonAncestor.find(8, 15));
+        System.out.println(lowestCommonAncestor.find(8, 5));
     }
 
 
