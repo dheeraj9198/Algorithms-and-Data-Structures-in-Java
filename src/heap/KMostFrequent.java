@@ -7,7 +7,7 @@ import java.util.HashMap;
  */
 public class KMostFrequent {
 
-    static Data[] datas = new Data[5];
+    static Data[] datas = new Data[4];
     static int size;
 
     private static void addToHeap(Data data) {
@@ -48,10 +48,10 @@ public class KMostFrequent {
 
         if (min != k) {
             Data data = datas[min];
-            datas[k] = data;
-            datas[k].heapIndex = k;
             datas[min] = datas[k];
             datas[min].heapIndex = min;
+            datas[k] = data;
+            datas[k].heapIndex = k;
             heapify(min);
         }
     }
@@ -80,6 +80,15 @@ public class KMostFrequent {
             this.word = word;
             this.heapIndex = -1;
         }
+
+        @Override
+        public String toString() {
+            return "Data{" +
+                    "count=" + count +
+                    ", word='" + word + '\'' +
+                    ", heapIndex=" + heapIndex +
+                    '}';
+        }
     }
 
     private static HashMap<String, Data> wordCountMap = new HashMap<String, Data>();
@@ -101,12 +110,7 @@ public class KMostFrequent {
     }
 
     public static void main(String[] strings) {
-        String s = "Welcome to the world of Geeks " +
-                "This portal has been created to provide well written well thought and well explained " +
-                "solutions for selected questions If you like Geeks for Geeks and would like to contribute " +
-                "here is your chance You can write article and mail your article to contribute at " +
-                "geeksforgeeks org See your article appearing on the Geeks for Geeks main page and help" +
-                "thousands of other Geeks";
+        String s = "A B C D A B A E E E E F F F";
         String[] strings1 = s.split(" ");
         for (String s1 : strings1) {
             addWord(s1);
