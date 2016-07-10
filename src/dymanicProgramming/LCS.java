@@ -1,4 +1,4 @@
-package DP;
+package dymanicProgramming;
 
 import java.util.Stack;
 

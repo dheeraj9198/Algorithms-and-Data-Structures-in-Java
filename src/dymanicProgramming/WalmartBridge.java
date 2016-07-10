@@ -1,4 +1,4 @@
-package DP;
+package dymanicProgramming;
 
 /**
  * Created by dheeraj on 12/21/14.

@@ -1,5 +1,14 @@
 package BinaryTree;
 
+
+import com.sun.deploy.model.Resource;
+
+import java.io.File;
+import java.security.CodeSigner;
+import java.security.cert.Certificate;
+import java.util.Map;
+import java.util.jar.JarFile;
+
 /**
  * Created by dheeraj on 7/10/2016.
  */
@@ -17,33 +26,32 @@ public class KDistanceFromANode {
         printAtKFromCurrent(root.right, currentDis + 1, diatance);
     }
 
-    private static int findDis(Node node, int value,int distance) {
+    private static int findDis(Node node, int value, int distance) {
         if (node == null) {
             return -1;
         }
         if (node.data == value) {
-            printAtKFromCurrent(node,0,distance);
+            printAtKFromCurrent(node, 0, distance);
             return 1;
         }
-        int left = findDis(node.left, value,distance);
-        int right = findDis(node.right, value,distance);
+        int left = findDis(node.left, value, distance);
+        int right = findDis(node.right, value, distance);
 
         if (left > -1) {
-            if(left == distance){
+            if (left == distance) {
                 System.out.println(node.data);
             }
-            printAtKFromCurrent(node.right,1,distance-left);
-            return left+1;
+            printAtKFromCurrent(node.right, 1, distance - left);
+            return left + 1;
         } else if (right > -1) {
-            if(right == distance){
+            if (right == distance) {
                 System.out.println(node.data);
             }
-            printAtKFromCurrent(node.left,1,distance-right);
-            return right+1;
+            printAtKFromCurrent(node.left, 1, distance - right);
+            return right + 1;
         }
         return -1;
     }
-
 
     public static void main(String[] strings) {
         Node node = new Node(1);
@@ -60,6 +68,6 @@ public class KDistanceFromANode {
         node.left.left.left = new Node(8);
         node.left.left.left.left = new Node(9);
         node.left.left.right = new Node(10);
-        findDis(node,4,2);
+        findDis(node, 4, 2);
     }
 }
