@@ -9,6 +9,10 @@ public class ReplaceZeroOneToFindLongest1 {
         int[] array = new int[]{1, 0, 1, 1, 0,1, 0, 1, 1, 1, 0, 0};
 */
         int[] array = new int[]{1, 1, 1, 1, 0,1, 1, 1, 1, 1, 1, 1};
+        //other way
+        //1, 1, 1, 1, 0,1, 1, 1, 1, 1, 1, 1
+        //1, 2, 3, 4, 0,1, 2, 3, 4, 5, 6, 7
+        //4, 4, 4, 4, 0,7, 7, 7, 7, 7, 7, 7
 
         int index = -1;
         int maxlen = 0;
