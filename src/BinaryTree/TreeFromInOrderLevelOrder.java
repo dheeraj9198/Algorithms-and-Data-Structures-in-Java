@@ -15,6 +15,7 @@ public class TreeFromInOrderLevelOrder {
             return new Node(level[rootDataIndex]);
         }
         Node root = new Node(level[rootDataIndex]);
+        //find that node in inorder travesal
         int mid = -1;
         for (int x = start; x <= end; x++) {
             if (level[rootDataIndex] == in[x]) {
@@ -25,7 +26,7 @@ public class TreeFromInOrderLevelOrder {
 
         int left = -1;
         //search first elment in level order which is
-        // present in pre order,that level order lement is root
+        // present in pre order,that level order element is left root
         for (int y = 0; y <= level.length - 1; y++) {
             for (int x = start; x <= mid - 1; x++) {
                 if (level[y] == in[x]) {

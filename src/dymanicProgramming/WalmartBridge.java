@@ -48,7 +48,7 @@ public class WalmartBridge {
 
 
     public static void main(String[] args){
-        WalmartBridge walmartBridge =  new WalmartBridge("ACB","ABC");
-        System.out.println(walmartBridge.getNumBridges());
+        WalmartBridge walmartBridge =  new WalmartBridge("81435267 ","12345678");
+   System.out.println(walmartBridge.getNumBridges());
     }
 }
