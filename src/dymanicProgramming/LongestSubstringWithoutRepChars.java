@@ -24,7 +24,7 @@ public class LongestSubstringWithoutRepChars {
         List<String> strings1 = new ArrayList<String>();
         map[s.charAt(0)]=0;
         for (int k = 1; k < s.length(); k++) {
-            if (map[s.charAt(k)]< k && map[s.charAt(k)] > start) {
+            if (map[s.charAt(k)] >= start) {
                 if (k - start >= length) {
                     length = k - start;
                     Iterator<String> stringIterator = strings1.iterator();
@@ -38,6 +38,7 @@ public class LongestSubstringWithoutRepChars {
                 }
                 int num = map[s.charAt(k)];
                 start = num + 1;
+
             }
             map[s.charAt(k)]=k;
         }
