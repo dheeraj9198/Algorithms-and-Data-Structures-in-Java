@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 /**
  * Created by dheeraj on 7/2/2016.
  */
-public class LinkedList {
+public class MyLinkedList {
         private static class Node {
             int data;
             Node next;
@@ -19,7 +19,7 @@ public class LinkedList {
 
         public Node root;
 
-        public LinkedList() {
+        public MyLinkedList() {
             this.root = null;
         }
 
@@ -60,7 +60,7 @@ public class LinkedList {
         public static void main(String[] args) {
             String data = "";
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-            LinkedList linkedList = new LinkedList();
+            MyLinkedList linkedList = new MyLinkedList();
             while (true) {
 
                 try{
