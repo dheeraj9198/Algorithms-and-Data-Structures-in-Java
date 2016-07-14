@@ -52,7 +52,7 @@ public class AllPermutationsOfString {
 
 
     public static void main(String[] args) {
-        Permute permute = new Permute("ABC");
+        Permute permute = new Permute("ABCD");
         permute.printAll();
     }
 }
