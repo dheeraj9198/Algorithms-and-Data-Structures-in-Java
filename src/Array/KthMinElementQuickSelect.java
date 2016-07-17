@@ -7,17 +7,20 @@ public class KthMinElementQuickSelect {
 
     private static int getKthMin(int k, int[] ints) {
         int part = partition(ints, 0, ints.length - 1);
-        while (part != k-1) {
-            if (part > k-1) {
+        while (part != k - 1) {
+            if (part > k - 1) {
                 part = partition(ints, 0, part - 1);
             } else {
                 part = partition(ints, part + 1, ints.length - 1);
             }
         }
-        return ints[part];
+        return part == -1 ? -1 : ints[part];
     }
 
     private static int partition(int[] array, int start, int end) {
+        if (start > end) {
+            return -1;
+        }
         int pivot = array[end];
         int index = start;
 
