@@ -1,0 +1,8 @@
+23
+4 4 1 4 13 8 8 8 0 8 14 9 15 11 -1 10 15 22 22 22 22 22 21
+9 2
+
+
+point to exit array
+can have just one exit or no exit -1
+multiple entry points can point to same exit

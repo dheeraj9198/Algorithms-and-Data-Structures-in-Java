@@ -6,7 +6,7 @@ package Array;
  * ans 3
  * <p>
  * 1- sort and do O(NlogN)
- * 2- counting sort O(MaxElemValue)
+ * 2- counting sort O(MaxElemValue) memory constraints will fuck it up
  * 3- quick select O(N)
  */
 public class ExactlyXelemGreaterThanX {
