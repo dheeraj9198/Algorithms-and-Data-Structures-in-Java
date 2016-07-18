@@ -70,6 +70,4 @@ public class LongestCommonSubsequence {
         System.out.println(longestCommonSubsequence.findAns());
         System.out.println(longestCommonSubsequence.findSubSequence());
     }
-
-
 }
