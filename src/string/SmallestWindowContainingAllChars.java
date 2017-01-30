@@ -31,7 +31,7 @@ public class SmallestWindowContainingAllChars {
     /*private static final String mainString = "this is a test string";
     private static final String subString = "tist";*/
 
-     private static final String mainString = "acbbaca";
+    private static final String mainString = "acbbaca";
     private static final String subString = "aba";
 
     public static void main(String[] strings) {
@@ -46,9 +46,11 @@ public class SmallestWindowContainingAllChars {
         int count = 0;
         for (int k = 0; k < mainString.length(); k++) {
             hasFound[(int) mainString.charAt(k)] = hasFound[(int) mainString.charAt(k)] + 1;
+            //find is meaningful only till all this condition, else they are extra not useful finds
             if (hasFound[(int) mainString.charAt(k)] <= toBeFound[(int) mainString.charAt(k)]) {
                 count++;
             }
+            //window is found for the first time
             if (count == subString.length() && !hasFoundOnce) {
                 hasFoundOnce = true;
                 end = k;
@@ -61,6 +63,7 @@ public class SmallestWindowContainingAllChars {
                         break;
                     }
                 }
+                //window is found again
             } else if (hasFoundOnce && mainString.charAt(k) == mainString.charAt(begin)) {
                 end = k;
                 //remove useless from start
