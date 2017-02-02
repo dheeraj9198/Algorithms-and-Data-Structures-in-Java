@@ -1,0 +1,61 @@
+Hi Dheeraj, Deepak here ...
+
+item, deadline, penalty
+i1,     1,              100
+i2,     2,              100
+i3,     2,              200
+
+(sorting on penalty example)
+item, deadline, penalty
+i1,     1,              100
+i2,     2,              50
+i3,     2,              200
+
+
+(sorting on deadline then on penalty)
+item, deadline, penalty
+i1,     1,              100
+i2,     2,              200
+i3,     2,              200
+
+
+
+        10
+       /  \
+      5
+     / \
+    1  2
+
+
+(10(5(1()())2....
+
+String getString(Node root){
+
+StringBuilder sb = new StringBuilder();
+
+Stack stack = new Stack();
+stack.push(root);
+
+while(!stack.isEmpty(){
+    Node node = stack.pop();
+    if(node == null){
+        sb.add("()");
+    }else{
+        sb.add("("+node.data);
+        stack.push(node.left);
+        stack.push(node.right);
+    }
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
