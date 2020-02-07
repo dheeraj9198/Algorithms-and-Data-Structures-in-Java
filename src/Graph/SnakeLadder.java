@@ -6,6 +6,15 @@ import java.util.Queue;
 
 /**
  * Created by dheeraj on 31/12/14.
+ *
+ * https://www.geeksforgeeks.org/snake-ladder-problem-2/
+ *
+ * Snake and Ladder Problem
+ * Given a snake and ladder board, find the minimum number of dice throws required to reach the destination or last cell from source or 1st cell. Basically, the player has total control over outcome of dice throw and wants to find out minimum number of throws required to reach last cell.
+ * If the player reaches a cell which is base of a ladder, the player has to climb up that ladder and if reaches a cell is mouth of the snake, has to go down to the tail of snake without a dice throw.
+ * The idea is to consider the given snake and ladder board as a directed graph with number of vertices equal to the number of cells in the board. The problem reduces to finding the shortest path in a graph. Every vertex of the graph has an edge to next six vertices if next 6 vertices do not have a snake or ladder. If any of the next six vertices has a snake or ladder, then the edge from current vertex goes to the top of the ladder or tail of the snake. Since all edges are of equal weight, we can efficiently find shortest path using Breadth First Search of the graph.
+ *
+ * Following is the implementation of the above idea. The input is represented by two things, first is ‘N’ which is number of cells in the given board, second is an array ‘move[0…N-1]’ of size N. An entry move[i] is -1 if there is no snake and no ladder from i, otherwise move[i] contains index of destination cell for the snake or the ladder at i.
  */
 public class SnakeLadder {
     private HashMap<Integer, Integer> jumpMap = new HashMap<Integer, Integer>();

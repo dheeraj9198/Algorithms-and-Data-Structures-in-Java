@@ -1,0 +1,86 @@
+algo
+
+1- SnakeLadder.java - graph,bfs, 3.8/5
+Time complexity of the above solution is O(N) as every cell is added and removed only once from queue. And a typical enqueue or dequeue operation takes O(1) time.
+______________________________________________________________________________________________________________________________________________________________________
+2- DictionaryOfAlienLanguage - graph,topological sort, 4.1/5
+Time Complexity: The first step to create a graph takes O(n + alhpa) time where n is number of given words and alpha is number
+of characters in given alphabet. The second step is also topological sorting. Note that there would be alpha vertices and at-most (n-1) edges in the graph. The time complexity of topological sorting is O(V+E) which is O(n + aplha) here. So overall time complexity is O(n + aplha) + O(n + aplha) which is O(n + aplha).
+
+
+______________________________________________________________________________________________________________________________________________________________
+______________________________________________________________________________________________________________________________________________________________
+
+ds
+
+Design an efficient data structure for given operations - heap,
+Design a Data Structure for the following operations. The data structure should be efficient enough to accommodate the operations according to their frequency.
+
+a) findMin() : Returns the minimum item.
+   Frequency: Most frequent
+
+b) findMax() : Returns the maximum item.
+    Frequency: Most frequent
+
+c) deleteMin() : Delete the minimum item.
+    Frequency: Moderate frequent
+
+d) deleteMax() : Delete the maximum item.
+    Frequency: Moderate frequent
+
+e) Insert() : Inserts an item.
+    Frequency: Least frequent
+
+f) Delete() : Deletes an item.
+    Frequency: Least frequent.
+
+A simple solution is to maintain a sorted array where smallest element is at first position and largest element is at last. The time complexity of findMin(), findMAx() and deleteMax() is O(1). But time complexities of deleteMin(), insert() and delete() will be O(n).
+
+Can we do the most frequent two operations in O(1) and other operations in O(Logn) time?.
+The idea is to use two binary heaps (one max and one min heap). The main challenge is, while deleting an item, we need to delete from both min-heap and max-heap. So, we need some kind of mutual data structure. In the following design, we have used doubly linked list as a mutual data structure. The doubly linked list contains all input items and indexes of corresponding min and max heap nodes. The nodes of min and max heaps store addresses of nodes of doubly linked list. The root node of min heap stores the address of minimum item in doubly linked list. Similarly, root of max heap stores address of maximum item in doubly linked list. Following are the details of operations.
+
+
+
+
+
+1) findMax(): We get the address of maximum value node from root of Max Heap. So this is a O(1) operation.
+
+1) findMin(): We get the address of minimum value node from root of Min Heap. So this is a O(1) operation.
+
+3) deleteMin(): We get the address of minimum value node from root of Min Heap. We use this address to find the node in doubly linked list. From the doubly linked list, we get node of Max Heap. We delete node from all three. We can delete a node from doubly linked list in O(1) time. delete() operations for max and min heaps take O(Logn) time.
+
+4) deleteMax(): is similar to deleteMin()
+
+5) Insert() We always insert at the beginning of linked list in O(1) time. Inserting the address in Max and Min Heaps take O(Logn) time. So overall complexity is O(Logn)
+
+6) Delete() We first search the item in Linked List. Once the item is found in O(n) time, we delete it from linked list. Then using the indexes stored in linked list, we delete it from Min Heap and Max Heaps in O(Logn) time. So overall complexity of this operation is O(n). The Delete operation can be optimized to O(Logn) by using a balanced binary search tree instead of doubly linked list as a mutual data structure. Use of balanced binary search will not effect time complexity of other operations as it will act as a mutual data structure like doubly Linked List.
+
+
+_________________________________________________________________________________________________________________________________________________________________
+Design a data structure that supports insert, delete, search and getRandom in constant time
+https://www.geeksforgeeks.org/design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time/
+__________________________________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________________________________
+
+problem solving
+
+Given an n*m matrix, the task is to find the maximum sum of elements of cell starting from the cell (0, 0) to cell (n-1, m-1).
+However, the allowed moves are right, downwards or diagonally right, i.e, from location (i, j) next move can be (i+1, j), or, (i, j+1), or (i+1, j+1). Find the maximum sum of elements satisfying the allowed moves.
+
+https://www.geeksforgeeks.org/maximum-sum-path-in-a-matrix/
+
+Input:
+mat[][] = {{100, -350, -200},
+           {-100, -300, 700}}
+Output: 500
+Explanation:
+Path followed is 100 -> -300 -> 700
+
+Input:
+mat[][] = {{500, 100, 230},
+           {1000, 300, 100},
+           {200, 1000, 200}}
+Output:
+3000
+Explanation:
+Path followed is 500 -> 1000 -> 300 -> 1000 -> 200
