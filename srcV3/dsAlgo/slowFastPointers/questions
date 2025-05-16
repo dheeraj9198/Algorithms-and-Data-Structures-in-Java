@@ -1,0 +1,38 @@
+1-Find The Duplicate Number
+Given an array of positive numbers, nums, such that the values lie in the range [1,n][1,n], inclusive, and that there are n+1n+1 numbers in the array, find and return the duplicate number present in nums. There is only one repeated number in nums, but it may appear more than once in the array.
+    Note: You cannot modify the given array nums. You have to solve the problem using only constant extra space.
+Constraints:
+    1≤n≤1031≤n≤103
+    nums.length =n+1=n+1
+    1≤1≤ nums[i] ≤n≤n
+    All the integers in nums are unique, except for one integer that will appear more than once.
+
+
+
+2-Circular Array Loop
+3-Linked List Cycle III
+Given the head of a linked list, determine the length of the cycle present in the linked list. If there is no cycle, return 0.
+
+A cycle exists in a linked list if there is some node in the list that can be reached again by continuously following the next pointer.
+
+Constraints:
+
+    The number of nodes in the list is in the range [0,104][0,104].
+
+    −105≤−105≤ Node.value ≤105≤105
+
+
+4-Linked List Cycle IV
+Given the head of a singly linked list, implement a function to detect and remove any cycle present in the list. A cycle occurs when a node's next pointer links back to a previous node, forming a loop within the list.
+
+The function must modify the linked list in place, ensuring it remains acyclic while preserving the original node order. If no cycle is found, return the linked list as is.
+
+Constraints:
+
+    The number of nodes in the list is in the range [0,104][0,104].
+
+    −105≤−105≤ Node.value ≤105≤105
+5-Middle of the Linked List
+6-Linked List Cycle
+7-Happy Number
+8-Palindrome Linked List

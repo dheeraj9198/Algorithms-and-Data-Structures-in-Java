@@ -1,7 +1,5 @@
 package CoreJava;
 
-import com.sun.java.util.jar.pack.*;
-
 /**
  * Created by dheeraj on 6/1/15.
  */

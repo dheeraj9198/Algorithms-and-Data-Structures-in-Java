@@ -1,7 +1,5 @@
 package dutchFlago1Segregation;
 
-import com.sun.istack.internal.NotNull;
-
 /**
  * Created by dheeraj on 6/7/16.
  */

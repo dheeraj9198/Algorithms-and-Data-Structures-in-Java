@@ -1,0 +1,3 @@
+1 two pointers
+1.1 dutch national flag sort 0,1,2 [current may be less than end but check with start too]
+1.2 reverse words from string [string.trim(), String.join(" ",words), "\\s+" regex for white space]

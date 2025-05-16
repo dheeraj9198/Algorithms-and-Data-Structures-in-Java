@@ -1,6 +1,5 @@
 package sorting;
 
-import com.sun.deploy.util.ArrayUtil;
 
 import java.util.Arrays;
 
