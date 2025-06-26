@@ -3,6 +3,7 @@ package dsAlgo.medium.heap;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -99,7 +100,8 @@ public class Heap {
         System.out.println(extractMin(list));
         System.out.println(list);
         heapSort(list);
-        System.out.println(list.reversed());
+        Collections.reverse(list);
+        System.out.println(list);
     }
 
     /**
@@ -122,7 +124,7 @@ public class Heap {
     private static int extractMin(ArrayList<Integer> list) {
         int min = list.get(0);
         list.set(0, list.get(list.size() - 1));
-        list.removeLast();
+        list.remove(list.size()-1);
         siftDown(list, 0, list.size());
         return min;
     }

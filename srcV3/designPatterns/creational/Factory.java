@@ -17,13 +17,13 @@ public class Factory {
         public void speak() { System.out.println("Meow"); }
     }
 
-    class AnimalFactory {
+    static class AnimalFactory {
         public static Animal createAnimal(String type) {
-            return switch (type) {
-                case "dog" -> new Dog();
-                case "cat" -> new Cat();
-                default -> throw new IllegalArgumentException("Unknown");
-            };
+             switch (type) {
+                 case "dog" : return new Dog();
+                 case "cat" : return new Cat();
+                 default : throw new IllegalArgumentException("Unknown");
+            }
         }
     }
 

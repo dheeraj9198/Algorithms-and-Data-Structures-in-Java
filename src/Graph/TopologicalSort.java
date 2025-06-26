@@ -69,12 +69,12 @@ public class TopologicalSort {
 
     public static void main(String[] args) {
         TopologicalSort topologicalSort = new TopologicalSort();
-        topologicalSort.addPair("Naveen", "Satish");
-        topologicalSort.addPair("Satish", "Anushree");
-        topologicalSort.addPair("Satish", "Sandeep");
-        topologicalSort.addPair("Gurinder", "Naveen");
-        topologicalSort.addPair("Dheeraj","Gurinder");
-        topologicalSort.addPair("Dheeraj","Gurinder1");
+        topologicalSort.addPair("Naveen0", "Satish1");
+        topologicalSort.addPair("Satish1", "Anushree2");
+        topologicalSort.addPair("Satish1", "Sandeep3");
+        topologicalSort.addPair("Gurinder4", "Naveen0");
+        topologicalSort.addPair("Dheeraj5","Gurinder4");
+        topologicalSort.addPair("Dheeraj5","Gurinder6");
 
 
         topologicalSort.topologicalSort();

@@ -34,7 +34,7 @@ public class FlyWeight {
             return characters.get(c);
         }
     }
-    public class FlyweightPatternDemo {
+    public static class FlyweightPatternDemo {
         public static void main(String[] args) {
             Character charA1 = CharacterFactory.getCharacter('A');
             Character charA2 = CharacterFactory.getCharacter('A');

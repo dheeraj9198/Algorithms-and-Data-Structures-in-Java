@@ -1,0 +1,68 @@
+package dsAlgo.graphs;
+
+
+    import java.util.*;
+
+    class CourseSchedule{
+
+        public static List<Integer> findOrder(int n, int[][] prerequisites) {
+            List<Integer> sortedOrder = new ArrayList<>();
+            if (n <= 0)
+                return sortedOrder;
+
+            HashMap<Integer, Integer> inDegree = new HashMap<>();
+            HashMap<Integer, List<Integer>> graph = new HashMap<>();
+            for (int i = 0; i < n; i++) {
+                inDegree.put(i, 0);
+                graph.put(i, new ArrayList<>());
+            }
+
+            for (int i = 0; i < prerequisites.length; i++) {
+                int parent = prerequisites[i][1], child = prerequisites[i][0];
+                graph.get(parent).add(child);
+                inDegree.put(child, inDegree.get(child) + 1);
+            }
+
+            Queue<Integer> sources = new LinkedList<>();
+            for (Map.Entry<Integer, Integer> entry : inDegree.entrySet()) {
+                if (entry.getValue() == 0)
+                    sources.add(entry.getKey());
+            }
+
+            while (!sources.isEmpty()) {
+                int vertex = sources.poll();
+                sortedOrder.add(vertex);
+                List<Integer> children = graph.get(vertex);
+                for (int child : children) {
+                    inDegree.put(child, inDegree.get(child) - 1);
+                    if (inDegree.get(child) == 0)
+                        sources.add(child);
+                }
+            }
+
+            if (sortedOrder.size() != n)
+                return new ArrayList<>();
+
+            return sortedOrder;
+        }
+
+        public static void main(String[] args){
+            // Driver code
+
+            int[]n = {4, 5, 2, 4, 7};
+            int[][][]prerequisites = {
+                    {{1, 0}, {2, 0}, {3, 1}, {3, 2}},
+                    {{1, 0}, {2, 0}, {3, 1},{4, 3}},
+                    {{1, 0}}, {{1, 0}, {2, 0}, {3, 1}, {3, 2}},
+                    {{1, 0}, {0, 3}, {0, 2}, {3, 2}, {2, 5}, {4, 5}, {5, 6}, {2, 4}}};
+            for(int i=0; i<n.length; i++){
+                System.out.print(i+1);
+                System.out.println(".\tPrerequisites: "+Arrays.deepToString(prerequisites[i])+"\n\tTotal number of courses, n = "+n[i]);
+                List<Integer> result = findOrder(n[i], prerequisites[i]);
+                System.out.println("\tValid courses order: " + result);
+                System.out.println(new String(new char[100]).replace('\0', '-'));
+            }
+
+        }
+    }
+

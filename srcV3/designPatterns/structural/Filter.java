@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  *The Filter Pattern (also known as the Specification Pattern) is a structural design pattern used to
@@ -41,7 +42,7 @@ public class Filter {
         public List<Person> meetCriteria(List<Person> persons) {
             return persons.stream()
                     .filter(p -> p.gender.equalsIgnoreCase("Male"))
-                    .toList();
+                    .collect(Collectors.toList());
         }
     }
 
@@ -49,7 +50,7 @@ public class Filter {
         public List<Person> meetCriteria(List<Person> persons) {
             return persons.stream()
                     .filter(p -> p.profession.equalsIgnoreCase("Engineer"))
-                    .toList();
+                    .collect(Collectors.toList());
         }
     }
 
@@ -87,14 +88,13 @@ public class Filter {
 
 //5. Client Code
 
-    public class Main {
+    public static class Main {
         public static void main(String[] args) {
-            List<Person> people = List.of(
-                    new Person("Alice", "Female", "Engineer"),
-                    new Person("Bob", "Male", "Doctor"),
-                    new Person("Charlie", "Male", "Engineer"),
-                    new Person("Diana", "Female", "Artist")
-            );
+            List<Person> people = new ArrayList<>();
+            people.add(new Person("Alice", "Female", "Engineer"));
+            people.add(new Person("Bob", "Male", "Doctor"));
+            people.add(new Person("Charlie", "Male", "Engineer"));
+            people.add(new Person("Diana", "Female", "Artist"));
 
             Criteria male = new CriteriaMale();
             Criteria engineer = new CriteriaEngineer();

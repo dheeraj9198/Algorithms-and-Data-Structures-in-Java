@@ -34,7 +34,7 @@ public class Adapter {
             payPalSDK.makePayment(amount);  // Delegate to the incompatible SDK
         }
     }
-    public class PaymentService {
+    public static class PaymentService {
         public static void main(String[] args) {
             PaymentProcessor stripe = new StripePaymentProcessor();
             stripe.pay(100.0);
