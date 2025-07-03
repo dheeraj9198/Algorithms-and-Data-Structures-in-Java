@@ -1,11 +1,7 @@
 package dsAlgo.combined;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.PriorityQueue;
+import java.util.*;
+
 
 /**
  * You are given a directed graph with N nodes labeled from 0 to N - 1.
@@ -15,7 +11,7 @@ import java.util.PriorityQueue;
  * Find the K distinct paths from node 0 to node N - 1 that have the minimum total cost.
  * If multiple paths have the same cost, prefer the one where lower-risk nodes appear earlier in the path, based on lexicographic order of their risk scores.
  * If cost and risk score is same shorter path is better.
- * Return a list of the top K such paths. Each path should be represented as a list of node indices in the order they are visited.
+ * Return a sorted list of the top K such paths. Each path should be represented as a list of node indices in the order they are visited.
  * <p>
  * Input
  * int N — the number of nodes
@@ -130,9 +126,13 @@ public class HeapDFSMapAmazonDjkistra {
                 {0, 2, 2},
                 {1, 3, 2},
                 {2, 3, 2},
-                {3, 4, 2}};
+                {3, 4, 2},
+
+                {0,3,2},
+                {0,4,2}
+        };
         int[] risk = {3, 2, 1, 4, 0};
-        int K = 2;
+        int K = 3;
         List<Path> pathList = findKBestPaths(N, edges, risk, K);
         for (Path path : pathList) {
             System.out.println(path.nodes + " " + path.cost);

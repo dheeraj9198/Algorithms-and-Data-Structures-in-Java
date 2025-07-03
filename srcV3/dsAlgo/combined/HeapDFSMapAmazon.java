@@ -1,12 +1,6 @@
 package dsAlgo.combined;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.PriorityQueue;
-import java.util.concurrent.atomic.AtomicInteger;
+import java.util.*;
 
 /**
  * You are given a directed graph with N nodes labeled from 0 to N - 1.
@@ -16,7 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * Find the K distinct paths from node 0 to node N - 1 that have the minimum total cost.
  * If multiple paths have the same cost, prefer the one where lower-risk nodes appear earlier in the path, based on lexicographic order of their risk scores.
  * If cost and risk score is same shorter path is better.
- * Return a list of the top K such paths. Each path should be represented as a list of node indices in the order they are visited.
+ * Return a sorted list of the top K such paths . Each path should be represented as a list of node indices in the order they are visited.
  * <p>
  * Input
  * int N — the number of nodes
@@ -52,7 +46,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class HeapDFSMapAmazon {
 
-    private static AtomicInteger counter = new AtomicInteger(0);
+    private static int counter = 0;
 
     private static class Path {
         private List<Integer> nodes;
@@ -104,7 +98,7 @@ public class HeapDFSMapAmazon {
     }
 
     private static void dfs(int src, int cost, List<Integer> path, int pathcost, boolean[] visited) {
-        counter.incrementAndGet();
+        counter++;
         if (visited[src]) {
             return;
         }
@@ -146,15 +140,25 @@ public class HeapDFSMapAmazon {
                 {0, 2, 2},
                 {1, 3, 2},
                 {2, 3, 2},
-                {3, 4, 2}};
+                {3, 4, 2},
+
+                {0,3,2},
+                {0,4,2}
+        };
         int[] risk = {3, 2, 1, 4, 0};
-        int K = 2;
+        int K = 3;
         findPaths(N, edges, risk, K);
+        Stack<Path> stack = new Stack<>();
         while (!pq.isEmpty()) {
             Path path = pq.poll();
+            stack.push(path);
+        }
+        while (!stack.isEmpty()) {
+            Path path = stack.pop();
             System.out.println(path.nodes + " " + path.cost);
         }
-        System.out.println(counter.get());
+
+        System.out.println(counter);
     }
 }
 
