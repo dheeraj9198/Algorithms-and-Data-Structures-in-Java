@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.PriorityQueue;
+import java.util.Set;
 
 /**
  * Problem: Most Reliable Path with Node Priority
@@ -28,21 +31,22 @@ import java.util.Map;
  * {3, 4, 10},
  * {4, 5, 10}
  * };
- * int[] priority = {5, 7, 6, 8, 5, 9};
+ * int[] priority = {0-5, 1-7, 2-6, 3-8, 4-5, 5-9};
  * <p>
  * Best path: 0->1->3->4->5
  * <p>
- *     0->1->3->4->5 35
- *     0->2->3->4->5 35
- *     0->1->4->5    35
- *
+ * 0->1->3->4->5 35 5,7,8,5,9
+ * 0->2->3->4->5 35 5,6,8,5,9
+ * 0->1->4->5    35 5,7,5,9
  */
 public class HeapDFSMap {
 
     static List<Integer> bestPath = new ArrayList<>();
     static int bestReliability = 0;
+    static int[] priority;
 
-    public static List<Integer> test(int nodeCount, int[][] edges, int[] priority) {
+    public static List<Integer> test(int nodeCount, int[][] edges, int[] p) {
+        priority = p;
         Map<Integer, List<int[]>> graph = new HashMap<>();
         for (int i = 0; i < nodeCount; i++) {
             graph.put(i, new ArrayList<>());
@@ -64,10 +68,26 @@ public class HeapDFSMap {
         }
         visited[node] = true;
         path.add(node);
-        if (node == nodeCount - 1 && reliability > bestReliability) {
-            bestReliability = reliability;
-            bestPath = path;
-            return;
+        if (node == nodeCount - 1) {
+            System.out.println("Possible path : " + Arrays.toString(path.toArray()) + " : " + reliability);
+            if (reliability > bestReliability) {
+                //System.out.println("Best path high: " + Arrays.toString(path.toArray()) + " : " + reliability);
+                bestReliability = reliability;
+                bestPath = path;
+                return;
+            } else if (reliability == bestReliability) {
+                for (int i = 0; i < bestPath.size() && i < path.size(); i++) {
+                    //System.out.println(priority[path.get(i)] +"->"+ priority[bestPath.get(i)]);
+                    if (priority[path.get(i)] > priority[bestPath.get(i)]) {
+                        //System.out.println("Best path same: " + Arrays.toString(path.toArray()) + " : " + reliability);
+                        bestReliability = reliability;
+                        bestPath = path;
+                        return;
+                    }else if (priority[path.get(i)] < priority[bestPath.get(i)]) {
+                        return;
+                    }
+                }
+            }
         }
         for (int[] i : graph.get(node)) {
             boolean[] visitedTemp = Arrays.copyOf(visited, visited.length);
@@ -76,8 +96,8 @@ public class HeapDFSMap {
         }
     }
 
-
     public static void main(String[] args) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
         int n = 6;
         int[][] edges = {
                 {0, 2, 10},
